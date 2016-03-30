@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="fonts/glyphicons-halflings-regular.ttf">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myscript.js"></script>
+    <title>Title</title>
+</head>
+<body class="container-fluid">
+<header class="row info-block ">
+    <div class="col-lg-7 col-lg-offset-3 col-md-9 col-md-offset-2">
+        <!-- Navbar start -->
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-collapse" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="main.html"><img src="/new-horse/images/логотип белый.png" width="120px"></a>
+                </div>
+
+                <!-- Collect the nav links -->
+                <div class="collapse navbar-collapse" id="bs-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="targets.html">Целевые программы</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="main.html#map"><img src="/new-horse/images/карта_иконка.png" height="20px" class="map-icon"></a></li>
+                        <p class="navbar-text number"><span class="small">8 (800)</span> <b>234 81 88</b></p>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false">RU <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">EN</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" disabled="disabled"><img src="/new-horse/images/ключ.png" height="25px"></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- Navbar end -->
+
+        <a class="btn red-btn btn-deal btn-lg" href="#">Заключить договор</a>
+
+        <!-- Nav links start-->
+        <div class="nav-links">
+            <ul class="nav">
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="faq.html">Вопросы и ответы</a></li>
+                <li><a href="kindness.html">Добрые дела</a></li>
+            </ul>
+        </div>
+        <!-- Nav links end -->
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <img src="/new-horse/images/shutterstock_134373716.jpg" width="100%">
+                <div class="carousel-caption">
+                    <p>Позвольте себе</p>
+                    <h1 class="text-uppercase">Путешествие <br> в любую <br> страну мира</h1>
+                    <span>Выгодные предложения по вкладам для Вас. <br> Специальные целевые программы.</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/new-horse/images/backstretch-home-03.jpg" width="100%">
+                <div class="carousel-caption">
+                    <p>Позвольте себе</p>
+                    <h1 class="text-uppercase">Больше спокойствия</h1>
+                    <span>Целевые программы для безопасности вклада и минимизация рисков.</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/new-horse/images/iStock_000023467366_Medium.jpg" width="100%">
+                <div class="carousel-caption">
+                    <p>Позвольте себе</p>
+                    <h1 class="text-uppercase">Больше заботы о здоровье</h1>
+                    <span>Страхование здоровья для Вас и Вашей семьи.</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/new-horse/images/facebook1.jpg" width="100%">
+                <div class="carousel-caption">
+                    <p>Позвольте себе</p>
+                    <h1 class="text-uppercase">Не думать <br> о пенсии</h1>
+                    <span>Продуманная пенсионная программа для беззаботной старости.</span>
+                </div>
+            </div>
+
+            <div class="item active">
+                <img src="/new-horse/images/-model-people-beauty-female-16105-1920x1080.jpg" width="100%">
+                <div class="carousel-caption">
+                    <p>Позвольте себе</p>
+                    <h1 class="text-uppercase">Новое качество жизни</h1>
+                    <span>Выгодные целевые программы.</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/new-horse/images/six-senses-yai-noi-main-pool-daytime1.jpg" width="100%">
+                <div class="carousel-caption">
+                    <p>Позвольте себе</p>
+                    <h1 class="text-uppercase">Роскошный дом</h1>
+                    <span>Выгодные предложения по инвестициям в недвижимость.</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span aria-hidden="true"><img src="/new-horse/images/arrow-l.png"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span aria-hidden="true"><img src="/new-horse/images/arrow-r.png"></span>
+    </a>
+</header>
+<main>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-12 text-center">
+            <h3>Наши программы</h3>
+            <div class="col-lg-4">
+                <h1 class="target-name">3+</h1>
+                <span>Доход в месяц 3%</span><br>
+                <div class="red-line"></div><br>
+                <span><i>Сумма целевого взноса</i></span><br>
+                <b>от 6 000 руб.<br>до 120 000 руб.</b><br>
+                <span><i>Пополнение счета <br> от 3 000 руб.</i></span>
+            </div>
+
+            <div class="col-lg-4">
+                <h1 class="target-name">4+</h1>
+                <span>Доход в месяц 4%</span><br>
+                <div class="red-line"></div><br>
+                <span><i>Сумма целевого взноса</i></span><br>
+                <b>от 120 000 руб.<br>до 600 000 руб.</b><br>
+                <span><i>Пополнение счета <br> от 10 000 руб.</i></span>
+            </div>
+
+            <div class="col-lg-4">
+                <h1 class="target-name">5+</h1>
+                <span>Доход в месяц 5%</span><br>
+                <div class="red-line"></div><br>
+                <span><i>Сумма целевого взноса</i></span><br>
+                <b>от 600 001 руб.<br>и выше</b><br>
+                <span><i>Пополнение счета <br> от 10 000 руб.</i></span>
+            </div>
+        </div>
+
+        <div class="gray-box col-lg-6 col-lg-offset-3 col-md-12">
+            <div class="block"></div>
+            <div class="media">
+                <div class="media-left">
+                    <img class="media-object round" src="/new-horse/images/2.png" width="40px">
+                </div>
+                <div class="media-body">
+                    <b class="media-heading">Снятие процентов</b><br>
+                    <i>Вы можете снимать проценты каждый месяц, с момента заключения договора.</i>
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="media-left">
+                    <img class="media-object round" src="/new-horse/images/3.png" width="40px">
+                </div>
+                <div class="media-body">
+                    <b class="media-heading">Начисление процентов</b><br>
+                    <i>Проценты перечисляются клиенту сразу и участвуют в увеличении основной суммы взноса.</i>
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="media-left">
+                    <img class="media-object round" src="/new-horse/images/1.png" width="40px">
+                </div>
+                <div class="media-body">
+                    <b class="media-heading">Минимальный срок договора</b><br>
+                    <i>Вы можете заключить договор от 3 месяцев.</i>
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="media-left">
+                    <img class="media-object round" src="/new-horse/images/4.png" width="40px">
+                </div>
+                <div class="media-body">
+                    <b class="media-heading">Льготный период</b><br>
+                    <i>Предоставляется льготный кредит по 9% годовых.</i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-lg-offset-3 col-md-12 text-center">
+            <div class="col-lg-4">
+                <div class="red-bubble">
+                    Пенсионная программа
+                </div>
+                <h1 class="target-name">4%</h1>
+                <span>Доход в месяц</span><br>
+                <div class="red-line"></div><br>
+                <span><i>Сумма целевого взноса</i></span><br>
+                <b>от 50 000 руб.<br>и выше</b>
+                <div class="gray-box text-left sm">
+                    <div class="block-sm"></div>
+                    <p>
+                        <b>Пополнение счета</b><br>
+                        <i>Пополняйте счет в любое удобное для Вас время на сумму от 3 000 рублей.</i>
+                    </p>
+                    <p>
+                        <b>Начисление процентов</b><br>
+                        <i>Проценты начисляются на любой указанный Вами банковский счёт.</i>
+                    </p>
+                    <p>
+                        <b>Срок инвестирования</b><br>
+                        <i>Вы можете заключить договор сроком от 6 месяцев.</i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="red-bubble">
+                    Погашение кредита
+                </div>
+                <h1 class="target-name">4%</h1>
+                <span>Доход в месяц</span><br>
+                <div class="red-line"></div><br>
+                <span><i>Сумма целевого взноса</i></span><br>
+                <b>от 50 000 руб.<br>и выше</b>
+                <div class="gray-box text-left sm">
+                    <div class="block-sm"></div>
+                    <p>
+                        <b>Пополнение счета</b><br>
+                        <i>Пополняйте счет в любое удобное для Вас время на сумму от 3 000 рублей.</i>
+                    </p>
+                    <p>
+                        <b>Начисление процентов</b><br>
+                        <i>Проценты начисляются на любой указанный Вами банковский счёт, по кредитному договору,
+                            без ограничений по выбору банка.</i>
+                    </p>
+                    <p>
+                        <b>Срок инвестирования</b><br>
+                        <i>Срок инвестирования равен сроку действия кредитного банковского договора.</i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="red-bubble">
+                    Инвестиции в недвижимость
+                </div>
+                <h1 class="target-name">20-25%</h1>
+                <span>Доход в год</span><br>
+                <div class="red-line"></div><br>
+                <span><i>Сумма целевого взноса</i></span><br>
+                <b>от 500 000 руб.<br>и выше</b>
+                <div class="gray-box text-left sm">
+                    <div class="block-sm"></div>
+                    <p>
+                        <b>Пополнение счета</b><br>
+                        <i>Пополняйте счет в любое удобное для Вас время на сумму от 10 000 рублей.</i>
+                    </p>
+                    <p>
+                        <b>Начисление процентов</b><br>
+                        <i>Проценты перечисляются Вам по окончании срока действия договора.</i>
+                    </p>
+                    <p>
+                        <b>Срок инвестирования</b><br>
+                        <i>Срок инвестирования возможен на период от 1 до 5 лет.</i>
+                    </p>
+                    <p>
+                        <b>Дополнение</b><br>
+                        <i>На сумму внесеных средств Вы сможете приобрести недвижимость в собственность.</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-12">
+            <div class="media b-box">
+                <div class="media-left media-middle">
+                    <img class="media-object" src="/new-horse/images/галка.png" height="110px" width="auto">
+                </div>
+                <div class="media-body">
+                    <h3 class="media-heading">Антикризисная программа</h3>
+                    <p><i>Страхование целевых программ "3+", "4+" и "5+" от изменения курса рубля к валюте.</i></p>
+                    <p>Включает защиту от значительного изменения курса рубля к иностранной валюте.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-12">
+            <div class="gray-box">
+                <div class="block"></div>
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object round" src="/new-horse/images/2.png" width="40px">
+                    </div>
+                    <div class="media-body">
+                        <p class="media-heading"><b>Стоимость программы</b></p>
+                        <p>Стоимость варьируется от 4% до 18%,  в зависимости от рыночной ситуации и страхуемой суммы.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object round" src="/new-horse/images/3.png" width="40px">
+                    </div>
+                    <div class="media-body">
+                        <p class="media-heading"><b>Возможности программы</b></p>
+                        <p>Приобретая защиту Вы получаете шанс значительно увеличить свой капитал даже при
+                            сильном падении курса рубля.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object round" src="/new-horse/images/1.png" width="40px">
+                    </div>
+                    <div class="media-body">
+                        <p class="media-heading"><b>Минимальный срок действия</b></p>
+                        <p>Вы можете воспользоваться даннной программмой в любое удобное для Вас время на срок,
+                            не менее чем 3 месяца.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object round" src="/new-horse/images/4.png" width="40px">
+                    </div>
+                    <div class="media-body">
+                        <p class="media-heading"><b>Пополнение суммы договора</b></p>
+                        <p>Сумма дополнительно внесенных средств по даннной программе страхуется отдельно.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object round" src="/new-horse/images/5.png" width="40px">
+                    </div>
+                    <div class="media-body">
+                        <p class="media-heading"><b>Специальные условия</b></p>
+                        <p>Прибыль по «Антикризисной программе» не суммируется с прибылью с программам: «3+», «4+»
+                            и «5+». Выплачивается наибольшая прибыль.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object round" src="/new-horse/images/6.png" width="40px">
+                    </div>
+                    <div class="media-body">
+                        <p class="media-heading"><b>Выгода</b></p>
+                        <p>Гарантированная прибыль независимо от ситуации на рынке.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row dgray">
+        <div class="col-lg-6 col-lg-offset-3 col-md-12 text-justify">
+            <h3 class="text-center">Общие положения</h3>
+            <div class="media">
+                <div class="media-left">
+                    <div class="flag">
+                        <div>1.</div>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <p class="media-heading"><b>Максимальный срок заключения договора</b></p>
+                    <p>Максимальный срок заключения договора по всем базовым целевым программам 60 месяцев ( 5 лет).</p>
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="media-left">
+                    <div class="flag">
+                        <div>2.</div>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <p class="media-heading"><b>Досрочное расторжение договора</b></p>
+                    <p>При досрочном расторжении договора менее 3-х месяцев: процентная ставка доходности по договору
+                        пересчитывается с даты последнего начисления процентов до дня принятия заявления компанией
+                        «Хорс-Инвест», по ставке рефинансирования Центробанка (8,25% годовых).</p>
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="media-left">
+                    <div class="flag">
+                        <div>3.</div>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <p class="media-heading"><b>Выведение средств</b></p>
+                    <p>Вывод средств осуществляется в течение 10 рабочих дней(то есть максимально может составлять
+                        2 календарные недели) со дня окончания договора или принятия заявления на вывод средств.</p>
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="media-left">
+                    <div class="flag">
+                        <div>4.</div>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <p class="media-heading"><b>Заключение договора</b></p>
+                    <p>Договора, заключённые по всем перечисленным целевым программам, пайщик оплачивает компании
+                        ПО «Хорс Инвест», а именно:<br>
+                        - фиксированный Вступительный взнос 150 руб.<br>
+                        - фиксированный Членский взнос 6% от суммы внесения на счет, в целях покрытия расходов
+                        ПО «ХОРС-ИНВЕСТ» по ведению уставной деятельности.<br>
+                        - фиксированный Паевой взнос 150 руб. (возвратный).</p>
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="media-left">
+                    <div class="flag">
+                        <div>5.</div>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <p class="media-heading"><b>Целевой взнос</b></p>
+                    <p>Целевой взнос - основная сумма, с учетом всех вычетов, направленная на накопления.</p>
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="media-left">
+                    <div class="flag">
+                        <div>6.</div>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <p class="media-heading"><b>Страхование вклада</b></p>
+                    <p>Страхование вклада до 50% от суммы на счёте по всем Целевым Программам.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-12 text-justify terminology">
+            <h3 class="text-center">Терминология</h3>
+            <p>
+                <span class="termin">Пайщик</span> –
+                физическое, юридическое лицо, подавшее заявление о приеме в ПО «ХОРС-ИНВЕСТ», оплатившего вступительный,
+                членский и паевой взносы, принятые решением Совета ПО «ХОРС-ИНВЕСТ» пайщиком.
+            </p>
+
+            <p>
+                <span class="termin">ПО «ХОРС-ИНВЕСТ»</span> –
+                потребительское общество, созданное в соответствии с Гражданским кодексом РФ, Законом РФ от 19.06.1992 г.
+                № 3085-1 «О потребительской кооперации (потребительских обществах, их союзах в Российской Федерации).
+            </p>
+
+            <p>
+                <span class="termin">Вступительный взнос</span> –
+                денежные средства, внесенные пайщиком и направленные на покрытие расходов,
+                связанных со вступление в ПО «ХОРС-ИНВЕСТ».
+            </p>
+
+            <p>
+                <span class="termin">Членский взнос</span> –
+                регулярное поступление денежных средств, вносимых пайщиком
+                в целях покрытия расходов ПО «ХОРС-ИНВЕСТ» по ведению уставной деятельности.
+            </p>
+
+
+            <p>
+                <span class="termin">Паевой взнос</span> –
+                денежные средства, имущество и имущественные права пайщика, вносимые им в паевой фонд
+                ПО «ХОРС-ИНВЕСТ» и являющийся источником формирования имущества ПО «ХОРС-ИНВЕСТ».
+            </p>
+
+            <p>
+                <span class="termin">Целевой взнос (возвращаемый)</span> –
+                взнос пайщиков в денежной и не денежной форме, предназначенные для развития Общества, приобретения товаров,
+                участий, в том числе инвестиционных, и услуг для пайщиков,образуют Фонд развития Общества
+                и имеют особый статус,определяемый уставом, положением о Фонде развития Общества и договорами Общества.
+            </p>
+
+            <p>
+                <span class="termin">Целевые взносы</span>
+                подлежат возврату как при выходе члена Общества из его состава, так и в случаях, предусмотренных
+                соответствующими внутренними документами Общества и положениями о целевых паевых объединениях,
+                прежде всего из числа обеспечивающих членов Общества товарами, участьями и услугами.
+            </p>
+
+        </div>
+    </div>
+</main>
+<footer class="row hidden-xs">
+    <div class="col-lg-6 col-lg-offset-3 col-md-12">
+        <ul class="site-map text-nowrap">
+            <li><a href="targets.html">Целевые программы</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="main.html#map">Контакты</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="faq.html">Вопросы и ответы</a></li>
+            <li class="small-number"><span class="small">8 (800)</span> <b>234 81 88</b></li>
+            <li><img src="/new-horse/images/логотип%20белый.png" width="100px"></li>
+        </ul>
+        <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
+    </div>
+</footer>
+</body>
+</html>
