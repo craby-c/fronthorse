@@ -76,7 +76,7 @@ header{
 }
 
 .faq{
-    background: url("/new-horse/images/Magnificent-Office-Wallpapers.jpg") no-repeat center center fixed;
+    background: url("../images/Magnificent-Office-Wallpapers.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -374,7 +374,7 @@ footer {
 }
 
 .lgray>.sun{
-    background: url("/new-horse/images/солнце.png") no-repeat 50% 100%;
+    background: url("../images/солнце.png") no-repeat 50% 100%;
 }
 .lgray>.sun>.media{
     background: rgba(235,235,235,0.6);
@@ -519,7 +519,7 @@ h3{
 
 .deal{
     height: 100%;
-    background: url("/new-horse/images/мужик%20с%20галстуком.jpg") no-repeat 50% 0;
+    background: url("../images/мужик%20с%20галстуком.jpg") no-repeat 50% 0;
 }
 
 .deal>header{
