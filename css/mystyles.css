@@ -11,6 +11,13 @@ body{
     font-weight: 300;
 }
 
+a,
+a:hover,
+a:active,
+a:focus{
+    outline: none !important;
+}
+
 header{
     background-image: linear-gradient(to top, rgba(0,0,0,.4) 0%, rgba(0,0,0,.2) 1%, rgba(0,0,0,.1) 2%, transparent 4%);
 }
@@ -62,7 +69,7 @@ header{
 
 .nav-links{
     position: absolute;
-    top: 85%;
+    top: 83%;
     background: rgba(0,0,0,0.3);
     padding: 10px 10px 10px 0;
     border-radius: 3px;
@@ -83,6 +90,7 @@ header{
     background-size: cover;
 }
 
+.main-panel,
 .faq-panel{
     position: relative;
     bottom: -20px;
@@ -100,7 +108,9 @@ header{
     font-weight: 600;
 }
 
-.panel-title>a:hover{
+.panel-title>a:hover,
+.panel-title>a:active,
+.panel-title>a:focus{
     text-decoration: none;
     color: #cc2229;
 }
@@ -512,11 +522,6 @@ h3{
     width: 17px;
 }
 
-.letters>img{
-    margin: 40px;
-    position:relative;
-}
-
 .deal{
     height: 100%;
     background: url("../images/мужик%20с%20галстуком.jpg") no-repeat 50% 0;
@@ -564,4 +569,129 @@ h3{
 
 #myModal1>.modal-dialog{
     width: 450px;
+}
+
+.thank{
+    padding-top: 30px;
+}
+
+
+.letters{
+    background: url("../images/солнце.png") no-repeat 50% 100%;
+    padding-left: 9%;
+    padding-top: 50px;
+    height: 380px;
+}
+
+.letters::after {
+    background: transparent;
+    background: -o-linear-gradient(top, rgba(235,235,235,0.6) 0%, rgba(235,235,235,0.6) 100%);
+    background: -ms-linear-gradient(top, rgba(235,235,235,0.6) 0%, rgba(235,235,235,0.6) 100%);
+    background: linear-gradient(to bottom, rgba(235,235,235,0.7) 0%, rgba(235,235,235,0.7) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+.letters>img{
+    position: relative;
+    z-index: 3;
+}
+
+.article-img{
+    height: 140px;
+    width: 140px;
+    margin: 20px;
+    border: 3px solid rgba(189,189,189,0.5);
+}
+
+.article-head{
+    color: #c32428;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.article-text>div>p{
+    font-size: 0.9em;
+    color: #6d6d6d;
+}
+
+.clip-text{
+    height: 100px;
+    overflow: hidden;
+}
+
+.clip-text>p{
+    text-overflow: ellipsis;
+}
+
+.social {
+    position: absolute;
+    right: 26%;
+    top: 600px;
+}
+
+.social>a{
+    display: inline-block;
+}
+
+.social>a>div{
+    background: url("../images/sprite_icon.png") no-repeat;
+    height: 49px;
+    width: 49px;
+}
+
+#vk{
+    background-position: 0 0;
+}
+#vk:hover{
+    background-position: 0 -48px;
+}
+#tw{
+    background-position: -49px 0;
+}
+#tw:hover{
+    background-position: -49px -48px;
+}
+#fb{
+    background-position: -98px 0;
+}
+#fb:hover{
+    background-position: -98px -48px;
+}
+#go{
+    background-position: -147px 0;
+}
+#go:hover{
+    background-position: -147px -48px;
+}
+
+.main-panel>.panel-heading{
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.main-panel>.panel-body{
+    padding-top: 50px;
+}
+
+.main-panel>.panel-heading>.panel-title{
+    font-size: 1.5em;
+}
+
+.red-angle{
+    content: '';
+    position: absolute;
+    height: 23px;
+    width: 70px;
+    bottom: -23px;
+    left: 45%;
+    background: url("../images/arrow-d.png") no-repeat, #ffffff;
 }

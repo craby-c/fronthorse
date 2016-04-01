@@ -1,18 +1,24 @@
 /**
  * Created by vera on 17.03.16.
  */
-//$(document).ready(
-    $("#myCarousel").carousel();
+$(document).ready(function(){
+    $(".article-head").click(function(){
+        $(".clip-text").css("height", "auto")
+    })
+});
 
-    $(".left").click(function(){
-        $("#myCarousel").carousel("prev");
-    });
 
-    $(".right").click(function(){
-       $("#myCarousel").carousel("next")
-    });
+$("#myCarousel").carousel();
 
-    $('.collapse').collapse();
+$(".left").click(function(){
+    $("#myCarousel").carousel("prev");
+});
+
+$(".right").click(function(){
+    $("#myCarousel").carousel("next")
+});
+
+$('.collapse').collapse();
 
 ymaps.ready(init);
 var myMap,
