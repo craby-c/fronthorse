@@ -2,8 +2,10 @@
  * Created by vera on 17.03.16.
  */
 $(document).ready(function(){
+    var t = $(".clip-text").children("p").text();
+    $(".clip-text").text(shorten(t, 20));
     $(".article-head").click(function(){
-        $(".clip-text").css("height", "auto")
+
     })
 });
 
@@ -15,7 +17,7 @@ $(".left").click(function(){
 });
 
 $(".right").click(function(){
-    $("#myCarousel").carousel("next")
+    $("#myCarousel").carousel("next");
 });
 
 $('.collapse').collapse();
@@ -23,6 +25,25 @@ $('.collapse').collapse();
 ymaps.ready(init);
 var myMap,
     myPlacemark;
+
+
+
+function shorten(text, maxLength) {
+
+    function checkSpace(item) {
+        return item != "";
+    }
+
+    var ret = text;
+    var arr = ret.split(" ").filter(checkSpace);
+    var over = arr.length-maxLength;
+    if (arr.length > maxLength) {
+        arr.splice(arr.length-over,over);
+        arr.push("...");
+        ret = arr.join(" ");
+    }
+    return ret;
+}
 
 function init(){
     myMap = new ymaps.Map("map", {
