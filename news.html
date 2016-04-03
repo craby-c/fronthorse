@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +13,121 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/myscript.js"></script>
-    <title>Новости компании</title>
+    <title>Новости</title>
 </head>
 
-<body>
+<body class="container-fluid news">
+<div class="row">
+    <div class="col-lg-7 col-lg-offset-3 col-md-12 col-sm-12 col-xs-12">
+        <!-- Navbar start -->
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-collapse" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="main.html"><img src="images/логотип белый.png" width="120px"></a>
+                </div>
 
+                <!-- Collect the nav links -->
+                <div class="collapse navbar-collapse" id="bs-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="targets.html">Целевые программы</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="main.html#map"><img src="images/карта_иконка.png" height="20px" class="map-icon"></a></li>
+                        <p class="navbar-text number"><span class="small">8 (800)</span> <b>234 81 88</b></p>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">EN</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><img src="images/ключ.png" height="25px"></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- Navbar end -->
+    </div>
+</div>
+<main class="row">
+    <div class="col-lg-6 col-lg-offset-3 col-md-12">
+        <div class="panel faq-panel main-panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">Новости</h3>
+                <div class="red-angle"></div>
+            </div>
+            <div class="panel-body">
+                    <div class="media article">
+                        <div class="media-left">
+                            <!-- Только квадратные картинки!!!! -->
+                            <img class="img-circle article-img" src="images/children.jpg">
+                        </div>
+                        <div class="media-body article-text">
+                            <div class="media-heading">
+                                <h3 class="article-head">
+                                    Наша компания принимает участие в благотворительных акциях,
+                                    организованных бизнес-клубом «Советчик»
+                                </h3>
+                            </div>
+                            <div class="clip-text">
+                                <p class="text-justify">
+                                    Наша компания принимает участие в благотворительных акциях,
+                                    организованных бизнес-клубом «Советчик».
+                                    В это лето мы дважды приняли участие в акции «Лучик радости». Дети онкологического отделения
+                                    ГБУЗ "ДККБ" нарисовали свои желания и, с присущей детям верой в добро и чудо , ждали их исполнения.
+                                    От ХОРС-ИНВЕСТ Медов Павел, Бражник Анатолий получили в подарок игровую приставку BSP и планшетный
+                                    компьютер Samsung GALAXY S4.
+                                </p>
+                            </div>
+                            <a href="">Посмотреть фото</a>
+                        </div>
+                    </div>
+
+                <div class="media article">
+                    <div class="media-left">
+                        <!-- Только квадратные картинки!!!! -->
+                        <img class="img-circle article-img" src="images/children.jpg">
+                    </div>
+                    <div class="media-body article-text">
+                        <div class="media-heading">
+                            <h3 class="article-head">
+                                Наша компания принимает участие в благотворительных акциях,
+                                организованных бизнес-клубом «Советчик»
+                            </h3>
+                        </div>
+                        <div class="clip-text">
+                            <p class="text-justify">
+                                Наша компания принимает участие в благотворительных акциях,
+                                организованных бизнес-клубом «Советчик».
+                                В это лето мы дважды приняли участие в акции «Лучик радости». Дети онкологического отделения
+                                ГБУЗ "ДККБ" нарисовали свои желания и, с присущей детям верой в добро и чудо , ждали их исполнения.
+                                От ХОРС-ИНВЕСТ Медов Павел, Бражник Анатолий получили в подарок игровую приставку BSP и планшетный
+                                компьютер Samsung GALAXY S4.
+                            </p>
+                        </div>
+                        <a href="">Посмотреть фото</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="row hidden-xs">
+    <div class="col-lg-6 col-lg-offset-3 col-md-12">
+        <ul class="site-map text-nowrap">
+            <li><a href="targets.html">Целевые программы</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="main.html#map">Контакты</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="faq.html">Вопросы и ответы</a></li>
+            <li class="small-number"><span class="small">8 (800)</span> <b>234 81 88</b></li>
+            <li><img src="images/логотип%20белый.png" width="100px"></li>
+        </ul>
+        <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
+    </div>
+</footer>
 </body>
 </html>

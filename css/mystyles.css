@@ -9,6 +9,7 @@ body{
     color: #000000;
     font-family:'Calibri Light', 'Roboto', sans-serif;
     font-weight: 300;
+    font-size: 1.4em;
 }
 
 a,
@@ -19,7 +20,7 @@ a:focus{
 }
 
 header{
-    background-image: linear-gradient(to top, rgba(0,0,0,.4) 0%, rgba(0,0,0,.2) 1%, rgba(0,0,0,.1) 2%, transparent 4%);
+    background: linear-gradient(to top, rgba(0,0,0,.4) 0%, rgba(0,0,0,.2) 1%, rgba(0,0,0,.1) 2%, transparent 4%);
 }
 
 .navbar{
@@ -31,7 +32,7 @@ header{
 }
 
 .navbar-toggle{
-    background-color: #737373;
+    background-color: #c32428;
 }
 
 .icon-bar{
@@ -54,7 +55,7 @@ header{
     padding-left: 5px;
     color: #000000;
     text-decoration: underline;
-    font-size: 1.11em;
+    font-size: 1.2em;
 }
 
 .nav>li>a:hover,
@@ -94,10 +95,12 @@ header{
 .faq-panel{
     position: relative;
     bottom: -20px;
+    overflow: hidden;
 }
 
-.faq-panel>.panel-body{
-    padding-left: 60px;
+.main-panel>.panel-body{
+    height: 500px;
+    overflow-y: scroll;
 }
 
 .panel>.panel-heading{
@@ -128,6 +131,27 @@ header{
 .panel{
     border: none;
     box-shadow: none;
+}
+
+/*Красная полоска faq*/
+.line{
+    content: '';
+    position: absolute;
+    margin-top: 5px;
+    left: 0;
+    width: 50px;
+    height: 6px;
+    border-radius: 0 2px 2px 0;
+    background: #cc2229;
+    display: none;
+}
+
+.gray-text{
+    color: #999;
+}
+
+.panel-group>.panel{
+    padding-left: 6%;
 }
 
 .info-block>div{
@@ -177,7 +201,7 @@ footer {
 }
 
 .carousel-caption>h1{
-    font-size: 3.2em;
+    font-size: 3.3em;
     margin-top: 10px;
     font-weight: 300;
 }
@@ -198,7 +222,8 @@ footer {
     border: none;
 }
 
-.red-btn:hover{
+.red-btn:hover,
+.red-btn:focus{
     color: #ffffff;
     background-color: #db3d43;
     text-decoration: none;
@@ -251,7 +276,7 @@ footer {
 
 .site-map{
     padding:0;
-    margin-top: 5%;
+    margin-top: 4%;
     text-align: center;
     color: #ffffff;
 }
@@ -284,8 +309,9 @@ footer {
 .block::after {
     content: '';
     position: absolute;
-    left: 46%;
-    bottom: -10px;
+    left: 50%;
+    margin-left: -25px;
+    bottom: -9px;
     border: 25px solid transparent;
     border-top: 15px solid #ffffff;
 }
@@ -304,7 +330,7 @@ footer {
 }
 
 .target-name{
-    font-size: 4em;
+    font-size: 4.5em;
     font-weight: 300;
 }
 
@@ -316,6 +342,7 @@ footer {
     border-radius: 7px;
     padding: 5px;
     position: relative;
+    width: 100%;
 }
 
 .red-bubble::after{
@@ -365,7 +392,8 @@ footer {
 .block-sm::after{
     content: '';
     position: absolute;
-    left: 37%;
+    left: 50%;
+    margin-left: -20px;
     bottom: 0;
     border: 20px solid transparent;
     border-top: 10px solid #ffffff;
@@ -398,7 +426,8 @@ footer {
     display: block;
 }
 
-#map{
+#map1,
+#map2{
     width: 100%;
     height: 450px;
     padding: 0;
@@ -410,7 +439,8 @@ footer {
 }
 
 .gray-btn:hover,
-.gray-btn:active{
+.gray-btn:active,
+.gray-btn:focus{
     color: #ffffff;
     text-decoration: none;
     background: rgba(189,189,189,0.9);
@@ -428,10 +458,12 @@ section{
 
 .address{
     padding-bottom: 20px;
+    box-shadow: inset 0 -2px 5px #ccc;
+    vertical-align: middle;
 }
 
-.address>div:first-child{
-    margin-top: 20px;
+#rd-address{
+    display: none;
 }
 
 h3{
@@ -536,6 +568,23 @@ h3{
     top: 70%;
 }
 
+.modal-footer{
+    text-align: center;
+    border-top: none;
+    padding-top: 0;
+}
+
+.modal-footer>button{
+    font-size: 16px;
+}
+
+.modal-header{
+    text-align: center;
+    border-bottom-width: 2px;
+    color: rgba(69,69,69,.7);
+    position: relative;
+}
+
 .close{
     opacity: 1;
     font-size: 3em;
@@ -559,6 +608,7 @@ h3{
 
 .form-control {
     display: inline-block;
+    background: rgba(189,189,189,.2);
 }
 
 .form-control:focus{
@@ -567,8 +617,11 @@ h3{
     border-color: #999;
 }
 
-#myModal1>.modal-dialog{
+.modal-dialog{
     width: 450px;
+}
+.modal-body{
+    padding-top: 30px;
 }
 
 .thank{
@@ -643,33 +696,33 @@ h3{
 
 .social>a>div{
     background: url("../images/sprite_icon.png") no-repeat;
-    height: 49px;
-    width: 49px;
+    height: 40px;
+    width: 40px;
 }
 
 #vk{
     background-position: 0 0;
 }
 #vk:hover{
-    background-position: 0 -48px;
+    background-position: 0 -40px;
 }
 #tw{
-    background-position: -49px 0;
+    background-position: -41px 0;
 }
 #tw:hover{
-    background-position: -49px -48px;
+    background-position: -41px -40px;
 }
 #fb{
-    background-position: -98px 0;
+    background-position: -81px 0;
 }
 #fb:hover{
-    background-position: -98px -48px;
+    background-position: -81px -40px;
 }
 #go{
-    background-position: -147px 0;
+    background-position: -121px 0;
 }
 #go:hover{
-    background-position: -147px -48px;
+    background-position: -121px -40px;
 }
 
 .main-panel>.panel-heading{
@@ -692,6 +745,23 @@ h3{
     height: 23px;
     width: 70px;
     bottom: -23px;
-    left: 45%;
+    left: 50%;
+    margin-left: -35px;
     background: url("../images/arrow-d.png") no-repeat, #ffffff;
 }
+
+.news{
+    background: url("../images/pennino.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*.col-lg-6{*/
+    /*width: 56%;*/
+/*}*/
+
+/*.col-lg-offset-3{*/
+    /*margin-left: 22%;*/
+/*}*/

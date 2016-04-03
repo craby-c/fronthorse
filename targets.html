@@ -16,7 +16,7 @@
     <title>Целевые программы</title>
 </head>
 <body class="container-fluid">
-<header class="row info-block ">
+<header class="row info-block">
     <div class="col-lg-7 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-12 col-xs-12">
         <!-- Navbar start -->
         <nav class="navbar">
@@ -36,26 +36,33 @@
                     <ul class="nav navbar-nav">
                         <li><a href="targets.html">Целевые программы</a></li>
                         <li><a href="about.html">О нас</a></li>
-                        <li><a href="main.html#map"><img src="images/карта_иконка.png" height="20px" class="map-icon"></a></li>
-                        <p class="navbar-text number"><span class="small">8 (800)</span> <b>234 81 88</b></p>
-                        <li class="dropdown">
+                        <li class="hidden-xs"><a href="main.html#kr-address">
+                            <img src="images/карта_иконка.png" height="20px" class="map-icon"></a>
+                        </li>
+                        <p class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></p>
+                        <li class="dropdown hidden-xs">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                                aria-expanded="false">RU <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">EN</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" disabled="disabled"><img src="images/ключ.png" height="25px"></a></li>
+                        <li class="hidden-xs"><a><img src="images/ключ.png" height="25px"></a></li>
+                        <li class="hidden visible-xs"><a>Личный кабинет</a></li>
+                        <li class="hidden visible-xs"><a href="news.html">Новости</a></li>
+                        <li class="hidden visible-xs"><a href="faq.html">Вопросы и ответы</a></li>
+                        <li class="hidden visible-xs"><a href="kindness.html">Добрые дела</a></li>
+                        <li class="hidden visible-xs"><a href="main.html#kr-address">Контакты</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
         <!-- Navbar end -->
 
-        <a class="btn red-btn btn-deal btn-lg" href="#">Заключить договор</a>
+        <a class="btn red-btn btn-deal btn-lg" href="deal.html">Заключить договор</a>
 
         <!-- Nav links start-->
-        <div class="nav-links">
+        <div class="nav-links hidden-xs">
             <ul class="nav">
                 <li><a href="news.html">Новости</a></li>
                 <li><a href="faq.html">Вопросы и ответы</a></li>
@@ -73,7 +80,7 @@
         <a href="https://plus.google.com/"><div id="go"></div></a>
     </div>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide hidden-sm hidden-xs" data-ride="carousel">
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
@@ -135,10 +142,10 @@
     </div>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <a class="left carousel-control hidden-sm hidden-xs" href="#myCarousel" role="button" data-slide="prev">
         <span aria-hidden="true"><img src="images/arrow-l.png"></span>
     </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <a class="right carousel-control hidden-sm hidden-xs" href="#myCarousel" role="button" data-slide="next">
         <span aria-hidden="true"><img src="images/arrow-r.png"></span>
     </a>
 </header>
@@ -146,7 +153,7 @@
     <div class="row">
         <div class="col-lg-6 col-lg-offset-3 col-md-12 text-center">
             <h3>Наши программы</h3>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <h1 class="target-name">3+</h1>
                 <span>Доход в месяц 3%</span><br>
                 <div class="red-line"></div><br>
@@ -155,7 +162,7 @@
                 <span><i>Пополнение счета <br> от 3 000 руб.</i></span>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <h1 class="target-name">4+</h1>
                 <span>Доход в месяц 4%</span><br>
                 <div class="red-line"></div><br>
@@ -164,7 +171,7 @@
                 <span><i>Пополнение счета <br> от 10 000 руб.</i></span>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <h1 class="target-name">5+</h1>
                 <span>Доход в месяц 5%</span><br>
                 <div class="red-line"></div><br>
@@ -217,9 +224,9 @@
             </div>
         </div>
         <div class="col-lg-6 col-lg-offset-3 col-md-12 text-center">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="red-bubble">
-                    Пенсионная программа
+                    Пенсионная<br> программа
                 </div>
                 <h1 class="target-name">4%</h1>
                 <span>Доход в месяц</span><br>
@@ -243,9 +250,9 @@
                 </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="red-bubble">
-                    Погашение кредита
+                    Погашение<br> кредита
                 </div>
                 <h1 class="target-name">4%</h1>
                 <span>Доход в месяц</span><br>
@@ -270,9 +277,9 @@
                 </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="red-bubble">
-                    Инвестиции в недвижимость
+                    Инвестиции <br>в недвижимость
                 </div>
                 <h1 class="target-name">20-25%</h1>
                 <span>Доход в год</span><br>
@@ -519,7 +526,7 @@
         </div>
     </div>
 </main>
-<footer class="row hidden-xs">
+<footer class="row">
     <div class="col-lg-6 col-lg-offset-3 col-md-12">
         <ul class="site-map text-nowrap">
             <li><a href="targets.html">Целевые программы</a></li>

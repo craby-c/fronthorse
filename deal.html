@@ -40,9 +40,9 @@
                         <p class="navbar-text number"><span class="small">8 (800)</span> <b>234 81 88</b></p>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">EN</a></li>
-                            </ul>
+                            <!--<ul class="dropdown-menu">-->
+                                <!--<li><a href="#">EN</a></li>-->
+                            <!--</ul>-->
                         </li>
                         <li><a href="#"><img src="images/ключ.png" height="25px"></a></li>
                     </ul>
@@ -55,7 +55,7 @@
     <div class="carousel-caption">
         <p>Ваш первый</p>
         <h1 class="text-uppercase">1 000 000</h1>
-        <span>Зарабатывайте с нами и приумножайте свой каждый месяц</span>
+        <span>Зарабатывайте с нами и приумножайте<br> свой капитал каждый месяц</span>
     </div>
 
     <div class="nav-links">
@@ -66,6 +66,13 @@
         </ul>
     </div>
 
+    <div class="social text-right">
+        <p>Мы в социальных сетях:</p>
+        <a href="https://vk.com/club78335588"><div id="vk"></div></a>
+        <a href="https://twitter.com/HorsInvest"><div id="tw"></div></a>
+        <a href="https://www.facebook.com/"><div id="fb"></div></a>
+        <a href="https://plus.google.com/"><div id="go"></div></a>
+    </div>
 
 
     <!-- Button trigger modal -->
@@ -78,11 +85,11 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <div class="red-angle"></div>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title" id="myModalLabel1">Modal title</h4>
+                    <h4 class="modal-title" id="myModalLabel1">Введите данные для заключения договора</h4>
+                    <div class="red-angle"></div>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -97,7 +104,29 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-lg red-btn">Написать нам</button>
+                    <button type="button" class="btn btn-lg red-btn" data-toggle="modal" data-target="#myModal2">
+                        Написать нам
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel2">
+                        Благодарим Вас<br> за заявку на заключение договора!
+                    </h4>
+                    <div class="red-angle"></div>
+                </div>
+                <div class="modal-body small text-justify">
+                    Специалисты нашей компании в кратчайшие сроки подготовят всю необходимую документацию для
+                    дальнейшего оформления договора, связавшись с Вами по указанному телефону.
                 </div>
             </div>
         </div>
