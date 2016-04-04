@@ -23,7 +23,6 @@ $(document).ready(function(){
            $("#rd-address").fadeIn();
        });
     });
-
     $("#krdr").click(function(){
         $("#rd-address").fadeOut(function(){
             $("#kr-address").fadeIn();
@@ -41,7 +40,7 @@ $(document).ready(function(){
     })
 });
 
-
+//карусель
 $("#myCarousel").carousel();
 
 $(".left").click(function(){
@@ -51,34 +50,17 @@ $(".left").click(function(){
 $(".right").click(function(){
     $("#myCarousel").carousel("next");
 });
-
+//сворачивающиеся элементы
 $('.collapse').collapse();
 
+
+//карты
 ymaps.ready(init);
 
 var Map1;
 var Map2;
 var Placemark1;
 var Placemark2;
-
-
-
-function shorten(text, maxLength) {
-
-    function checkSpace(item) {
-        return item != "";
-    }
-
-    var ret = text;
-    var arr = ret.split(" ").filter(checkSpace);
-    var over = arr.length-maxLength;
-    if (arr.length > maxLength) {
-        arr.splice(arr.length-over,over);
-        arr.push("...");
-        ret = arr.join(" ");
-    }
-    return ret;
-}
 
 function init(){
     Map1 = new ymaps.Map("map1", {
@@ -124,4 +106,22 @@ function init(){
 
     Map1.geoObjects.add(Placemark1);
     Map2.geoObjects.add(Placemark2);
+}
+
+//обрезка новостей
+function shorten(text, maxLength) {
+
+    function checkSpace(item) {
+        return item != "";
+    }
+
+    var ret = text;
+    var arr = ret.split(" ").filter(checkSpace);
+    var over = arr.length-maxLength;
+    if (arr.length > maxLength) {
+        arr.splice(arr.length-over,over);
+        arr.push("...");
+        ret = arr.join(" ");
+    }
+    return ret;
 }

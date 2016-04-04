@@ -17,6 +17,7 @@ a:hover,
 a:active,
 a:focus{
     outline: none !important;
+    cursor: pointer;
 }
 
 header{
@@ -25,6 +26,7 @@ header{
 
 .navbar{
     border: none;
+    text-align: center;
 }
 
 .navbar-nav{
@@ -55,7 +57,7 @@ header{
     padding-left: 5px;
     color: #000000;
     text-decoration: underline;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .nav>li>a:hover,
@@ -74,7 +76,7 @@ header{
     background: rgba(0,0,0,0.3);
     padding: 10px 10px 10px 0;
     border-radius: 3px;
-    z-index: 5;
+    z-index: 10;
 }
 
 .nav-links>ul>li>a{
@@ -165,6 +167,7 @@ footer {
     width: 100%;
     height: 130px;
     background: rgb(65,65,65);
+    z-index: 20;
 }
 
 #myCarousel{
@@ -601,14 +604,19 @@ h3{
     background-color: #6d6d6d;
 }
 
-.form-group>*{
+.form-group{
     margin-top: 20px;
-    width: 90%;
+}
+label{
+    margin-bottom: -60px;
+    font-weight: 300;
 }
 
 .form-control {
     display: inline-block;
     background: rgba(189,189,189,.2);
+    margin-top: 20px;
+    width: 90%;
 }
 
 .form-control:focus{
@@ -653,7 +661,7 @@ h3{
 
 .letters>img{
     position: relative;
-    z-index: 3;
+    z-index: 7;
 }
 
 .article-img{
@@ -688,6 +696,7 @@ h3{
     position: absolute;
     right: 26%;
     top: 600px;
+    z-index: 11;
 }
 
 .social>a{
