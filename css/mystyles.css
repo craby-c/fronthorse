@@ -26,7 +26,6 @@ header{
 
 .navbar{
     border: none;
-    text-align: center;
 }
 
 .navbar-nav{
@@ -168,6 +167,16 @@ footer {
     height: 130px;
     background: rgb(65,65,65);
     z-index: 20;
+}
+
+.logo-xs{
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: url("../images/logobook_hors.png") no-repeat 50% 30%;
+    background-size: auto 30%;
 }
 
 #myCarousel{
@@ -333,7 +342,7 @@ footer {
 }
 
 .target-name{
-    font-size: 4.5em;
+    font-size: 4.3em;
     font-weight: 300;
 }
 
@@ -766,11 +775,3 @@ label{
     -o-background-size: cover;
     background-size: cover;
 }
-
-/*.col-lg-6{*/
-    /*width: 56%;*/
-/*}*/
-
-/*.col-lg-offset-3{*/
-    /*margin-left: 22%;*/
-/*}*/

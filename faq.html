@@ -18,12 +18,13 @@
 
 <body class="container-fluid faq">
 <div class="row">
-    <div class="col-lg-7 col-lg-offset-3 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-7 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
         <!-- Navbar start -->
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-collapse" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-collapse" aria-expanded="false">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -36,15 +37,65 @@
                     <ul class="nav navbar-nav">
                         <li><a href="targets.html">Целевые программы</a></li>
                         <li><a href="about.html">О нас</a></li>
-                        <li><a href="main.html#map"><img src="images/карта_иконка.png" height="20px" class="map-icon"></a></li>
-                        <p class="navbar-text number"><span class="small">8 (800)</span> <b>234 81 88</b></p>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
+                        <li class="hidden-xs"><a href="main.html#kr-address">
+                            <img src="images/карта_иконка.png" height="20px" class="map-icon"></a>
+                        </li>
+                        <p class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></p>
+                        <li class="dropdown hidden-xs">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false">RU <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">EN</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><img src="images/ключ.png" height="25px"></a></li>
+                        <li class="hidden-xs"><a class="modal-button" data-toggle="modal" data-target="#myModal3">
+                            <img src="images/ключ.png" height="25px"></a>
+                        </li>
+
+                        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content text-center">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel3">
+                                            Введите данные для входа
+                                        </h4>
+                                        <div class="red-angle"></div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="login">Логин (номер счета)</label>
+                                                <input type="text" class="form-control" id="login">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">Пароль</label>
+                                                <input type="password" class="form-control" id="password">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" class="small" checked>Запомнить меня
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="red-btn btn btn-lg">Войти в систему</button>
+                                        <p><a class="small">Забыли пароль?</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li class="hidden visible-xs"><a>Личный кабинет</a></li>
+                        <li class="hidden visible-xs"><a href="news.html">Новости</a></li>
+                        <li class="hidden visible-xs"><a href="faq.html">Вопросы и ответы</a></li>
+                        <li class="hidden visible-xs"><a href="kindness.html">Добрые дела</a></li>
+                        <li class="hidden visible-xs"><a href="main.html#kr-address">Контакты</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -53,7 +104,7 @@
     </div>
 </div>
 <main class="row">
-    <div class="col-lg-6 col-lg-offset-3 col-md-12">
+    <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1">
         <div class="panel faq-panel main-panel">
             <div class="panel-heading">
                 <h3 class="panel-title">Часто задаваемые вопросы</h3>
@@ -436,16 +487,18 @@
         </div>
     </div>
 </main>
-<footer class="row hidden-xs">
-    <div class="col-lg-6 col-lg-offset-3 col-md-12">
+<footer class="row">
+    <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1">
         <ul class="site-map text-nowrap">
             <li><a href="targets.html">Целевые программы</a></li>
             <li><a href="about.html">О нас</a></li>
-            <li><a href="main.html#map">Контакты</a></li>
+            <li><a href="main.html#kr-address">Контакты</a></li>
             <li><a href="news.html">Новости</a></li>
             <li><a href="faq.html">Вопросы и ответы</a></li>
-            <li class="small-number"><span class="small">8 (800)</span> <b>234 81 88</b></li>
-            <li><img src="images/логотип%20белый.png" width="100px"></li>
+            <li class="small-number hidden-xs">
+                <span class="small">8 (800)</span> <b>234 81 88</b>
+            </li>
+            <li class="hidden-xs"><img src="images/логотип%20белый.png" width="100px"></li>
         </ul>
         <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
     </div>
