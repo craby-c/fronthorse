@@ -4,10 +4,26 @@
 $(document).ready(function(){
     var clipText = $(".clip-text");
     var t = clipText.children("p").text();
-    clipText.text(shorten(t, 20));
-    $(".article-head").click(function(){
-        clipText.css("height", "auto")
-    });
+    var height;
+    var wordNumber = 20;
+    clipText.text(shorten(t, wordNumber));
+    $(".article-head").on("click",textShow);
+
+    function textShow(){
+        var stext = $(this).parent().next();
+        height = stext.css("height");
+        stext.text(t).css("height","100%");
+        var height2 = stext.css("height");
+        stext.css("height", height).animate({"height": height2});
+        $(".article-head").off("click",textShow).on("click",textHide);
+    }
+
+    function textHide(){
+        $(this).parent().next().animate({"height": height},function(){
+            $(this).text(shorten(t, 20));
+        });
+        $(".article-head").off("click",textHide).on("click",textShow);
+    }
 
     // Автозапуск модалки на старте страницы
     $("#myModal1").modal('show');
