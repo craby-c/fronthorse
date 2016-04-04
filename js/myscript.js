@@ -2,10 +2,19 @@
  * Created by vera on 17.03.16.
  */
 $(document).ready(function(){
-    var t = $(".clip-text").children("p").text();
-    $(".clip-text").text(shorten(t, 20));
+    var clipText = $(".clip-text");
+    var t = clipText.children("p").text();
+    clipText.text(shorten(t, 20));
     $(".article-head").click(function(){
-        $(".clip-text").css("height", "auto")
+        clipText.css("height", "auto")
+    });
+
+    // Автозапуск модалки на старте страницы
+    $("#myModal1").modal('show');
+
+    // Переключение модалок
+    $(".modal-button").click(function(){
+        $("#myModal1").modal('hide');
     });
 
     //переключалка карт
