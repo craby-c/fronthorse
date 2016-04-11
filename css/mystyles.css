@@ -24,6 +24,10 @@ header{
     background: linear-gradient(to top, rgba(0,0,0,.4) 0%, rgba(0,0,0,.2) 1%, rgba(0,0,0,.1) 2%, transparent 4%);
 }
 
+.img-responsive{
+    width: 100%;
+}
+
 .navbar{
     border: none;
 }
