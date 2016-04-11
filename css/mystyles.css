@@ -7,9 +7,9 @@ body{
     min-height: 100%;
     margin-bottom: 130px;
     color: #000000;
-    font-family:'Calibri Light', 'Roboto', sans-serif;
+    font-family:'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: 1vw;
 }
 
 a,
@@ -30,6 +30,13 @@ header{
 
 .navbar{
     border: none;
+    position: absolute;
+    right: 0;
+}
+
+.navbar-collapse.in{
+    background: rgba(250,250,250,0.8);
+    overflow: visible;
 }
 
 .navbar-nav{
@@ -75,9 +82,10 @@ header{
 
 .nav-links{
     position: absolute;
-    top: 83%;
+    bottom: 2%;
+    left: 26%;
     background: rgba(0,0,0,0.3);
-    padding: 10px 10px 10px 0;
+    padding: 10px;
     border-radius: 3px;
     z-index: 10;
 }
@@ -90,7 +98,7 @@ header{
 }
 
 .faq{
-    background: url("../images/Magnificent-Office-Wallpapers.jpg") no-repeat center center fixed;
+    background: url("../images/answer.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -100,8 +108,9 @@ header{
 .main-panel,
 .faq-panel{
     position: relative;
-    bottom: -20px;
     overflow: hidden;
+    bottom: -20px;
+    margin-top: 100px;
 }
 
 .main-panel>.panel-body{
@@ -160,8 +169,8 @@ header{
     padding-left: 6%;
 }
 
-.info-block>div{
-    height: 700px;
+.info-block{
+    position: relative;
 }
 
 footer {
@@ -171,6 +180,7 @@ footer {
     height: 130px;
     background: rgb(65,65,65);
     z-index: 20;
+    overflow: hidden;
 }
 
 .logo-xs{
@@ -184,16 +194,17 @@ footer {
 }
 
 #myCarousel{
-    position: absolute;
+    width: 100%;
+    position: relative;
+    top: -1px;
     z-index: -1;
     overflow: hidden;
 }
 
 .carousel-control{
     position: absolute;
-    height: 750px;
     margin-left: -40px;
-    opacity: 1;
+    opacity: 0.7;
 }
 
 .carousel-control.right,
@@ -203,12 +214,13 @@ footer {
 
 .carousel-control>span{
     position: absolute;
-    top: 40%;
+    top: 50%;
+    margin-top: -50px;
 }
 
 .carousel-caption{
     left: 26%;
-    top: 200px;
+    top: 26%;
     right: 0;
     bottom: 0;
     text-align: left;
@@ -248,7 +260,8 @@ footer {
 
 .btn-deal{
     position: absolute;
-    top: 470px;
+    bottom: 30%;
+    left: 26%;
     font-size: 1em;
 }
 
@@ -348,6 +361,7 @@ footer {
 .target-name{
     font-size: 4.3em;
     font-weight: 300;
+    white-space: nowrap;
 }
 
 .red-bubble{
@@ -359,6 +373,7 @@ footer {
     padding: 5px;
     position: relative;
     width: 100%;
+    white-space: nowrap;
 }
 
 .red-bubble::after{
@@ -434,12 +449,6 @@ footer {
     background: rgba(235,235,235,0.6);
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-.partners>div>img{
-    width: 120%;
-    margin-left: -10%;
-    display: block;
 }
 
 #map1,
@@ -572,16 +581,11 @@ h3{
 
 .deal{
     height: 100%;
-    background: url("../images/мужик%20с%20галстуком.jpg") no-repeat 50% 0;
+    background: url("../images/мужик с галстуком.jpg") no-repeat 50% 0;
 }
 
 .deal>header{
     min-height: 700px;
-}
-
-.deal>header>.nav-links{
-    left: 26%;
-    top: 70%;
 }
 
 .modal-footer{
@@ -614,7 +618,11 @@ h3{
 }
 
 .modal-backdrop{
-    background-color: #6d6d6d;
+    background-color: rgba(107,107,107,.9);
+}
+
+.modal-backdrop.in{
+    opacity: 1;
 }
 
 .form-group{
@@ -708,7 +716,7 @@ label{
 .social {
     position: absolute;
     right: 26%;
-    top: 600px;
+    bottom: 2%;
     z-index: 11;
 }
 
@@ -773,9 +781,20 @@ label{
 }
 
 .news{
-    background: url("../images/pennino.jpg") no-repeat center center fixed;
+    background: url("../images/news.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.img-thumbnail{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

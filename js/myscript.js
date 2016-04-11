@@ -2,6 +2,8 @@
  * Created by vera on 17.03.16.
  */
 $(document).ready(function(){
+
+    //обрезка+разворот статей
     var clipText = $(".clip-text");
     var t = clipText.children("p").text();
     var height;
@@ -53,7 +55,7 @@ $(document).ready(function(){
         $(this).prev().toggle();
         $(title).not(this).prev().css("display", "none");
         $(title).not(this).toggleClass("gray-text");
-    })
+    });
 });
 
 //карусель

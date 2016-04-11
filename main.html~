@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="fonts/glyphicons-halflings-regular.ttf">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myscript.js"></script>
+    <title>"Хорс" - инвестиционная компания</title>
+</head>
+<body class="container-fluid">
+<header class="row info-block">
+    <div class="col-lg-7 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+        <!-- Navbar start -->
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-collapse" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="main.html"><img src="images/логотип белый.png" width="120px"></a>
+                </div>
+
+                <!-- Collect the nav links -->
+                <div class="collapse navbar-collapse" id="bs-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden visible-xs"><a href="deal.html">Заключить договор</a></li>
+                        <li><a href="targets.html">Целевые программы</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li class="hidden-xs"><a href="main.html#kr-address">
+                            <img src="images/карта_иконка.png" height="20px" class="map-icon"></a>
+                        </li>
+                        <p class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></p>
+                        <li class="dropdown hidden-xs">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false">RU <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                            </ul>
+                        </li>
+                        <li class="hidden-xs"><a class="modal-button" data-toggle="modal" data-target="#myModal3">
+                            <img src="images/ключ.png" height="25px"></a>
+                        </li>
+
+                        <li class="hidden visible-xs"><a>Личный кабинет</a></li>
+                        <li class="hidden visible-xs"><a href="news.html">Новости</a></li>
+                        <li class="hidden visible-xs"><a href="faq.html">Вопросы и ответы</a></li>
+                        <li class="hidden visible-xs"><a href="kindness.html">Добрые дела</a></li>
+                        <li class="hidden visible-xs"><a href="main.html#kr-address">Контакты</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- Navbar end -->
+    </div>
+
+
+    <a class="btn red-btn btn-deal btn-lg hidden-xs" href="deal.html">Заключить договор</a>
+
+    <!-- Nav links start-->
+    <div class="nav-links hidden-xs">
+        <ul>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="faq.html">Вопросы и ответы</a></li>
+            <li><a href="kindness.html">Добрые дела</a></li>
+        </ul>
+    </div>
+    <!-- Nav links end -->
+
+    <div class="social text-right hidden-xs">
+        <p>Мы в социальных сетях:</p>
+        <a href="https://vk.com/club78335588"><div id="vk"></div></a>
+        <a href="https://twitter.com/HorsInvest"><div id="tw"></div></a>
+        <a href="https://www.facebook.com/"><div id="fb"></div></a>
+        <a href="https://plus.google.com/"><div id="go"></div></a>
+    </div>
+
+    <!--<div class="hidden visible-xs logo-xs"></div>-->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <img src="images/trip.jpg" width="100%">
+                <div class="carousel-caption">
+                    <p>Позвольте себе</p>
+                    <h1 class="text-uppercase">Путешествие <br> в любую <br> страну мира</h1>
+                    <span>Выгодные предложения по вкладам для Вас. <br> Специальные целевые программы.</span>
+                </div>
+            </div>
+            <div class="item active">
+                <img src="images/company.jpg" width="100%">
+                <div class="carousel-caption">
+                    <p>Позвольте себе</p>
+                    <h1 class="text-uppercase">Больше<br> спокойствия</h1>
+                    <span>Целевые программы для безопасности вклада <br>и минимизация рисков.</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/health.jpg" width="100%">
+                <div class="carousel-caption">
+                    <p>Позвольте себе</p>
+                    <h1 class="text-uppercase">Больше заботы <br>о здоровье</h1>
+                    <span>Страхование здоровья для Вас и Вашей семьи.</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/retire.jpg" width="100%">
+                <div class="carousel-caption">
+                    <p>Позвольте себе</p>
+                    <h1 class="text-uppercase">Не думать <br> о пенсии</h1>
+                    <span>Продуманная пенсионная программа <br> для беззаботной старости.</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/target-program.jpg" width="100%">
+                <div class="carousel-caption">
+                    <p>Позвольте себе</p>
+                    <h1 class="text-uppercase">Новое<br> качество<br> жизни</h1>
+                    <span>Выгодные целевые программы.</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/property.jpg" width="100%">
+                <div class="carousel-caption">
+                    <p>Позвольте себе</p>
+                    <h1 class="text-uppercase">Роскошный<br> дом</h1>
+                    <span>Выгодные предложения <br>по инвестициям в недвижимость.</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control hidden-xs" href="#myCarousel" role="button" data-slide="prev">
+        <span aria-hidden="true"><img src="images/arrow-l.png"></span>
+    </a>
+    <a class="right carousel-control hidden-xs" href="#myCarousel" role="button" data-slide="next">
+        <span aria-hidden="true"><img src="images/arrow-r.png"></span>
+    </a>
+</header>
+
+
+<main>
+    <div class="row">
+        <section class="col-lg-6 col-lg-offset-3 col-md-12 text-center">
+            <h3>Наши программы</h3>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <h1 class="target-name">3+</h1>
+                <span>Доход в месяц 3%</span><br>
+                <div class="red-line"></div><br>
+                <span><i>Сумма целевого взноса</i></span><br>
+                <b>от 6 000 руб.<br>до 120 000 руб.</b><br>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <h1 class="target-name">4+</h1>
+                <span>Доход в месяц 4%</span><br>
+                <div class="red-line"></div><br>
+                <span><i>Сумма целевого взноса</i></span><br>
+                <b>от 120 000 руб.<br>до 600 000 руб.</b><br>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <h1 class="target-name">5+</h1>
+                <span>Доход в месяц 5%</span><br>
+                <div class="red-line"></div><br>
+                <span><i>Сумма целевого взноса</i></span><br>
+                <b>от 600 001 руб.<br>и выше</b><br>
+            </div>
+        </section>
+
+        <section class="col-lg-6 col-lg-offset-3 col-md-12 text-center">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="red-bubble">
+                    Пенсионная <br> программа
+                </div>
+                <h1 class="target-name">4%</h1>
+                <span>Доход в месяц</span><br>
+                <div class="red-line"></div><br>
+                <span><i>Сумма целевого взноса</i></span><br>
+                <b>от 50 000 руб.<br>и выше</b>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="red-bubble">
+                    Погашение<br> кредита
+                </div>
+                <h1 class="target-name">4%</h1>
+                <span>Доход в месяц</span><br>
+                <div class="red-line"></div><br>
+                <span><i>Сумма целевого взноса</i></span><br>
+                <b>от 50 000 руб.<br>и выше</b>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="red-bubble">
+                    Инвестиции в <br> недвижимость
+                </div>
+                <h1 class="target-name">20-25%</h1>
+                <span>Доход в год</span><br>
+                <div class="red-line"></div><br>
+                <span><i>Сумма целевого взноса</i></span><br>
+                <b>от 500 000 руб.<br>и выше</b>
+            </div>
+        </section>
+
+        <section class="col-lg-6 col-lg-offset-3 col-md-12">
+            <div class="media b-box">
+                <div class="media-left media-middle">
+                    <img class="media-object" src="images/галка.png" height="110px" width="auto">
+                </div>
+                <div class="media-body">
+                    <h3 class="media-heading">Антикризисная программа</h3>
+                    <p><i>Работает совместно с любой из программ.</i></p>
+                    <p>Включает защиту от значительного изменения курса рубля к иностранной валюте.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="col-lg-6 col-lg-offset-3 text-center btn-wrapper">
+            <a class="btn-lg red-btn more-btn" href="targets.html">Хочу знать подробности</a>
+        </div>
+    </div>
+
+    <div class="row lgray">
+        <section class="col-lg-6 col-lg-offset-3 col-md-12 sun">
+            <div class="media about">
+                <div class="media-left">
+                    <img class="media-object h hidden-sm hidden-xs" src="images/H.png" height="260px">
+                </div>
+                <div class="media-body text-justify story">
+                    <p>
+                        Наша компания имеет достаточно ресурсов, опыта и знаний, чтобы предлагать Вам проверенные
+                        способы увеличения дохода. Идея создать компанию родилась 8 лет назад. Мы росли и развивались.
+                        В течении этого времени велась работа по подбору лицензированных специалистов – трейдеров,
+                        развивалось сотрудничество и партнерские отношения с консалтинговыми компаниями, осуществлялся
+                        подбор поставщиков ликвидности и котировок на фондовых и валютных рынках. Сейчас мы имеем
+                        достаточно ресурсов, опыта, знаний. Мы с уверенностью даем нашим клиентам фиксированные
+                        проценты со страхованием вклада до 50 % от суммы на счете.
+                    </p>
+                </div>
+                <div class="media-bottom text-center">
+                    <a class="btn-lg gray-btn more-btn" href="targets.html">Хочу знать подробности</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="row text-center">
+        <section class="col-lg-6 col-lg-offset-3 col-md-12 text-center partners">
+            <h3>Наши партнеры</h3>
+
+            <a href="http://www.nefteprominvest.ru/?referer1=slk2801">
+                <div class="col-lg-3 col-md-3">
+                    <p class="text-uppercase">Нефтепромбанк</p>
+                    <img src="images/баннер_нефтепромбанк.png" class="hidden-sm hidden-xs img-responsive">
+                </div>
+            </a>
+
+            <a href="https://www.zerich.com/account/new?utm_source=partner&utm_term=9a6de5c3-7528-e411-b102-005056ad3c2e&utm_content=558774b8-6fe0-413c-b6fb-b2c2569e9f41">
+                <div class="col-lg-3 col-md-3">
+                    <p class="text-uppercase">Церих</p>
+                    <img src="images/баннер_церих.png" class="hidden-sm hidden-xs img-responsive">
+                </div>
+            </a>
+
+            <a href="https://grandcapital.ru/promo/crisis/?partner_id=259818">
+                <div class="col-lg-3 col-md-3">
+                    <p class="text-uppercase">Grandcapital</p>
+                    <img src="images/баннер_грандкапитал.png" class="hidden-sm hidden-xs img-responsive">
+                </div>
+            </a>
+
+            <a href="http://www.hantecfx.com/ru">
+                <div class="col-lg-3 col-md-3">
+                    <p class="text-uppercase text-nowrap">Hantec Markets</p>
+                    <img src="images/баннер_хантек.png" class="hidden-sm hidden-xs img-responsive">
+                </div>
+            </a>
+        </section>
+    </div>
+
+    <div id="kr-address">
+        <section class="row lgray address">
+            <div class="col-lg-3 col-lg-offset-3 col-md-6 col-sm-6">
+                <br>
+                <a class="btn-lg red-btn" id="rostov">Офис в г. Ростов-на-Дону</a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <p>
+                    ИНН 2308213277, ОГРН 1142308009986 <br>
+                    г.Краснодар, ул.Монтажников 1/4, оф.1103 (11 этаж)<br>
+                    8 (800) 234-81-88, 8 (861) 279-40-38
+                </p>
+            </div>
+        </section>
+
+        <div class="row map-wrapper">
+            <div class="col-lg-12" id="map1"></div>
+        </div>
+    </div>
+
+    <div id="rd-address">
+        <section class="row lgray address">
+            <div class="col-lg-3 col-lg-offset-3 col-md-6 col-sm-6">
+                <br>
+                <a class="btn-lg red-btn" id="krdr">Офис в г. Краснодар</a>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <p>
+                    ИНН 2308213277, ОГРН 1142308009986<br>
+                    г.Ростов на Дону, ул.Варфоломеева 259-261, оф.409 <br>
+                    тел: 8 (863) 218-87-84</span>
+                </p>
+            </div>
+        </section>
+
+        <div class="row map-wrapper">
+            <div class="col-lg-12" id="map2"></div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="row">
+    <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1">
+        <ul class="site-map text-nowrap">
+            <li><a href="targets.html">Целевые программы</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="main.html#kr-address">Контакты</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="faq.html">Вопросы и ответы</a></li>
+            <li class="small-number hidden-xs">
+                <span class="small">8 (800)</span> <b>234 81 88</b>
+            </li>
+            <li class="hidden-xs"><img src="images/логотип%20белый.png" width="100px"></li>
+        </ul>
+        <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
+    </div>
+</footer>
+
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel3">
+                    Введите данные для входа
+                </h4>
+                <div class="red-angle"></div>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="login">Логин (номер счета)</label>
+                        <input type="text" class="form-control" id="login">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" class="small" checked>Запомнить меня
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="red-btn btn btn-lg">Войти в систему</button>
+                <p><a class="small">Забыли пароль?</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
