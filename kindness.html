@@ -8,7 +8,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mystyles.css" rel="stylesheet">
     <link href="fonts/glyphicons-halflings-regular.ttf">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -17,9 +17,9 @@
 </head>
 <body class="container-fluid">
 <header class="row info-block">
-    <div class="col-lg-7 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+    <div class="col-lg-7 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
         <!-- Navbar start -->
-        <nav class="navbar">
+        <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -34,6 +34,7 @@
                 <!-- Collect the nav links -->
                 <div class="collapse navbar-collapse" id="bs-collapse">
                     <ul class="nav navbar-nav">
+                        <li class="hidden visible-xs"><a href="deal.html">Заключить договор</a></li>
                         <li><a href="targets.html">Целевые программы</a></li>
                         <li><a href="about.html">О нас</a></li>
                         <li class="hidden-xs"><a href="main.html#kr-address">
@@ -51,45 +52,6 @@
                             <img src="images/ключ.png" height="25px"></a>
                         </li>
 
-                        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content text-center">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        <h4 class="modal-title" id="myModalLabel3">
-                                            Введите данные для входа
-                                        </h4>
-                                        <div class="red-angle"></div>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="login">Логин (номер счета)</label>
-                                                <input type="text" class="form-control" id="login">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="password">Пароль</label>
-                                                <input type="password" class="form-control" id="password">
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" class="small" checked>Запомнить меня
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="red-btn btn btn-lg">Войти в систему</button>
-                                        <p><a class="small">Забыли пароль?</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <li class="hidden visible-xs"><a>Личный кабинет</a></li>
                         <li class="hidden visible-xs"><a href="news.html">Новости</a></li>
                         <li class="hidden visible-xs"><a href="faq.html">Вопросы и ответы</a></li>
@@ -101,18 +63,19 @@
         </nav>
         <!-- Navbar end -->
 
-        <!-- Nav links start-->
-        <div class="nav-links hidden-xs">
-            <ul class="nav">
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="faq.html">Вопросы и ответы</a></li>
-                <li><a href="kindness.html">Добрые дела</a></li>
-            </ul>
-        </div>
-        <!-- Nav links end -->
     </div>
 
-    <div class="social text-right">
+    <!-- Nav links start-->
+    <div class="nav-links hidden-xs">
+        <ul class="nav">
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="faq.html">Вопросы и ответы</a></li>
+            <li><a href="kindness.html">Добрые дела</a></li>
+        </ul>
+    </div>
+    <!-- Nav links end -->
+
+    <div class="social text-right hidden-xs">
         <p>Мы в социальных сетях:</p>
         <a href="https://vk.com/club78335588"><div id="vk"></div></a>
         <a href="https://twitter.com/HorsInvest"><div id="tw"></div></a>
@@ -120,12 +83,12 @@
         <a href="https://plus.google.com/"><div id="go"></div></a>
     </div>
 
-    <div class="hidden visible-xs logo-xs"></div>
+    <!--<div class="hidden visible-xs logo-xs"></div>-->
 
-    <div id="myCarousel" class="carousel hidden-xs">
+    <div id="myCarousel" class="carousel">
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="images/resources.jpg" width="100%">
+                <img src="images/good_deeds.jpg" width="100%">
                 <div class="carousel-caption">
                     <p>Мы совершаем</p>
                     <h1 class="text-uppercase">Добрые<br> дела</h1>
@@ -165,12 +128,21 @@
                     </a>
                     <div class="collapse" id="collapsePhoto">
                         <div class="row">
-                            <div class="col-md-3 col-sm-3 col-xs-3"><img src="images/1.png" class="img-responsive img-thumbnail"></div>
-                            <div class="col-md-3 col-sm-3 col-xs-3"><img src="images/1.png" class="img-responsive img-thumbnail"></div>
-                            <div class="col-md-3 col-sm-3 col-xs-3"><img src="images/1.png" class="img-responsive img-thumbnail"></div>
-                            <div class="col-md-3 col-sm-3 col-xs-3"><img src="images/1.png" class="img-responsive img-thumbnail"></div>
-                            <div class="col-md-3 col-sm-3 col-xs-3"><img src="images/1.png" class="img-responsive img-thumbnail"></div>
-                            <div class="col-md-3 col-sm-3 col-xs-3"><img src="images/1.png" class="img-responsive img-thumbnail"></div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/1.png" class="img-responsive img-thumbnail">
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/1.png" class="img-responsive img-thumbnail">
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/1.png" class="img-responsive img-thumbnail">
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/1.png" class="img-responsive img-thumbnail">
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img src="images/1.png" class="img-responsive img-thumbnail">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -182,7 +154,7 @@
         <h3 class=" text-center">Благодарственные письма</h3>
         <section class="col-lg-6 col-lg-offset-3 col-md-12 letters">
             <img src="images/благодарственное1ё.png" height="250px" width="auto">
-            <img src="images/благодарственное2.png" height="250px" width="auto">
+            <img src="images/благодарственное2.png" height="250px" width="auto" class="hidden-xs">
         </section>
     </div>
 </main>
@@ -202,5 +174,46 @@
         <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
     </div>
 </footer>
+
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel3">
+                    Введите данные для входа
+                </h4>
+                <div class="red-angle"></div>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="login">Логин (номер счета)</label>
+                        <input type="text" class="form-control" id="login">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" class="small" checked>Запомнить меня
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="red-btn btn btn-lg">Войти в систему</button>
+                <p><a class="small">Забыли пароль?</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

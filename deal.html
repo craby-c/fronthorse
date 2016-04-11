@@ -8,7 +8,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mystyles.css" rel="stylesheet">
     <link href="fonts/glyphicons-halflings-regular.ttf">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -17,10 +17,10 @@
 </head>
 
 <body class="container-fluid deal">
-<header class="row">
-    <div class="col-lg-7 col-lg-offset-3 col-md-12 col-sm-12 col-xs-12">
+<header class="row info-block">
+    <div class="col-lg-7 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
         <!-- Navbar start -->
-        <nav class="navbar">
+        <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-collapse" aria-expanded="false">
@@ -34,17 +34,29 @@
                 <!-- Collect the nav links -->
                 <div class="collapse navbar-collapse" id="bs-collapse">
                     <ul class="nav navbar-nav">
+                        <li class="hidden visible-xs"><a href="deal.html">Заключить договор</a></li>
                         <li><a href="targets.html">Целевые программы</a></li>
                         <li><a href="about.html">О нас</a></li>
-                        <li><a href="main.html#map"><img src="images/карта_иконка.png" height="20px" class="map-icon"></a></li>
-                        <p class="navbar-text number"><span class="small">8 (800)</span> <b>234 81 88</b></p>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
-                            <!--<ul class="dropdown-menu">-->
-                                <!--<li><a href="#">EN</a></li>-->
-                            <!--</ul>-->
+                        <li class="hidden-xs"><a href="main.html#kr-address">
+                            <img src="images/карта_иконка.png" height="20px" class="map-icon"></a>
                         </li>
-                        <li><a href="#"><img src="images/ключ.png" height="25px"></a></li>
+                        <p class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></p>
+                        <li class="dropdown hidden-xs">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false">RU <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">EN</a></li>
+                            </ul>
+                        </li>
+                        <li class="hidden-xs"><a class="modal-button" data-toggle="modal" data-target="#myModal3">
+                            <img src="images/ключ.png" height="25px"></a>
+                        </li>
+
+                        <li class="hidden visible-xs"><a>Личный кабинет</a></li>
+                        <li class="hidden visible-xs"><a href="news.html">Новости</a></li>
+                        <li class="hidden visible-xs"><a href="faq.html">Вопросы и ответы</a></li>
+                        <li class="hidden visible-xs"><a href="kindness.html">Добрые дела</a></li>
+                        <li class="hidden visible-xs"><a href="main.html#kr-address">Контакты</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -59,7 +71,7 @@
     </div>
 
     <div class="nav-links">
-        <ul class="nav">
+        <ul>
             <li><a href="news.html">Новости</a></li>
             <li><a href="faq.html">Вопросы и ответы</a></li>
             <li><a href="kindness.html">Добрые дела</a></li>
