@@ -3,6 +3,12 @@
  */
 $(document).ready(function(){
 
+    //активность ссылок
+    var active =  $("a").filter(function(){
+        return $(this).attr("href") == window.location.pathname;
+    });
+    active.addClass("active");
+
     //обрезка+разворот статей
     var clipText = $(".clip-text");
     var t = clipText.children("p").text();
@@ -28,7 +34,7 @@ $(document).ready(function(){
     }
 
     // Автозапуск модалки на старте страницы
-    $("#myModal1").modal('show');
+    // $("#myModal1").modal('show');
 
     // Переключение модалок
     $(".modal-button").click(function(){

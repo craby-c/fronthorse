@@ -18,7 +18,7 @@
 
 <body class="container-fluid faq">
 <div class="row">
-    <div class="col-lg-7 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+    <div class="col-lg-7 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-11 col-sm-offset-1 col-xs-12">
         <!-- Navbar start -->
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
@@ -35,7 +35,7 @@
                 <!-- Collect the nav links -->
                 <div class="collapse navbar-collapse" id="bs-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="hidden visible-xs"><a href="deal.html">Заключить договор</a></li>
+                        <li class="hidden visible-xs"><a data-toggle="modal" data-target="#myModal1">Заключить договор</a></li>
                         <li><a href="targets.html">Целевые программы</a></li>
                         <li><a href="about.html">О нас</a></li>
                         <li class="hidden-xs"><a href="main.html#kr-address">
@@ -52,45 +52,6 @@
                         <li class="hidden-xs"><a class="modal-button" data-toggle="modal" data-target="#myModal3">
                             <img src="images/ключ.png" height="25px"></a>
                         </li>
-
-                        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content text-center">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        <h4 class="modal-title" id="myModalLabel3">
-                                            Введите данные для входа
-                                        </h4>
-                                        <div class="red-angle"></div>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="login">Логин (номер счета)</label>
-                                                <input type="text" class="form-control" id="login">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="password">Пароль</label>
-                                                <input type="password" class="form-control" id="password">
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" class="small" checked>Запомнить меня
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="red-btn btn btn-lg">Войти в систему</button>
-                                        <p><a class="small">Забыли пароль?</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <li class="hidden visible-xs"><a>Личный кабинет</a></li>
                         <li class="hidden visible-xs"><a href="news.html">Новости</a></li>
@@ -504,5 +465,99 @@
         <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
     </div>
 </footer>
+
+<!--Вход в личный кабинет-->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel3">
+                    Введите данные для входа
+                </h4>
+                <div class="red-angle"></div>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="login">Логин (номер счета)</label>
+                        <input type="text" class="form-control" id="login">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" class="small" checked>Запомнить меня
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="red-btn btn btn-lg">Войти в систему</button>
+                <p><a class="small">Забыли пароль?</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Заявка на заключение договора -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel1">Введите данные для заключения договора</h4>
+                <div class="red-angle"></div>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group text-center">
+                        <input type="text" class="form-control" id="name" placeholder="Ваше имя:">
+                        <input type="text" class="form-control" id="lastname" placeholder="Ваша фамилия:">
+                        <input type="tel" class="form-control" id="tel" placeholder="Номер телефона:">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail:">
+                        <input type="text" class="form-control" id="city" placeholder="Город:">
+                        <textarea class="form-control" rows="3" placeholder="Ваше сообщение:"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg red-btn modal-button" data-toggle="modal" data-target="#myModal2">
+                    Написать нам
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Благодарность за заявку-->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel2">
+                    Благодарим Вас<br> за заявку на заключение договора!
+                </h4>
+                <div class="red-angle"></div>
+            </div>
+            <div class="modal-body small text-justify">
+                Специалисты нашей компании в кратчайшие сроки подготовят всю необходимую документацию для
+                дальнейшего оформления договора, связавшись с Вами по указанному телефону.
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

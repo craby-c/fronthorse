@@ -9,7 +9,7 @@ body{
     color: #000000;
     font-family:'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 1.4em;
 }
 
 a,
@@ -220,27 +220,26 @@ footer {
 
 .carousel-caption{
     left: 26%;
-    top: 20%;
+    top: 18%;
     right: 0;
-    bottom: 0;
     text-align: left;
     color: #000000;
     text-shadow: none;
 }
 
 .carousel-caption>h1{
-    font-size: 3.3em;
+    font-size: 3vw;
     margin-top: 10px;
     font-weight: 300;
 }
 
 .carousel-caption>p{
-    font-size: 1.5em;
+    font-size: 1.5vw;
     font-weight: 300;
 }
 
 .carousel-caption>span{
-    font-size: 1.1em;
+    font-size: 1.1vw;
     font-weight: 300;
 }
 
@@ -258,11 +257,11 @@ footer {
     cursor: pointer;
 }
 
-.btn-deal{
+.btn-lg.btn-deal{
     position: absolute;
     bottom: 43%;
     left: 26%;
-    font-size: 1em;
+    font-size: 1.1vw;
 }
 
 .lgray{
@@ -281,7 +280,7 @@ footer {
 
 .number{
     margin-top: 8px;
-    font-size: 1.7em;
+    font-size: 23px;
     color: #c32428;
 }
 
@@ -579,14 +578,14 @@ h3{
     width: 17px;
 }
 
-.deal{
-    height: 100%;
-    background: url("../images/мужик с галстуком.jpg") no-repeat 50% 0;
-}
+/*.deal{*/
+    /*height: 100%;*/
+    /*background: url("../images/мужик с галстуком.jpg") no-repeat 50% 0;*/
+/*}*/
 
-.deal>header{
-    min-height: 700px;
-}
+/*.deal>header{*/
+    /*min-height: 700px;*/
+/*}*/
 
 .modal-footer{
     text-align: center;
