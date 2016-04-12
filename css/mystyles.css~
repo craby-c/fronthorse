@@ -9,7 +9,7 @@ body{
     color: #000000;
     font-family:'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 100vw;
 }
 
 a,
@@ -82,7 +82,7 @@ header{
 
 .nav-links{
     position: absolute;
-    bottom: 20%;
+    bottom: 2%;
     left: 26%;
     background: rgba(0,0,0,0.3);
     padding: 10px;
@@ -220,7 +220,7 @@ footer {
 
 .carousel-caption{
     left: 26%;
-    top: 20%;
+    top: 26%;
     right: 0;
     bottom: 0;
     text-align: left;
@@ -260,7 +260,7 @@ footer {
 
 .btn-deal{
     position: absolute;
-    bottom: 43%;
+    bottom: 30%;
     left: 26%;
     font-size: 1em;
 }
@@ -359,7 +359,7 @@ footer {
 }
 
 .target-name{
-    font-size: 4em;
+    font-size: 4.3em;
     font-weight: 300;
     white-space: nowrap;
 }
@@ -610,7 +610,6 @@ h3{
     font-size: 3em;
     font-weight: 300;
     text-shadow: none;
-    color: #ffffff;
 }
 
 .modal-header .close {
@@ -619,7 +618,7 @@ h3{
 }
 
 .modal-backdrop{
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(107,107,107,.9);
 }
 
 .modal-backdrop.in{
@@ -717,7 +716,7 @@ label{
 .social {
     position: absolute;
     right: 26%;
-    bottom: 20%;
+    bottom: 2%;
     z-index: 11;
 }
 
