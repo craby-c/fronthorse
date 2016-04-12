@@ -66,13 +66,17 @@ header{
     padding-right: 3px;
     padding-left: 5px;
     color: #000000;
-    text-decoration: underline;
     font-size: 1.1em;
+}
+.nav>li>a.active,
+.nav-links>ul>li>a.active{
+    text-decoration: underline;
 }
 
 .nav>li>a:hover,
 .nav>li>a:active,
 .nav>li>a:focus{
+    text-decoration: underline;
     background-color: transparent;
 }
 
@@ -92,7 +96,6 @@ header{
 
 .nav-links>ul>li>a{
     color: #ffffff;
-    text-decoration: underline;
     font-size: 1.1em;
     padding: 2px;
 }
