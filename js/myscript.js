@@ -11,16 +11,18 @@ $(document).ready(function(){
 
     //обрезка+разворот статей
     var clipText = $(".clip-text");
-    var t = clipText.children("p").text();
+    var t = clipText.html();
+    console.log(t);
     var height;
     var wordNumber = 20;
-    clipText.text(shorten(t, wordNumber));
+    clipText.html(shorten(t, wordNumber));
     $(".article-head").on("click",textShow);
 
     function textShow(){
         var stext = $(this).parent().next();
         height = stext.css("height");
-        stext.text(t).css("height","100%");
+        // console.log(t);
+        stext.html(t).css("height","100%");
         var height2 = stext.css("height");
         stext.css("height", height).animate({"height": height2});
         $(".article-head").off("click",textShow).on("click",textHide);
@@ -28,7 +30,7 @@ $(document).ready(function(){
 
     function textHide(){
         $(this).parent().next().animate({"height": height},function(){
-            $(this).text(shorten(t, 20));
+            $(this).html(shorten(t, 20));
         });
         $(".article-head").off("click",textHide).on("click",textShow);
     }
