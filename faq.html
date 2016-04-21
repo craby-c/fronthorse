@@ -18,11 +18,11 @@
 
 <body class="container-fluid faq">
 <div class="row">
-    <div class="col-lg-7 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-11 col-sm-offset-1 col-xs-12">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
         <!-- Navbar start -->
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
-                <div class="navbar-header">
+                <div class="navbar-header hidden visible-xs">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#bs-collapse" aria-expanded="false">
                         <span class="icon-bar"></span>
@@ -35,13 +35,17 @@
                 <!-- Collect the nav links -->
                 <div class="collapse navbar-collapse" id="bs-collapse">
                     <ul class="nav navbar-nav">
+                        <li><a class="nav-logo hidden-xs" href="main.html"><img src="images/логотип белый.png" width="120px"></a></li>
                         <li class="hidden visible-xs"><a data-toggle="modal" data-target="#myModal1">Заключить договор</a></li>
                         <li><a href="targets.html">Целевые программы</a></li>
+                        <li class="hidden visible-xs"><a href="news.html">Новости</a></li>
+                        <li class="hidden visible-xs"><a href="faq.html">Вопросы и ответы</a></li>
+                        <li class="hidden visible-xs"><a href="kindness.html">Добрые дела</a></li>
                         <li><a href="about.html">О нас</a></li>
+                        <li class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></li>
                         <li class="hidden-xs"><a href="main.html#kr-address">
                             <img src="images/карта_иконка.png" height="20px" class="map-icon"></a>
                         </li>
-                        <p class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></p>
                         <li class="dropdown hidden-xs">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                                aria-expanded="false">RU <span class="caret"></span></a>
@@ -54,9 +58,6 @@
                         </li>
 
                         <li class="hidden visible-xs"><a>Личный кабинет</a></li>
-                        <li class="hidden visible-xs"><a href="news.html">Новости</a></li>
-                        <li class="hidden visible-xs"><a href="faq.html">Вопросы и ответы</a></li>
-                        <li class="hidden visible-xs"><a href="kindness.html">Добрые дела</a></li>
                         <li class="hidden visible-xs"><a href="main.html#kr-address">Контакты</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -66,11 +67,11 @@
     </div>
 </div>
 <main class="row">
-    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-        <div class="panel faq-panel main-panel">
+    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+        <div class="panel faq-panel main-panel navbar-fixed-bottom">
             <div class="panel-heading">
                 <h3 class="panel-title">Часто задаваемые вопросы</h3>
-                <div class="red-angle"></div>
+                <div class="white-bg"><div class="red-angle"></div></div>
             </div>
             <div class="panel-body">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

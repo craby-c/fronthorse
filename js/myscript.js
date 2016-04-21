@@ -62,6 +62,19 @@ $(document).ready(function(){
         $(title).not(this).prev().css("display", "none");
         $(title).not(this).toggleClass("gray-text");
     });
+
+
+    // замена стрелок
+    $(".carousel-control.right").hover(function (){
+            $(this).find("img").attr("src", "images/arrow-r.png")}
+        , function () {
+            $(this).find("img").attr("src", "images/arrow-rw.png")
+        });
+    $(".carousel-control.left").hover(function (){
+            $(this).find("img").attr("src", "images/arrow-l.png")}
+        , function () {
+            $(this).find("img").attr("src", "images/arrow-lw.png")
+        })
 });
 
 //карусель

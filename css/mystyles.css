@@ -9,7 +9,10 @@ body{
     color: #000000;
     font-family:'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: 1.6em;
+}
+main{
+    height: 100%;
 }
 
 a,
@@ -38,9 +41,22 @@ header{
     background: rgba(250,250,250,0.8);
     overflow: visible;
 }
+.navbar-fixed-top .navbar-collapse{
+    max-height: 400px;
+}
 
 .navbar-nav{
     margin-top: 10px;
+}
+
+.navbar-nav {
+    float: none;
+    text-align: center;
+}
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .navbar-toggle{
@@ -63,11 +79,12 @@ header{
 }
 
 .nav>li>a{
-    padding-right: 3px;
-    padding-left: 5px;
+    padding-right:7px;
+    padding-left: 10px;
     color: #000000;
     font-size: 1.1em;
 }
+
 .nav>li>a.active,
 .nav-links>ul>li>a.active{
     text-decoration: underline;
@@ -87,7 +104,7 @@ header{
 .nav-links{
     position: absolute;
     bottom: 20%;
-    left: 26%;
+    left: 23.5%;
     background: rgba(0,0,0,0.3);
     padding: 10px;
     border-radius: 3px;
@@ -98,6 +115,19 @@ header{
     color: #ffffff;
     font-size: 1.1em;
     padding: 2px;
+}
+
+
+.nav-logo{
+    background: #cc2229;
+    height: 73px;
+    border-radius: 0 0 7px 7px;
+    margin-top: -10px;
+}
+.nav>li>.nav-logo:hover,
+.nav>li>.nav-logo:active{
+    background: #cc2229;
+    text-decoration: none;
 }
 
 .faq{
@@ -113,7 +143,9 @@ header{
     position: relative;
     overflow: hidden;
     bottom: -20px;
+    height: 80%;
     margin-top: 100px;
+    z-index: 1;
 }
 
 .main-panel>.panel-body{
@@ -207,7 +239,7 @@ footer {
 .carousel-control{
     position: absolute;
     margin-left: -40px;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .carousel-control.right,
@@ -222,7 +254,7 @@ footer {
 }
 
 .carousel-caption{
-    left: 26%;
+    left: 23.5%;
     top: 18%;
     right: 0;
     text-align: left;
@@ -263,7 +295,7 @@ footer {
 .btn-lg.btn-deal{
     position: absolute;
     bottom: 43%;
-    left: 26%;
+    left: 23.5%;
     font-size: 1.1vw;
 }
 
@@ -718,7 +750,7 @@ label{
 
 .social {
     position: absolute;
-    right: 26%;
+    right: 23.5%;
     bottom: 20%;
     z-index: 11;
 }
@@ -728,7 +760,7 @@ label{
 }
 
 .social>a>div{
-    background: url("../images/sprite_icon.png") no-repeat;
+    background: url("../images/sprite_icon1.png") no-repeat;
     height: 40px;
     width: 40px;
 }
@@ -780,7 +812,23 @@ label{
     bottom: -23px;
     left: 50%;
     margin-left: -35px;
-    background: url("../images/arrow-d.png") no-repeat, #ffffff;
+    background: url("../images/arrow-d1.png") no-repeat, transparent;
+    z-index: 30;
+}
+
+.white-bg>.red-angle{
+    bottom: 2px;
+}
+
+.white-bg{
+    content: '';
+    position: absolute;
+    width: 97%;
+    height: 24px;
+    bottom: -25px;
+    left: 0;
+    background: #ffffff;
+    z-index: 1;
 }
 
 .news{
@@ -800,4 +848,15 @@ ul{
 .img-thumbnail{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.arrow-down{
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    width: 114px;
+    height: 37px;
+    margin-left: -57px;
+    background: url("../images/arrow-dw.png") no-repeat transparent;
+    z-index: 10;
 }
