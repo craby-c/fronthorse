@@ -760,33 +760,34 @@ label{
 }
 
 .social>a>div{
-    background: url("../images/sprite_icon1.png") no-repeat;
+    background-image: url("../images/sprite_icon1.png");
+    background-repeat: no-repeat;
     height: 40px;
     width: 40px;
 }
 
-#vk{
+.vk{
     background-position: 0 0;
 }
-#vk:hover{
+.vk:hover{
     background-position: 0 -40px;
 }
-#tw{
+.tw{
     background-position: -41px 0;
 }
-#tw:hover{
+.tw:hover{
     background-position: -41px -40px;
 }
-#fb{
+.fb{
     background-position: -81px 0;
 }
-#fb:hover{
+.fb:hover{
     background-position: -81px -40px;
 }
-#go{
+.go{
     background-position: -121px 0;
 }
-#go:hover{
+.go:hover{
     background-position: -121px -40px;
 }
 
@@ -859,4 +860,9 @@ ul{
     margin-left: -57px;
     background: url("../images/arrow-dw.png") no-repeat transparent;
     z-index: 10;
+}
+
+.bottom-social{
+    bottom: 2%;
+    right: 30%;
 }

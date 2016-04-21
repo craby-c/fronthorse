@@ -34,10 +34,7 @@ $(document).ready(function(){
         });
         $(".article-head").off("click",textHide).on("click",textShow);
     }
-
-    // Автозапуск модалки на старте страницы
-    // $("#myModal1").modal('show');
-
+    
     // Переключение модалок
     $(".modal-button").click(function(){
         $("#myModal1").modal('hide');
