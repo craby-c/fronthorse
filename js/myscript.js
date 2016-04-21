@@ -9,32 +9,34 @@ $(document).ready(function(){
     });
     active.addClass("active");
 
-    //обрезка+разворот статей
-    var clipText = $(".clip-text");
-    var t = clipText.html();
-    console.log(t);
+    // обрезка+разворот статей
     var height;
     var wordNumber = 20;
-    clipText.html(shorten(t, wordNumber));
+    var clipText = $('.clip-text');
+    clipText.html(function(c, n){
+        $(this).attr('data',n);
+        return shorten(n, wordNumber);
+    });
     $(".article-head").on("click",textShow);
 
     function textShow(){
         var stext = $(this).parent().next();
         height = stext.css("height");
-        // console.log(t);
-        stext.html(t).css("height","100%");
+        stext.html(stext.attr('data')).css("height","100%");
         var height2 = stext.css("height");
         stext.css("height", height).animate({"height": height2});
-        $(".article-head").off("click",textShow).on("click",textHide);
+        $(this).off("click",textShow).on("click",textHide);
     }
 
     function textHide(){
         $(this).parent().next().animate({"height": height},function(){
-            $(this).html(shorten(t, 20));
+            $(this).html(function(c, n){
+                return shorten(n, wordNumber);
+            });
         });
-        $(".article-head").off("click",textHide).on("click",textShow);
+        $(this).off("click",textHide).on("click",textShow);
     }
-    
+
     // Переключение модалок
     $(".modal-button").click(function(){
         $("#myModal1").modal('hide');
@@ -64,12 +66,13 @@ $(document).ready(function(){
 
 
     // замена стрелок
+    // console.log($(".carousel-control.right"));
     $(".carousel-control.right").hover(function (){
             $(this).find("img").attr("src", "images/arrow-r.png")}
         , function () {
             $(this).find("img").attr("src", "images/arrow-rw.png")
         });
-    $(".carousel-control.left").hover(function (){
+    $(".carousel-control .left").hover(function (){
             $(this).find("img").attr("src", "images/arrow-l.png")}
         , function () {
             $(this).find("img").attr("src", "images/arrow-lw.png")
@@ -150,8 +153,8 @@ function shorten(text, maxLength) {
     function checkSpace(item) {
         return item != "";
     }
-
     var ret = text;
+    console.log(ret);
     var arr = ret.split(" ").filter(checkSpace);
     var over = arr.length-maxLength;
     if (arr.length > maxLength) {
