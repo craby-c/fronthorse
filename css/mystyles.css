@@ -38,7 +38,7 @@ header{
 }
 
 .navbar-collapse.in{
-    background: rgba(250,250,250,0.8);
+    background: rgba(250,250,250,0.9);
     overflow: visible;
 }
 .navbar-fixed-top .navbar-collapse{
@@ -648,8 +648,8 @@ h3{
 }
 
 .modal-header .close {
-    margin-top: -50px;
-    margin-right: -35px;
+    margin-top: -55px;
+    margin-right: -45px;
 }
 
 .modal-backdrop{
@@ -729,7 +729,7 @@ label{
 
 .article-head{
     color: #c32428;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 500;
     cursor: pointer;
 }

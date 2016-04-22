@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     // обрезка+разворот статей
     var height;
-    var wordNumber = 20;
+    var wordNumber = 40;
     var clipText = $('.clip-text');
     clipText.html(function(c, n){
         $(this).attr('data',n);
