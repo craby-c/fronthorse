@@ -56,27 +56,35 @@ $(document).ready(function(){
 
     //красная палочка и серый шрифт в faq
     var line = $("<div></div>").addClass("line");
-    var title = $(".panel-group>.panel>.panel-heading>.panel-title");
-    $(title).before(line);
-    $(title).click(function(){
+    var title = $(".panel").children(".panel-heading").children(".panel-title");
+    title.before(line);
+    title.click(function(){
         $(this).prev().toggle();
-        $(title).not(this).prev().css("display", "none");
-        $(title).not(this).toggleClass("gray-text");
+        title.not(this).prev().css("display", "none");
+        title.not(this).addClass("gray-text");
+        title.parent().next().on('hide.bs.collapse', function () {
+            title.not(this).removeClass("gray-text");
+        });
     });
 
 
     // замена стрелок
-    // console.log($(".carousel-control.right"));
-    $(".carousel-control.right").hover(function (){
-            $(this).find("img").attr("src", "images/arrow-r.png")}
-        , function () {
+    $(".carousel-control.right").hover(
+        function (){
+            $(this).find("img").attr("src", "images/arrow-r.png")
+        },
+        function (){
             $(this).find("img").attr("src", "images/arrow-rw.png")
-        });
-    $(".carousel-control.left").hover(function (){
-            $(this).find("img").attr("src", "images/arrow-l.png")}
-        , function () {
+        }
+    );
+    $(".carousel-control.left").hover(
+        function (){
+            $(this).find("img").attr("src", "images/arrow-l.png")
+        },
+        function (){
             $(this).find("img").attr("src", "images/arrow-lw.png")
-        })
+        }
+    );
 });
 
 //карусель
