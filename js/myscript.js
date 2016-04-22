@@ -77,7 +77,7 @@ $(document).ready(function(){
             $(this).find("img").attr("src", "images/arrow-rw.png")
         }
     );
-    $(".carousel-control .left").hover(
+    $(".carousel-control.left").hover(
         function (){
             $(this).find("img").attr("src", "images/arrow-l.png")
         },
