@@ -72,7 +72,7 @@ $(document).ready(function(){
         , function () {
             $(this).find("img").attr("src", "images/arrow-rw.png")
         });
-    $(".carousel-control .left").hover(function (){
+    $(".carousel-control.left").hover(function (){
             $(this).find("img").attr("src", "images/arrow-l.png")}
         , function () {
             $(this).find("img").attr("src", "images/arrow-lw.png")
