@@ -85,6 +85,11 @@ $(document).ready(function(){
             $(this).find("img").attr("src", "images/arrow-lw.png")
         }
     );
+
+    var d = $("#details");
+    if (d.length != 0){
+        $('html,body').stop().animate({ scrollTop: d.offset().top }, 1500);
+    }
 });
 
 //карусель
