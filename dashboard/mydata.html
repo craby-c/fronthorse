@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../main/css/mystyles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="fonts/glyphicons-halflings-regular.ttf">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../main/js/myscript.js"></script>
+    <script src="js/script.js"></script>
+    <title>Личный кабинет "Хорс-Инвест"</title>
+</head>
+<body class="container-fluid">
+<header class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+        <!-- Navbar start -->
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header hidden visible-xs">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-collapse" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand left" href="../main/main.html"><img src="../main/images/логотип белый.png" width="120px"></a>
+                </div>
+
+                <!-- Collect the nav links -->
+                <div class="collapse navbar-collapse" id="bs-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a class="nav-logo hidden-xs" href="../main/main.html"><img src="../main/images/logobook_hors.png" width="150px"></a></li>
+                        <li class="hidden-xs"><a href="../main/targets.html">Целевые программы</a></li>
+                        <li class="hidden-xs"><a href="../main/about.html">О нас</a></li>
+                        <li class="visible-xs"><a href="../main/main.html">На главную страницу</a></li>
+                        <li class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></li>
+                        <li class="hidden-xs"><a href="../main/main.html#kr-address" title="Контакты">
+                            <img src="../main/images/карта_иконка.png" height="20px" class="map-icon"></a>
+                        </li>
+                        <li class="dropdown hidden-xs">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false" title="Язык">RU <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">EN</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../main/main.html">Выход</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- Navbar end -->
+    </div>
+</header>
+
+
+<div class="col-lg-8 col-lg-offset-2 hello-row">
+    <a href="answers.html"><i>У Вас возникли вопросы?</i></a>
+    <span class="username"><i>Здравствуйте, <span>{{ username }}</span>! </i>
+        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><sup>1</sup>
+    </span>
+</div>
+<nav class="navbar col-lg-8 col-lg-offset-2">
+    <ul class="nav navbar-nav lk-nav">
+        <li><a href="myaccount.html">Мои счета</a></li>
+        <li><a href="operatons.html">Операции</a></li>
+        <li><a href="mydata.html">Мои данные</a></li>
+        <li><a href="myclients.html">Мои клиенты</a></li>
+        <li><a href="reports.html">Отчеты</a></li>
+        <li><a href="docs.html">Документы</a></li>
+        <li><a href="achivements.html">Достижения</a></li>
+        <li><a href="cancel.html">Расторгнуть договор</a></li>
+    </ul>
+</nav>
+
+<main class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-justify">
+            <ul class="nav nav-tabs nav-justified gray-title">
+                <li role="presentation" class="active"><a href="#mydata" data-toggle="tab">Мои данные</a></li>
+                <li role="presentation"><a href="#edit" data-toggle="tab">Редактировать данные</a></li>
+                <li></li>
+            </ul>
+            <div class="tab-content">
+
+                <!--Вкладка "Мои данные"-->
+                <div id="mydata" class="tab-pane fade in active">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="product" class="col-lg-3 control-label">Продукт</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="product" readonly value="{{product}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="fullname" class="col-lg-3 control-label">ФИО</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="fullname" readonly value="{{fullname}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-lg-3 control-label">E-mail</label>
+                            <div class="col-lg-6">
+                                <input type="email" class="form-control" id="email" readonly value="{{email@email.com}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address" class="col-lg-3 control-label">Адрес</label>
+                            <div class="col-lg-6">
+                                <textarea class="form-control" id="address" rows="2" readonly>{{address}}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="passport" class="col-lg-3 control-label">Номер паспорта</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="passport" readonly value="{{passport}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sex" class="col-lg-3 control-label">Пол</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="sex" readonly value="{{sex}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="birthday" class="col-lg-3 control-label">Дата рождения</label>
+                            <div class="col-lg-6">
+                                <input type="date" class="form-control" id="birthday" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone1" class="col-lg-3 control-label">Городской номер</label>
+                            <div class="col-lg-6">
+                                <input type="tel" class="form-control" id="phone1" readonly value="{{phone1}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone2" class="col-lg-3 control-label">Мобильный номер</label>
+                            <div class="col-lg-6">
+                                <input type="tel" class="form-control" id="phone2" readonly value="{{phone2}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="skype" class="col-lg-3 control-label">Skype</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="skype" readonly value="{{skype}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lang" class="col-lg-3 control-label">Язык</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="lang" readonly value="{{lang}}">
+                            </div>
+                        </div>
+                        <div class="wrapper-center">
+                            <button class="btn red-btn"><a href="#edit" data-toggle="tab">Редактировать данные</a></button>
+                        </div>
+                    </form>
+                </div>
+                <!--конец вкладки "Мои данные"-->
+
+                <!--Вкладка "редактировать данные"-->
+                <div id="edit" class="tab-pane fade">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="fio" class="col-lg-3 control-label">ФИО</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="fio" value="{{fullname}}">
+                            </div>
+                            <div class="col-lg-3 validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country" class="col-lg-3 control-label">Страна</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="country" value="{{country}}">
+                            </div>
+                            <div class="col-lg-3 validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="e-mail" class="col-lg-3 control-label">E-mail</label>
+                            <div class="col-lg-6">
+                                <input type="email" class="form-control" id="e-mail" value="{{e-mail}}">
+                            </div>
+                            <div class="col-lg-3 validation"></div>
+                        </div>
+                        <div class="wrapper-center">
+                            <input type="submit" class="btn red-btn" value="Редактировать мои данные">
+                        </div>
+                    </form>
+
+                    <form class="form-horizontal" id="change-pass">
+                        <div class="form-group">
+                            <label for="pass" class="col-lg-3 control-label">Текущий пароль</label>
+                            <div class="col-lg-6">
+                                <input type="password" class="form-control" id="pass">
+                            </div>
+                            <div class="col-lg-3"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="newpass" class="col-lg-3 control-label">Новый пароль</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="newpass">
+                            </div>
+                            <div class="col-lg-3"><span class="glyphicon glyphicon-eye-open"></span></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="newpass2" class="col-lg-3 control-label">Повторите пароль</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="newpass2">
+                            </div>
+                            <div class="col-lg-3"><span class="glyphicon glyphicon-eye-open"></span></div>
+                        </div>
+                        <div class="wrapper-center">
+                            <input type="submit" class="btn red-btn" value="Изменить пароль">
+                        </div>
+                    </form>
+                </div>
+                <!--конец вкладки "редактировать данные"-->
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="site-map text-nowrap">
+            <li><a href="../main/targets.html">Целевые программы</a></li>
+            <li><a href="../main/about.html">О нас</a></li>
+            <li><a href="../main/main.html#kr-address">Контакты</a></li>
+            <li><a href="../main/news.html">Новости</a></li>
+            <li><a href="../main/faq.html">Вопросы и ответы</a></li>
+            <li class="small-number hidden-xs">
+                <span class="small">8 (800)</span> <b>234 81 88</b>
+            </li>
+            <li class="hidden-xs"><a href="../main/main.html"><img src="../main/images/логотип%20белый.png" width="100px"></a></li>
+        </ul>
+        <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
+    </div>
+</footer>
+</body>
+</html>
