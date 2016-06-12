@@ -89,9 +89,7 @@ header{
     min-height: 400px;
     height: auto;
 }
-/*.tab-content{*/
-    /*background: #fafafa;*/
-/*}*/
+
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover {
@@ -109,8 +107,7 @@ header{
 .dictionary{
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 20px;
-    padding-bottom: 10px;
+    padding: 20px 20px 10px 20px;
     border: 1px solid #cdcdcd;
     border-radius: 5px;
     font-size: small;
@@ -275,10 +272,6 @@ th{
     cursor: pointer;
 }
 
-.top-trade{
-    border: 1px solid #cdcdcd;
-    border-radius: 5px;
-}
 .img-circle{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -288,4 +281,16 @@ th{
 .nav-tabs.nav-justified>.active>a:focus,
 .nav-tabs.nav-justified>.active>a:hover{
     border-bottom-color: #fafafa;
+}
+
+.message{
+    color: #cc2229;
+}
+.username>a:hover,
+.username>a:active,
+.username>a:focus{
+    text-decoration: none;
+}
+.nomessage{
+    color: #cdcdcd;
 }
