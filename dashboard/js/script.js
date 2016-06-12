@@ -17,7 +17,7 @@ $(document).ready(function(){
         trigger: "manual",
         placement: "bottom",
         html: true,
-        content: '<div class="top-trade text-center">' +
+        content: '<div class="text-center">' +
         '<p>1st place<br><span class="red-link">%%%</span></p>' +
         '<p>2nd place<br><span class="red-link">%%%</span></p>' +
         '<p>3rd place<br><span class="red-link">%%%</span></p></div>'

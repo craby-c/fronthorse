@@ -64,7 +64,15 @@
 <div class="col-lg-8 col-lg-offset-2 hello-row">
     <a href="answers.html"><i>У Вас возникли вопросы?</i></a>
     <span class="username"><i>Здравствуйте, <span>{{ username }}</span>! </i>
-        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><sup>1</sup>
+        <a href="#">
+            <span class="message">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                <sup>1</sup>
+            </span>
+        </a>
+        <span class="nomessage hidden">
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+        </span>
     </span>
 </div>
 <nav class="navbar col-lg-8 col-lg-offset-2">
@@ -76,7 +84,7 @@
         <li><a href="reports.html">Отчеты</a></li>
         <li><a href="docs.html">Документы</a></li>
         <li><a href="achivements.html">Достижения</a></li>
-        <li><a href="cancel.html">Расторгнуть договор</a></li>
+        <li><a href="rescind.html">Расторгнуть договор</a></li>
     </ul>
 </nav>
 
@@ -112,10 +120,32 @@
                 <!--конец вкладки "Итоги работы трейдеров"-->
 
                 <!--Вкладка "Промоушен трейдеров"-->
-                <div id="promo" class="tab-pane fade">
-
+                <div id="promo" class="tab-pane fade wrapper-center">
+                    <div class="row">
+                        <div class="wrapper-center"><i>Поздравляем победителей!</i></div>
+                        <div class="col-lg-3">
+                            <img class="img-circle" src="../main/images/prize1.jpg">
+                            <p class="red-link">1 МЕСТО</p>
+                            <p class="small"><i>Приз - автомобиль Volkswagen Polo</i></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <img class="img-circle" src="../main/images/prize2.jpg">
+                            <p class="red-link">2 МЕСТО</p>
+                            <p class="small"><i>Приз - путевка на двоих в Таиланд, о. Пхукет</i></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <img class="img-circle" src="../main/images/prize3.jpg">
+                            <p class="red-link">3 МЕСТО</p>
+                            <p class="small"><i>Приз - годовой абонемент на двоих в лучший фитнес-клуб</i></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <img class="img-circle" src="../main/images/prize4.jpg">
+                            <p class="red-link">4 МЕСТО</p>
+                            <p class="small"><i>Приз - годовой абонемент на одного в лучший фитнес-клуб</i></p>
+                        </div>
+                    </div>
                 </div>
-                <!--конец вкладки итоги работы трейдеров-->
+                <!--конец вкладки промоушен трейдеров-->
             </div>
         </div>
     </div>
