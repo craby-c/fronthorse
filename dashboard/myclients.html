@@ -100,7 +100,7 @@
 
                 <!--Вкладка "Мои клиенты"-->
                 <div id="myclient" class="tab-pane fade in active">
-                    <table class="table">
+                    <table class="table table-responsive">
                         <tbody>
                         <tr>
                             <th>Имя</th>
@@ -144,7 +144,7 @@
 
                             <!--шаг 1-->
                             <div class="form-group step1">
-                                <div class="col-lg-2 col-lg-offset-1"><label class="control-label">Выбрать продукт 1</label></div>
+                                <div class="col-lg-2 col-lg-offset-1"><label class="control-label">Выбрать продукт</label></div>
                                 <div class="col-lg-6">
                                     <select class="form-control">
                                         <option>{{1st}}</option>
@@ -408,27 +408,6 @@
                                 <div class="col-lg-12">
                                     <button class="red-btn btn" data-toggle="modal" data-target="#docModal">Продолжить</button>
                                 </div>
-
-                                <div class="modal fade" id="docModal" tabindex="-1" role="dialog" aria-labelledby="docModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="docModalLabel">
-                                                    Операция успешно выполнена
-                                                </h4>
-                                                <div class="red-angle"></div>
-                                            </div>
-                                            <div class="modal-body wrapper-center">
-                                                <button class="red-btn btn">Скачать документы</button>
-                                                <button class="gray-btn btn">Вернуться на сайт</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </form>
                         <div class="row step-nav">
@@ -511,6 +490,29 @@
         </div>
     </div>
 </div>
+
+
+
+<div class="modal fade" id="docModal" tabindex="-1" role="dialog" aria-labelledby="docModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="docModalLabel">
+                    Операция успешно выполнена
+                </h4>
+                <div class="red-angle"></div>
+            </div>
+            <div class="modal-body wrapper-center">
+                <button class="red-btn btn">Скачать документы</button>
+                <button class="gray-btn btn">Вернуться на сайт</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>
