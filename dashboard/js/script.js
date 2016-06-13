@@ -34,4 +34,12 @@ $(document).ready(function(){
             $(this).children(".doc-link").popover('hide')
         }
     );
+
+    $(".doc-block").hover(function () {
+        // $(this).
+    });
+
+    $(".modal-button").click(function(){
+        $("#noteModal").modal('hide');
+    });
 });
