@@ -63,7 +63,7 @@
 <div class="col-lg-8 col-lg-offset-2 hello-row">
     <a href="answers.html"><i>У Вас возникли вопросы?</i></a>
     <span class="username"><i>Здравствуйте, <span>{{ username }}</span>! </i>
-        <a href="#">
+        <a data-toggle="modal" data-target="#noteModal">
             <span class="message">
                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                 <sup>1</sup>
@@ -104,6 +104,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Порядок участия Пайщика</p>
                                 </a>
                             </div>
@@ -112,6 +113,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Реквизиты РАО "РОСБАНК"</p>
                                 </a>
                             </div>
@@ -120,6 +122,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Реквизиты "КУБАНЬКРЕДИТ" и "АЛЬФАБАНК"</p>
                                 </a>
                             </div>
@@ -130,6 +133,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Устав ПО "Хорс-Инвест"</p>
                                 </a>
                             </div>
@@ -138,6 +142,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Положение о кредитовании и авансировании Пайщиков</p>
                                 </a>
                             </div>
@@ -146,6 +151,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Положение о фондах</p>
                                 </a>
                             </div>
@@ -161,6 +167,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Договор о внесении целевого взноса</p>
                                 </a>
                             </div>
@@ -169,6 +176,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Договор о внесении целевого взноса через ТКУ</p>
                                 </a>
                             </div>
@@ -177,6 +185,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Заявление о приеме через ТКУ</p>
                                 </a>
                             </div>
@@ -187,6 +196,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Положение о ЦП "3+"</p>
                                 </a>
                             </div>
@@ -195,6 +205,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Положение о ЦП "4+"</p>
                                 </a>
                             </div>
@@ -203,6 +214,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Положение о ЦП "5+"</p>
                                 </a>
                             </div>
@@ -213,6 +225,7 @@
                             <div class="doc-block text-center">
                                 <a href="#" class="doc-link">
                                     <div class="img-wrapper"></div>
+                                    <div class="fade-wrapper"></div>
                                     <p>Заявление о приеме в <br>ПО "Хорс-Инвест" для физического лица</p>
                                 </a>
                             </div>
@@ -278,5 +291,54 @@
         <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
     </div>
 </footer>
+
+
+<div class="modal fade" id="noteModal" tabindex="-1" role="dialog" aria-labelledby="noteModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="noteModalLabel">
+                    Ознакомьтесь, это может быть важно!
+                </h4>
+                <div class="red-angle"></div>
+            </div>
+            <div class="modal-body wrapper-center">
+                <p class="small text-justify"><i>
+                    Уважаемый Сергей Владимирович,
+                    <br><br>
+                    у вас заканчивается договор!  Вы можете продлить договор, заполнив соответствующую форму.
+                    В случае если Вы не хотите по каким бы то ни было причинам дальше сотрудничать,
+                    то Вы можете просто закрыть договор, воспользовавшись основным меню Личного Кабинета,
+                    в разделе <a href="rescind.html" class="red-link">«Расторгнуть договор»</a>.
+                </i></p><br>
+                <button class="red-btn btn modal-button" data-toggle="modal" data-target="#successModal">Пролонгировать договор</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="successModalLabel">
+                    Операция успешно выполнена
+                </h4>
+                <div class="red-angle"></div>
+            </div>
+            <div class="modal-body wrapper-center">
+                <button class="red-btn btn">Скачать документы</button>
+                <button class="gray-btn btn">Вернуться на сайт</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
