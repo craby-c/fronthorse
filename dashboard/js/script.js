@@ -38,9 +38,15 @@ $(document).ready(function(){
     );
 
 
-    $(".doc-block").hover(function () {
-        // $(this).
-    });
+
+    $(".doc-link").hover(
+        function () {
+            $(this).children(".fade-wrapper").css("display", "none");
+        },
+        function () {
+            $(this).children(".fade-wrapper").css("display", "block");
+        }
+    );
 
     $(".modal-button").click(function() {
         $("#noteModal").modal('hide');
@@ -48,42 +54,48 @@ $(document).ready(function(){
     // Переключение формы добавления клиента
     var progress_bar = $(".progress-bar");
     var steps_text = $(".steps").children("i");
-    var client_form = $("#client_form");
-    var max_step = client_form.children(".form-group").length;
+    var client_form = $("#client_form").children(".form-group");
+    var forward = $(".forward");
+    var backward = $(".backward");
+    var download = $(".download");
+    var max_step = client_form.length;
     var step = 1;
     var max_value = 100;
     var value_step = max_value/max_step;
     var value = value_step;
     progress_bar.css("width", value+"%");
-    $(".backward").css("visibility", "hidden");
-    client_form.children(".form-group").css("display","none");
-    client_form.children(".form-group").eq(step-1).css("display","block");
-    $(".forward").click(function () {
+    backward.css("visibility", "hidden");
+    download.css("visibility", "hidden");
+    client_form.css("display", "none");
+    client_form.eq(step-1).css("display", "block");
+    forward.click(function () {
         if (step < max_step){
             step += 1;
             value += value_step;
-            if (step >= max_step){
-                $(this).css("visibility", "hidden");
-            }
             steps_text.text(step + " шаг");
-            $(".backward").css("visibility", "visible");
             progress_bar.css("width", value+"%");
-            client_form.children(".form-group").css("display","none");
-            client_form.children(".form-group").eq(step-1).css("display", "block");
+            client_form.css("display","none").eq(step-1).css("display", "block");
+            if (step >= max_step){
+                $(this).css("display", "none");
+                backward.css("display", "none");
+                download.css("visibility", "visible");
+            }
+            else {
+                backward.css("visibility", "visible");
+            }
         }
     });
-    $(".backward").click(function () {
+    backward.click(function () {
         if (step > 1){
             step -= 1;
             value -= value_step;
+            forward.css("visibility", "visible");
+            steps_text.text(step + " шаг");
+            progress_bar.css("width", value+"%");
+            client_form.css("display","none").eq(step-1).css("display", "block");
             if (step <= 1){
                 $(this).css("visibility", "hidden");
             }
-            $(".forward").css("visibility", "visible");
-            steps_text.text(step + " шаг");
-            progress_bar.css("width", value+"%");
-            client_form.children(".form-group").css("display","none");
-            client_form.children(".form-group").eq(step-1).css("display", "block");
         }
     });
 });
