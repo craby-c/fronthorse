@@ -52,7 +52,8 @@ header{
     padding-right: 15px;
 }
 .username{
-    float: right;
+    /*float: right;*/
+    text-align: right;
 }
 
 .nav>li>.nav-logo:hover,
@@ -136,6 +137,7 @@ label{
     text-align: center;
     background: #ffffff;
     width: 100%;
+    height: 30px;
 }
 
 .glyphicon-asterisk{
