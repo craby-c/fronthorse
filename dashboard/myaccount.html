@@ -67,7 +67,7 @@
     <div class="col-lg-6">
         <aside class="username"><i>Здравствуйте, <span>{{ username }}</span>! </i>
             <a data-toggle="modal" data-target="#noteModal">
-                <span class="message">
+                <span class="message text-nowrap">
                     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                     <sup>1</sup>
                 </span>
@@ -156,86 +156,86 @@
                 <!--конец вкладки "Основная информация по счёту"-->
 
                 <!--Вкладка "Добавить счёт"-->
-                <div id="addacc" class="tab-pane fade">
-                    <form class="form-horizontal">
+                <div id="addacc" class="tab-pane fade row">
+                    <form class="form-horizontal col-lg-10 col-lg-offset-1">
                         <div class="form-group row">
-                            <label for="inn" class="col-lg-3 control-label">ИНН</label>
-                            <div class="col-lg-6">
+                            <label for="inn" class="col-lg-4 control-label">ИНН</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="inn">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="kpp" class="col-lg-3 control-label">КПП</label>
-                            <div class="col-lg-6">
+                            <label for="kpp" class="col-lg-4 control-label">КПП</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="kpp">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="ogrn" class="col-lg-3 control-label">ОГРН</label>
-                            <div class="col-lg-6">
+                            <label for="ogrn" class="col-lg-4 control-label">ОГРН</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="ogrn">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="rs" class="col-lg-3 control-label">Расчетный счет</label>
-                            <div class="col-lg-6">
+                            <label for="rs" class="col-lg-4 control-label">Расчетный счет</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="rs" required>
                             </div>
-                            <div class="col-lg-3 validation">
+                            <div class="col-lg-4 validation">
                                 <label class="glyphicon glyphicon-asterisk" aria-hidden="true"></label>
                                 <i class="small"><br>Обязательное поле для заполнения</i>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="bankname" class="col-lg-3 control-label">Наименование банка</label>
-                            <div class="col-lg-6">
+                            <label for="bankname" class="col-lg-4 control-label">Наименование банка</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="bankname" required>
                             </div>
-                            <div class="col-lg-3 validation">
+                            <div class="col-lg-4 validation">
                                 <label class="glyphicon glyphicon-asterisk" aria-hidden="true"></label>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="korr" class="col-lg-3 control-label">Корреспондентский счет</label>
-                            <div class="col-lg-6">
+                            <label for="korr" class="col-lg-4 control-label">Корреспондентский счет</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="korr" required>
                             </div>
-                            <div class="col-lg-3 validation">
+                            <div class="col-lg-4 validation">
                                 <label class="glyphicon glyphicon-asterisk" aria-hidden="true"></label>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="bik" class="col-lg-3 control-label">БИК</label>
-                            <div class="col-lg-6">
+                            <label for="bik" class="col-lg-4 control-label">БИК</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="bik" required>
                             </div>
-                            <div class="col-lg-3 validation">
+                            <div class="col-lg-4 validation">
                                 <label class="glyphicon glyphicon-asterisk" aria-hidden="true"></label>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="swift" class="col-lg-3 control-label">СВИФТ</label>
-                            <div class="col-lg-6">
+                            <label for="swift" class="col-lg-4 control-label">СВИФТ</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="swift">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="bankben" class="col-lg-3 control-label">Банк-бенефициар</label>
-                            <div class="col-lg-6">
+                            <label for="bankben" class="col-lg-4 control-label">Банк-бенефициар</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="bankben">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="bene" class="col-lg-3 control-label">Бенефициар</label>
-                            <div class="col-lg-6">
+                            <label for="bene" class="col-lg-4 control-label">Бенефициар</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="bene">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
                         <div class="wrapper-center">
                             <input type="submit" class="btn red-btn" value="Добавить реквизиты" data-toggle="modal" data-target="#accModal">

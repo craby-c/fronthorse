@@ -67,7 +67,7 @@
     <div class="col-lg-6">
         <aside class="username"><i>Здравствуйте, <span>{{ username }}</span>! </i>
             <a data-toggle="modal" data-target="#noteModal">
-                <span class="message">
+                <span class="message text-nowrap">
                     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                     <sup>1</sup>
                 </span>
@@ -91,12 +91,12 @@
     </ul>
 </nav>
 
-<div class="col-lg-12 text-right">
-    <div class="gray-title title-row">
+<div class="col-lg-12">
+    <div class="gray-title title-row text-right">
         <i>Выберите нужную операцию</i>
     </div>
     <div class="page-content">
-        <ul class="nav nav-pills col-lg-6 col-lg-offset-3">
+        <ul class="nav nav-pills col-lg-4 col-lg-offset-4">
 
             <li class="dropdown select">
                 <a class="dropdown-toggle text-center" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -117,15 +117,15 @@
             <div class="tab-content">
 
                 <!--Получение займа-->
-                <div id="getloan" class="tab-pane fade col-lg-12 wrapper-center">
+                <div id="getloan" class="tab-pane fade wrapper-center col-lg-10 col-lg-offset-1">
                     <h4>Получение займа</h4>
                     <form class="form-horizontal" role="form">
                         <div class="form-group">
-                            <label for="loansum" class="control-label col-lg-3">Сумма займа</label>
-                            <div class="col-lg-3 text-center">
+                            <label for="loansum" class="control-label col-lg-4">Сумма займа</label>
+                            <div class="col-lg-4 text-center">
                                 <input type="text" class="form-control" id="loansum">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12 text-nowrap">
@@ -135,11 +135,11 @@
                                     </label>
                                 </div>
                             </div>
-                            <label for="pluscv" class="control-label col-lg-3">Сумма займа</label>
-                            <div class="col-lg-6 text-center">
+                            <label for="pluscv" class="control-label col-lg-4">Сумма займа</label>
+                            <div class="col-lg-4 text-center">
                                 <input type="text" class="form-control" id="pluscv" disabled>
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
 
                         <div class="form-group">
@@ -150,11 +150,11 @@
                                     </label>
                                 </div>
                             </div>
-                            <label for="cash" class="control-label col-lg-3">Сумма займа</label>
-                            <div class="col-lg-6 text-center">
+                            <label for="cash" class="control-label col-lg-4">Сумма займа</label>
+                            <div class="col-lg-4 text-center">
                                 <input type="text" class="form-control" id="cash" disabled>
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
                         <div class="form-group">
                             <label class="radio-inline">
@@ -164,7 +164,7 @@
                                 <input type="radio" name="money" id="check" value="check">Безналичными
                             </label>
                             <br>
-                            <div class="col-lg-6 col-lg-offset-3">
+                            <div class="col-lg-4 col-lg-offset-4">
                                 <select class="form-control acc-select" disabled>
                                     <option>Выбрать счёт</option>
                                     <option>2</option>
@@ -174,9 +174,9 @@
                                 </select>
                             </div>
                         </div>
+                        <br>
+                        <a href="myaccount.html#addacc" class="red-link">Добавить новый счёт</a>
                     </form>
-                    <br>
-                    <a href="myaccount.html#addacc" class="red-link">Добавить новый счёт</a>
                     <br><br>
                     <!--чтобы заменить кнопку на текст или наоборот - нужно добавить или убрать класс "hidden"
                     или принудительно в css прописать свойство dislay:none (or visible) при нужной кондиции-->
@@ -188,13 +188,13 @@
                 <!--снятие цв-->
                 <div id="cashcv" class="tab-pane fade col-lg-12 wrapper-center">
                     <h4>Снятие части целевого вклада</h4>
-                    <form class="form-horizontal" role="form">
+                    <form class="form-horizontal col-lg-10 col-lg-offset-1" role="form">
                         <div class="form-group">
-                            <label for="cashing" class="control-label col-lg-3 text-nowrap">Введите сумму для снятия</label>
-                            <div class="col-lg-6 text-center">
+                            <label for="cashing" class="control-label col-lg-4 text-nowrap">Введите сумму для снятия</label>
+                            <div class="col-lg-4 text-center">
                                 <input type="text" class="form-control" id="cashing">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
 
                         <div class="form-group">
@@ -202,7 +202,7 @@
                             <label class="radio-inline"><input type="radio" name="money" id="mon" value="money">Наличными</label>
                             <label class="radio-inline"><input type="radio" name="money" id="che" value="check">Безналичными</label>
                             <br>
-                            <div class="col-lg-6 col-lg-offset-3">
+                            <div class="col-lg-4 col-lg-offset-4">
                                 <select class="form-control acc-select">
                                     <option>Выбрать счёт</option>
                                     <option>2</option>
@@ -226,13 +226,13 @@
                 <!--снятие парт. возн.-->
                 <div id="cashpv" class="tab-pane fade col-lg-12 wrapper-center">
                     <h4>Снятие партнерских вознаграждений</h4>
-                    <form class="form-horizontal" role="form">
+                    <form class="form-horizontal col-lg-10 col-lg-offset-1" role="form">
                         <div class="form-group">
-                            <label for="cashing-p" class="control-label col-lg-3 text-nowrap">Введите сумму для снятия</label>
-                            <div class="col-lg-6 text-center">
+                            <label for="cashing-p" class="control-label col-lg-4 text-nowrap">Введите сумму для снятия</label>
+                            <div class="col-lg-4 text-center">
                                 <input type="text" class="form-control" id="cashing-p">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
 
                         <div class="form-group">
@@ -240,7 +240,7 @@
                             <label class="radio-inline"><input type="radio" name="money" id="mon-p" value="money">Наличными</label>
                             <label class="radio-inline"><input type="radio" name="money" id="che-p" value="check">Безналичными</label>
                             <br>
-                            <div class="col-lg-6 col-lg-offset-3">
+                            <div class="col-lg-4 col-lg-offset-4">
                                 <select class="form-control acc-select">
                                     <option>Выбрать счёт</option>
                                     <option>2</option>
@@ -269,16 +269,16 @@
                         в тот же день, когда было подписано.<br>
                         В случае несоблюдения данного правила заявление обработано не будет.<br>
                         31-го числа заявления не принимаются.<br><br></i></p>
-                    <form class="form-horizontal">
+                    <form class="form-horizontal col-lg-10 col-lg-offset-1">
                         <div class="form-group">
-                            <label for="percent" class="control-label col-lg-3">Сумма %</label>
-                            <div class="col-lg-6 text-center">
+                            <label for="percent" class="control-label col-lg-4">Сумма %</label>
+                            <div class="col-lg-4 text-center">
                                 <input type="text" class="form-control" id="percent">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
+                        <br>
                     </form>
-                    <br>
                     <!--чтобы заменить кнопку на текст или наоборот - нужно добавить или убрать класс "hidden"
                     или принудительно в css прописать свойство dislay:none (or visible) при нужной кондиции-->
                     <input class="btn red-btn" type="submit" value="Формировать документы">

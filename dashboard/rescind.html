@@ -67,7 +67,7 @@
         <div class="col-lg-6">
         <aside class="username"><i>Здравствуйте, <span>{{ username }}</span>! </i>
             <a data-toggle="modal" data-target="#noteModal">
-                <span class="message">
+                <span class="message text-nowrap">
                     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                     <sup>1</sup>
                 </span>
@@ -93,123 +93,123 @@
 
 <main class="container-fluid">
     <div class="row">
-    <div class="col-lg-12 text-right">
-        <div class="gray-title title-row">
-            <i>Расторгнуть договор</i>
-        </div>
-        <div class="page-content">
-            <form class="form-horizontal wrapper-center">
-                <div class="form-group">
-                    <label for="loansum" class="control-label col-lg-3">Сумма займа</label>
-                    <div class="col-lg-6 text-center">
-                        <input type="text" class="form-control" id="loansum">
-                    </div>
-                    <div class="col-lg-3 validation"></div>
-                </div>
-                <br>
-                <p class="small"><i>Оформляется только после возврата паевого взноса (150 р.)<br> на баланс Вашего счёта</i></p><br>
-
-                <label class="radio-inline"><input type="radio" name="money" id="money" value="money">Наличными</label>
-                <label class="radio-inline"><input type="radio" name="money" id="check" value="check">Безналичными</label>
-
-                <div class="form-group">
-                    <label for="inn" class="col-lg-3 control-label">ИНН</label>
-                    <div class="col-lg-6">
-                        <input type="text" class="form-control" id="inn">
-                    </div>
-                    <div class="col-lg-3 validation"></div>
-                </div>
-                <div class="form-group">
-                    <label for="kpp" class="col-lg-5 control-label">КПП</label>
-                    <div class="col-lg-2">
-                        <input type="text" class="form-control" id="kpp">
-                    </div>
-                    <div class="col-lg-3 validation"></div>
-                </div>
-                <div class="form-group">
-                    <label for="ogrn" class="col-lg-3 control-label">ОГРН</label>
-                    <div class="col-lg-6">
-                        <input type="text" class="form-control" id="ogrn">
-                    </div>
-                    <div class="col-lg-3 validation"></div>
-                </div>
-                <div class="form-group">
-                    <label for="rs" class="col-lg-3 control-label">Расчетный счет</label>
-                    <div class="col-lg-6">
-                        <input type="text" class="form-control" id="rs" required>
-                    </div>
-                    <div class="col-lg-3 validation"></div>
-                </div>
-                <div class="form-group">
-                    <label for="bankname" class="col-lg-3 control-label">Наименование банка</label>
-                    <div class="col-lg-6">
-                        <input type="text" class="form-control" id="bankname" required>
-                    </div>
-                    <div class="col-lg-3 validation"></div>
-                </div>
-                <div class="form-group">
-                    <label for="korr" class="col-lg-3 control-label">Корреспондентский счет</label>
-                    <div class="col-lg-6">
-                        <input type="text" class="form-control" id="korr" required>
-                    </div>
-                    <div class="col-lg-3 validation"></div>
-                </div>
-                <div class="form-group">
-                    <label for="bik" class="col-lg-3 control-label">БИК</label>
-                    <div class="col-lg-6">
-                        <input type="text" class="form-control" id="bik" required>
-                    </div>
-                    <div class="col-lg-3 validation"></div>
-                </div>
-                <div class="form-group">
-                    <label for="swift" class="col-lg-3 control-label">СВИФТ</label>
-                    <div class="col-lg-6">
-                        <input type="text" class="form-control" id="swift">
-                    </div>
-                    <div class="col-lg-3 validation"></div>
-                </div>
-                <div class="form-group">
-                    <label for="bankben" class="col-lg-3 control-label">Банк-бенефициар</label>
-                    <div class="col-lg-6">
-                        <input type="text" class="form-control" id="bankben">
-                    </div>
-                    <div class="col-lg-3 validation"></div>
-                </div>
-                <div class="form-group">
-                    <label for="bene" class="col-lg-3 control-label">Бенефициар</label>
-                    <div class="col-lg-6">
-                        <input type="text" class="form-control" id="bene">
-                    </div>
-                    <div class="col-lg-3 validation"></div>
-                </div>
-
-                <div class="wrapper-center">
-                    <button class="btn red-btn" data-toggle="modal" data-target="#docModal">Формировать документы</button>
-                </div>
-            </form>
-
-            <div class="modal fade" id="docModal" tabindex="-1" role="dialog" aria-labelledby="docModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title" id="docModalLabel">
-                                Операция успешно выполнена
-                            </h4>
-                            <div class="red-angle"></div>
-                        </div>
-                        <div class="modal-body wrapper-center">
-                            <button class="red-btn btn">Скачать документы</button>
-                            <button class="gray-btn btn">Вернуться на сайт</button>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-lg-12 text-right">
+            <div class="gray-title title-row">
+                <i>Расторгнуть договор</i>
             </div>
+            <div class="page-content row">
+                <form class="form-horizontal wrapper-center col-lg-10 col-lg-offset-1">
+                    <div class="form-group">
+                        <label for="loansum" class="control-label col-lg-4">Сумма займа</label>
+                        <div class="col-lg-4 text-center">
+                            <input type="text" class="form-control" id="loansum">
+                        </div>
+                        <div class="col-lg-4 validation"></div>
+                    </div>
+                    <br>
+                    <p class="small"><i>Оформляется только после возврата паевого взноса (150 р.)<br> на баланс Вашего счёта</i></p><br>
 
+                    <label class="radio-inline"><input type="radio" name="money" id="money" value="money">Наличными</label>
+                    <label class="radio-inline"><input type="radio" name="money" id="check" value="check">Безналичными</label>
+
+                    <div class="form-group">
+                        <label for="inn" class="col-lg-4 control-label">ИНН</label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" id="inn">
+                        </div>
+                        <div class="col-lg-4 validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="kpp" class="col-lg-4 control-label">КПП</label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" id="kpp">
+                        </div>
+                        <div class="col-lg-4 validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ogrn" class="col-lg-4 control-label">ОГРН</label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" id="ogrn">
+                        </div>
+                        <div class="col-lg-4 validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="rs" class="col-lg-4 control-label">Расчетный счет</label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" id="rs" required>
+                        </div>
+                        <div class="col-lg-4 validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bankname" class="col-lg-4 control-label">Наименование банка</label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" id="bankname" required>
+                        </div>
+                        <div class="col-lg-4 validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="korr" class="col-lg-4 control-label">Корреспондентский счет</label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" id="korr" required>
+                        </div>
+                        <div class="col-lg-4 validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bik" class="col-lg-4 control-label">БИК</label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" id="bik" required>
+                        </div>
+                        <div class="col-lg-4 validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="swift" class="col-lg-4 control-label">СВИФТ</label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" id="swift">
+                        </div>
+                        <div class="col-lg-4 validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bankben" class="col-lg-4 control-label">Банк-бенефициар</label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" id="bankben">
+                        </div>
+                        <div class="col-lg-4 validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bene" class="col-lg-4 control-label">Бенефициар</label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" id="bene">
+                        </div>
+                        <div class="col-lg-4 validation"></div>
+                    </div>
+
+                    <div class="wrapper-center">
+                        <button class="btn red-btn" data-toggle="modal" data-target="#docModal">Формировать документы</button>
+                    </div>
+                </form>
+
+                <div class="modal fade" id="docModal" tabindex="-1" role="dialog" aria-labelledby="docModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="docModalLabel">
+                                    Операция успешно выполнена
+                                </h4>
+                                <div class="red-angle"></div>
+                            </div>
+                            <div class="modal-body wrapper-center">
+                                <button class="red-btn btn">Скачать документы</button>
+                                <button class="gray-btn btn">Вернуться на сайт</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
     </div>
 
 <!--Словарь-->

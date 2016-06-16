@@ -68,7 +68,7 @@
     <div class="col-lg-6">
         <aside class="username"><i>Здравствуйте, <span>{{ username }}</span>! </i>
             <a data-toggle="modal" data-target="#noteModal">
-                <span class="message">
+                <span class="message text-nowrap">
                     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                     <sup>1</sup>
                 </span>
@@ -104,71 +104,71 @@
             <div class="tab-content">
 
                 <!--Вкладка "Мои данные"-->
-                <div id="mydata" class="tab-pane fade in active">
-                    <form class="form-horizontal">
+                <div id="mydata" class="tab-pane fade in active row">
+                    <form class="form-horizontal col-lg-10 col-lg-offset-1">
                         <div class="form-group">
-                            <label for="product" class="col-lg-3 control-label">Продукт</label>
-                            <div class="col-lg-6">
+                            <label for="product" class="col-lg-4 control-label">Продукт</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="product" readonly value="{{product}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="fullname" class="col-lg-3 control-label">ФИО</label>
-                            <div class="col-lg-6">
+                            <label for="fullname" class="col-lg-4 control-label">ФИО</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="fullname" readonly value="{{fullname}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="email" class="col-lg-3 control-label">E-mail</label>
-                            <div class="col-lg-6">
+                            <label for="email" class="col-lg-4 control-label">E-mail</label>
+                            <div class="col-lg-4">
                                 <input type="email" class="form-control" id="email" readonly value="{{email@email.com}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="address" class="col-lg-3 control-label">Адрес</label>
-                            <div class="col-lg-6">
+                            <label for="address" class="col-lg-4 control-label">Адрес</label>
+                            <div class="col-lg-4">
                                 <textarea class="form-control" id="address" rows="2" readonly>{{address}}</textarea>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="passport" class="col-lg-3 control-label">Номер паспорта</label>
-                            <div class="col-lg-6">
+                            <label for="passport" class="col-lg-4 control-label">Номер паспорта</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="passport" readonly value="{{passport}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="sex" class="col-lg-3 control-label">Пол</label>
-                            <div class="col-lg-6">
+                            <label for="sex" class="col-lg-4 control-label">Пол</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="sex" readonly value="{{sex}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="birthday" class="col-lg-3 control-label">Дата рождения</label>
-                            <div class="col-lg-6">
+                            <label for="birthday" class="col-lg-4 control-label">Дата рождения</label>
+                            <div class="col-lg-4">
                                 <input type="date" class="form-control" id="birthday" readonly>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="phone1" class="col-lg-3 control-label">Городской номер</label>
-                            <div class="col-lg-6">
+                            <label for="phone1" class="col-lg-4 control-label">Городской номер</label>
+                            <div class="col-lg-4">
                                 <input type="tel" class="form-control" id="phone1" readonly value="{{phone1}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="phone2" class="col-lg-3 control-label">Мобильный номер</label>
-                            <div class="col-lg-6">
+                            <label for="phone2" class="col-lg-4 control-label">Мобильный номер</label>
+                            <div class="col-lg-4">
                                 <input type="tel" class="form-control" id="phone2" readonly value="{{phone2}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="skype" class="col-lg-3 control-label">Skype</label>
-                            <div class="col-lg-6">
+                            <label for="skype" class="col-lg-4 control-label">Skype</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="skype" readonly value="{{skype}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="lang" class="col-lg-3 control-label">Язык</label>
-                            <div class="col-lg-6">
+                            <label for="lang" class="col-lg-4 control-label">Язык</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="lang" readonly value="{{lang}}">
                             </div>
                         </div>
@@ -180,55 +180,55 @@
                 <!--конец вкладки "Мои данные"-->
 
                 <!--Вкладка "редактировать данные"-->
-                <div id="edit" class="tab-pane fade">
-                    <form class="form-horizontal">
+                <div id="edit" class="tab-pane fade row">
+                    <form class="form-horizontal col-lg-10 col-lg-offset-1">
                         <div class="form-group">
-                            <label for="fio" class="col-lg-3 control-label">ФИО</label>
-                            <div class="col-lg-6">
+                            <label for="fio" class="col-lg-4 control-label">ФИО</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="fio" value="{{fullname}}">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
                         <div class="form-group">
-                            <label for="country" class="col-lg-3 control-label">Страна</label>
-                            <div class="col-lg-6">
+                            <label for="country" class="col-lg-4 control-label">Страна</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="country" value="{{country}}">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
                         <div class="form-group">
-                            <label for="e-mail" class="col-lg-3 control-label">E-mail</label>
-                            <div class="col-lg-6">
+                            <label for="e-mail" class="col-lg-4 control-label">E-mail</label>
+                            <div class="col-lg-4">
                                 <input type="email" class="form-control" id="e-mail" value="{{e-mail}}">
                             </div>
-                            <div class="col-lg-3 validation"></div>
+                            <div class="col-lg-4 validation"></div>
                         </div>
                         <div class="wrapper-center">
                             <input type="submit" class="btn red-btn" value="Редактировать мои данные">
                         </div>
                     </form>
 
-                    <form class="form-horizontal" id="change-pass">
+                    <form class="form-horizontal col-lg-10 col-lg-offset-1" id="change-pass">
                         <div class="form-group">
-                            <label for="pass" class="col-lg-3 control-label">Текущий пароль</label>
-                            <div class="col-lg-6">
+                            <label for="pass" class="col-lg-4 control-label">Текущий пароль</label>
+                            <div class="col-lg-4">
                                 <input type="password" class="form-control" id="pass">
                             </div>
-                            <div class="col-lg-3"></div>
+                            <div class="col-lg-4"></div>
                         </div>
                         <div class="form-group">
-                            <label for="newpass" class="col-lg-3 control-label">Новый пароль</label>
-                            <div class="col-lg-6">
+                            <label for="newpass" class="col-lg-4 control-label">Новый пароль</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="newpass">
                             </div>
-                            <div class="col-lg-3"><span class="glyphicon glyphicon-eye-open"></span></div>
+                            <div class="col-lg-4"><span class="glyphicon glyphicon-eye-open"></span></div>
                         </div>
                         <div class="form-group">
-                            <label for="newpass2" class="col-lg-3 control-label">Повторите пароль</label>
-                            <div class="col-lg-6">
+                            <label for="newpass2" class="col-lg-4 control-label">Повторите пароль</label>
+                            <div class="col-lg-4">
                                 <input type="text" class="form-control" id="newpass2">
                             </div>
-                            <div class="col-lg-3"><span class="glyphicon glyphicon-eye-open"></span></div>
+                            <div class="col-lg-4"><span class="glyphicon glyphicon-eye-open"></span></div>
                         </div>
                         <div class="wrapper-center">
                             <input type="submit" class="btn red-btn" value="Изменить пароль">
