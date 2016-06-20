@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../main/css/mystyles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="fonts/glyphicons-halflings-regular.ttf">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../main/js/myscript.js"></script>
+    <script src="js/script.js"></script>
+    <title>Личный кабинет "Хорс-Инвест"</title>
+</head>
+<body class="container-fluid">
+<header class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+        <!-- Navbar start -->
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header hidden visible-xs">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-collapse" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand left" href="../main/main.html"><img src="../main/images/логотип белый.png" width="120px"></a>
+                </div>
+
+                <!-- Collect the nav links -->
+                <div class="collapse navbar-collapse" id="bs-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a class="nav-logo hidden-xs" href="../main/main.html"><img src="../main/images/logobook_hors.png" width="150px"></a></li>
+                        <li class="hidden-xs"><a href="../main/targets.html">Целевые программы</a></li>
+                        <li class="hidden-xs"><a href="../main/about.html">О нас</a></li>
+                        <li class="visible-xs"><a href="../main/main.html">На главную страницу</a></li>
+                        <li class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></li>
+                        <li class="hidden-xs"><a href="../main/main.html#kr-address" title="Контакты">
+                            <img src="../main/images/карта_иконка.png" height="20px" class="map-icon"></a>
+                        </li>
+                        <li class="dropdown hidden-xs">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false" title="Язык">RU <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">EN</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../main/main.html">Выход</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- Navbar end -->
+    </div>
+</header>
+
+<div class="col-lg-12 hello-row">
+    <div class="col-lg-6">
+        <a href="answers.html"><i>У Вас возникли вопросы?</i></a>
+    </div>
+    <div class="col-lg-6">
+        <aside class="username"><i>Здравствуйте, <span>{{ username }}</span>! </i>
+            <a data-toggle="modal" data-target="#noteModal">
+                <span class="message text-nowrap">
+                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                    <sup>1</sup>
+                </span>
+            </a>
+            <span class="nomessage hidden">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+            </span>
+        </aside>
+    </div>
+</div>
+<nav class="navbar col-lg-12">
+    <ul class="nav navbar-nav lk-nav">
+        <li><a href="myaccount.html">Мои счета</a></li>
+        <li><a href="operatons.html">Операции</a></li>
+        <li><a href="mydata.html">Мои данные</a></li>
+        <li><a href="myclients.html">Мои клиенты</a></li>
+        <li><a href="reports.html">Отчеты</a></li>
+        <li><a href="docs.html">Документы</a></li>
+        <li><a href="achivements.html">Достижения</a></li>
+        <li><a href="rescind.html">Расторгнуть договор</a></li>
+    </ul>
+</nav>
+
+<div class="col-lg-12">
+    <div class="gray-title title-row text-right">
+        <i>Выберите нужную операцию</i>
+    </div>
+    <div class="page-content">
+        <ul class="nav nav-pills col-lg-4 col-lg-offset-4">
+
+            <li class="dropdown select">
+                <a class="dropdown-toggle text-center" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Выберите нужную операцию <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li role="presentation"><a href="#getloan" data-toggle="tab">Получение займа</a></li>
+                    <li role="presentation"><a href="#cashcv" data-toggle="tab">Снятие части ЦВ (начисления)</a></li>
+                    <li role="presentation"><a href="#cashpv" data-toggle="tab">Снятие партнерских вознаграждений</a></li>
+                    <li role="presentation"><a href="#perloan" data-toggle="tab">Погашение процентов по займу</a></li>
+                    <li role="presentation"><a href="#closingloan" data-toggle="tab">Закрытие займа</a></li>
+                    <li role="presentation"><a href="#changepr" data-toggle="tab">Переход на другую программу</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        <div class="row">
+            <div class="tab-content">
+
+                <!--Получение займа-->
+                <div id="getloan" class="tab-pane fade wrapper-center col-lg-10 col-lg-offset-1">
+                    <h4>Получение займа</h4>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="loansum" class="control-label col-lg-4">Сумма займа</label>
+                            <div class="col-lg-4 text-center">
+                                <input type="text" class="form-control" id="loansum">
+                            </div>
+                            <div class="col-lg-4 validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 text-nowrap">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Пополнение займом ЦВ
+                                    </label>
+                                </div>
+                            </div>
+                            <label for="pluscv" class="control-label col-lg-4">Сумма займа</label>
+                            <div class="col-lg-4 text-center">
+                                <input type="text" class="form-control" id="pluscv" disabled>
+                            </div>
+                            <div class="col-lg-4 validation"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12 text-nowrap">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Выдача займа
+                                    </label>
+                                </div>
+                            </div>
+                            <label for="cash" class="control-label col-lg-4">Сумма займа</label>
+                            <div class="col-lg-4 text-center">
+                                <input type="text" class="form-control" id="cash" disabled>
+                            </div>
+                            <div class="col-lg-4 validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="radio-inline">
+                                <input type="radio" name="money" id="money" value="money">Наличными
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="money" id="check" value="check">Безналичными
+                            </label>
+                            <br>
+                            <div class="col-lg-4 col-lg-offset-4">
+                                <select class="form-control acc-select" disabled>
+                                    <option>Выбрать счёт</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <a href="myaccount.html#addacc" class="red-link">Добавить новый счёт</a>
+                    </form>
+                    <br><br>
+                    <!--чтобы заменить кнопку на текст или наоборот - нужно добавить или убрать класс "hidden"
+                    или принудительно в css прописать свойство dislay:none (or visible) при нужной кондиции-->
+                    <input class="btn red-btn" type="submit" value="Формировать документы">
+                    <p class="hidden"><i>Извините, данная операция для Вас недоступна.</i></p>
+                </div>
+                <!--конец получение займа-->
+
+                <!--снятие цв-->
+                <div id="cashcv" class="tab-pane fade col-lg-12 wrapper-center">
+                    <h4>Снятие части целевого вклада</h4>
+                    <form class="form-horizontal col-lg-10 col-lg-offset-1" role="form">
+                        <div class="form-group">
+                            <label for="cashing" class="control-label col-lg-4 text-nowrap">Введите сумму для снятия</label>
+                            <div class="col-lg-4 text-center">
+                                <input type="text" class="form-control" id="cashing">
+                            </div>
+                            <div class="col-lg-4 validation"></div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label class="radio-inline"><input type="radio" name="money" id="mon" value="money">Наличными</label>
+                            <label class="radio-inline"><input type="radio" name="money" id="che" value="check">Безналичными</label>
+                            <br>
+                            <div class="col-lg-4 col-lg-offset-4">
+                                <select class="form-control acc-select">
+                                    <option>Выбрать счёт</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <a href="myaccount.html#addacc" class="red-link">Добавить новый счёт</a>
+                        <br><br>
+                        <!--чтобы заменить кнопку на текст или наоборот - нужно добавить или убрать класс "hidden"
+                        или принудительно в css прописать свойство dislay:none (or visible) при нужной кондиции-->
+                        <input class="btn red-btn" type="submit" value="Формировать документы">
+                        <p class="hidden"><i>Извините, данная операция для Вас недоступна.</i></p>
+                    </form>
+                </div>
+                <!--конец снятие цв-->
+
+                <!--снятие парт. возн.-->
+                <div id="cashpv" class="tab-pane fade col-lg-12 wrapper-center">
+                    <h4>Снятие партнерских вознаграждений</h4>
+                    <form class="form-horizontal col-lg-10 col-lg-offset-1" role="form">
+                        <div class="form-group">
+                            <label for="cashing-p" class="control-label col-lg-4 text-nowrap">Введите сумму для снятия</label>
+                            <div class="col-lg-4 text-center">
+                                <input type="text" class="form-control" id="cashing-p">
+                            </div>
+                            <div class="col-lg-4 validation"></div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label class="radio-inline"><input type="radio" name="money" id="mon-p" value="money">Наличными</label>
+                            <label class="radio-inline"><input type="radio" name="money" id="che-p" value="check">Безналичными</label>
+                            <br>
+                            <div class="col-lg-4 col-lg-offset-4">
+                                <select class="form-control acc-select">
+                                    <option>Выбрать счёт</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <a href="myaccount.html#addacc" class="red-link">Добавить новый счёт</a>
+                        <br><br>
+                        <!--чтобы заменить кнопку на текст или наоборот - нужно добавить или убрать класс "hidden"
+                        или принудительно в css прописать свойство dislay:none (or visible) при нужной кондиции-->
+                        <input class="btn red-btn" type="submit" value="Формировать документы">
+                        <p class="hidden"><i>Извините, данная операция для Вас недоступна.</i></p>
+                    </form>
+                </div>
+                <!--конец снятие парт. возн.-->
+
+                <!--погашение процентов-->
+                <div id="perloan" class="tab-pane fade col-lg-12 wrapper-center">
+                    <h4>Погашение процентов по займу</h4>
+                    <p><i class="small">Данное заявление будет принято, если оно будет передано,<br>
+                        отправлено в офис с 10 до 18 (по МСК) и с понедельника по пятницу<br>
+                        в тот же день, когда было подписано.<br>
+                        В случае несоблюдения данного правила заявление обработано не будет.<br>
+                        31-го числа заявления не принимаются.<br><br></i></p>
+                    <form class="form-horizontal col-lg-10 col-lg-offset-1">
+                        <div class="form-group">
+                            <label for="percent" class="control-label col-lg-4">Сумма %</label>
+                            <div class="col-lg-4 text-center">
+                                <input type="text" class="form-control" id="percent">
+                            </div>
+                            <div class="col-lg-4 validation"></div>
+                        </div>
+                        <br>
+                    </form>
+                    <!--чтобы заменить кнопку на текст или наоборот - нужно добавить или убрать класс "hidden"
+                    или принудительно в css прописать свойство dislay:none (or visible) при нужной кондиции-->
+                    <input class="btn red-btn" type="submit" value="Формировать документы">
+                    <p class="hidden"><i>Извините, данная операция для Вас недоступна.</i></p>
+                </div>
+                <!--конец погашения процентов-->
+
+                <!--закрытие займа-->
+                <div id="closingloan" class="tab-pane fade col-lg-12 wrapper-center">
+                    <h4>Закрытие займа</h4>
+                    <p><i class="small">Данное заявление будет принято, если оно будет передано,<br>
+                        отправлено в офис с 10 до 18 (по МСК) и с понедельника по пятницу<br>
+                        в тот же день, когда было подписано.<br>
+                        В случае несоблюдения данного правила заявление обработано не будет.<br>
+                        31-го числа заявления не принимаются.<br><br></i></p>
+                    <input class="btn red-btn" type="submit" value="Формировать документы">
+                </div>
+                <!--конец закрытие займа-->
+
+                <!--Переход на другую программу-->
+                <div id="changepr" class="tab-pane fade col-lg-12 wrapper-center">
+                    <h4>Переход на другую программу</h4>
+                    <p><i class="small">Данное заявление будет принято, если оно будет передано,<br>
+                        отправлено в офис с 10 до 18 (по МСК) и с понедельника по пятницу<br>
+                        в тот же день, когда было подписано.<br>
+                        В случае несоблюдения данного правила заявление обработано не будет.<br>
+                        31-го числа заявления не принимаются.<br><br></i></p>
+                    <!--чтобы заменить кнопку на текст или наоборот - нужно добавить или убрать класс "hidden"
+                    или принудительно в css прописать свойство dislay:none (or visible) при нужной кондиции-->
+                    <input class="btn red-btn hidden" type="submit" value="Формировать документы">
+                    <p><i>Извините, данная операция для Вас недоступна.</i></p>
+                </div>
+                <!--конец перехода на др. программу-->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="dictionary">
+            <p><i><b>Баланс основного счёта</b> - денежные средства, которые работают на приумножение.</i></p>
+            <p><i><b>Баланс счёта Займа</b> - сумма которую Пайщик взял в Займ плюс процент на сегодняшний день.</i></p>
+            <p><i><b>Доступный баланс для совершения операций</b> - максимально доступные денежные средства для
+                совершения операций, без полного закрытия счёта.</i></p>
+            <p><i><b>Доступный баланс при закрытии счета</b> - максимально доступные денежные средства при закрытии счёта.</i></p>
+        </div>
+    </div>
+</div>
+</div>
+
+<footer class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="site-map">
+            <li><a href="../main/targets.html">Целевые программы</a></li>
+            <li><a href="../main/about.html">О нас</a></li>
+            <li><a href="../main/main.html#kr-address">Контакты</a></li>
+            <li><a href="../main/news.html">Новости</a></li>
+            <li><a href="../main/faq.html">Вопросы и ответы</a></li>
+            <li class="small-number hidden-xs">
+                <span class="small">8 (800)</span> <b>234 81 88</b>
+            </li>
+            <li class="hidden-xs"><a href="../main/main.html"><img src="../main/images/логотип%20белый.png" width="100px"></a></li>
+        </ul>
+        <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
+    </div>
+</footer>
+
+
+<div class="modal fade" id="noteModal" tabindex="-1" role="dialog" aria-labelledby="noteModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="noteModalLabel">
+                    Ознакомьтесь, это может быть важно!
+                </h4>
+                <div class="red-angle"></div>
+            </div>
+            <div class="modal-body wrapper-center">
+                <p class="small text-justify"><i>
+                    Уважаемый Сергей Владимирович,
+                    <br><br>
+                    у вас заканчивается договор!  Вы можете продлить договор, заполнив соответствующую форму.
+                    В случае если Вы не хотите по каким бы то ни было причинам дальше сотрудничать,
+                    то Вы можете просто закрыть договор, воспользовавшись основным меню Личного Кабинета,
+                    в разделе <a href="rescind.html" class="red-link">«Расторгнуть договор»</a>.
+                </i></p><br>
+                <button class="red-btn btn modal-button" data-toggle="modal" data-target="#successModal">Пролонгировать договор</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="successModalLabel">
+                    Операция успешно выполнена
+                </h4>
+                <div class="red-angle"></div>
+            </div>
+            <div class="modal-body wrapper-center">
+                <button class="red-btn btn">Скачать документы</button>
+                <button class="gray-btn btn">Вернуться на сайт</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
