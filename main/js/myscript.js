@@ -134,7 +134,7 @@ function init(){
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: 'images/флажок.png',
+            iconImageHref: '../../main/images/флажок.png',
             // Размеры метки.
             iconImageSize: [150, 110],
             // Смещение левого верхнего угла иконки относительно
@@ -149,7 +149,7 @@ function init(){
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: 'images/флажок.png',
+            iconImageHref: '../../main/images/флажок.png',
             // Размеры метки.
             iconImageSize: [150, 110],
             // Смещение левого верхнего угла иконки относительно

@@ -17,62 +17,45 @@
     <script src="../../main/js/myscript.js"></script>
     <script src="../../dashboard/js/script.js"></script>
     <script src="../js/mob_script.js"></script>
-    <title>О компании</title>
+    <title>Частые вопросы</title>
 </head>
-<body class="container-fluid faq">
+<body class="container-fluid">
 <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
         <!-- Navbar start -->
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
-                <div class="navbar-header hidden visible-xs">
+                <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#bs-collapse" aria-expanded="false">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="main.html"><img src="images/логотип белый.png" width="120px"></a>
+                    <a class="navbar-brand" href="main.html"><img src="../../main/images/логотип белый.png" width="90px"></a>
+                    <span class="navbar-text number"><span class="small">8 (800)</span> <b>234 81 88</b></span>
                 </div>
 
                 <!-- Collect the nav links -->
                 <div class="collapse navbar-collapse" id="bs-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a class="nav-logo hidden-xs" href="main.html"><img src="images/логотип белый.png" width="120px"></a></li>
-                        <li class="hidden visible-xs"><a data-toggle="modal" data-target="#myModal1">Заключить договор</a></li>
                         <li><a href="targets.html">Целевые программы</a></li>
-                        <li class="hidden visible-xs"><a href="news.html">Новости</a></li>
-                        <li class="hidden visible-xs"><a href="faq.html">Вопросы и ответы</a></li>
-                        <li class="hidden visible-xs"><a href="kindness.html">Добрые дела</a></li>
+                        <li><a data-toggle="modal" data-target="#myModal1">Заключить договор</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="faq.html">Вопросы и ответы</a></li>
+                        <li><a href="kindness.html">Добрые дела</a></li>
                         <li><a href="about.html">О нас</a></li>
-                        <li class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></li>
-                        <li class="hidden-xs"><a href="main.html#kr-address" title="Контакты">
-                            <img src="images/карта_иконка.png" height="20px" class="map-icon"></a>
-                        </li>
-                        <li class="dropdown hidden-xs">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                               aria-expanded="false" title="Язык">RU <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">EN</a></li>
-                            </ul>
-                        </li>
-                        <li class="hidden-xs"><a class="modal-button" data-toggle="modal" data-target="#myModal3" title="Личный кабинет" >
-                            <img src="images/ключ.png" height="25px"></a>
-                        </li>
-
-                        <li class="hidden visible-xs"><a>Личный кабинет</a></li>
-                        <li class="hidden visible-xs"><a href="main.html#kr-address">Контакты</a></li>
+                        <li><a data-toggle="modal" data-target="#myModal3">Личный кабинет</a></li>
+                        <li><a href="main.html#kr-address">Контакты</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
         <!-- Navbar end -->
-    </div>
 </div>
-<main class="container">
+
+<main>
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-            <div class="panel faq-panel main-panel navbar-fixed-bottom">
+            <div class="panel faq-panel main-panel">
                 <div class="panel-heading">
                     <h3 class="panel-title">Часто задаваемые вопросы</h3>
                     <div class="white-bg"><div class="red-angle"></div></div>
@@ -452,29 +435,19 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </main>
+
 <footer class="row">
-    <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1">
-        <ul class="site-map text-nowrap">
-            <li><a href="targets.html">Целевые программы</a></li>
-            <li><a href="about.html">О нас</a></li>
-            <li><a href="main.html#kr-address">Контакты</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="faq.html">Вопросы и ответы</a></li>
-            <li class="small-number hidden-xs">
-                <span class="small">8 (800)</span> <b>234 81 88</b>
-            </li>
-            <li class="hidden-xs"><a href="main.html"><img src="images/логотип%20белый.png" width="100px"></a></li>
-        </ul>
+    <div class="text-center col-xs-12">
+        <div class="social">
+            <p>Мы в социальных сетях:</p>
+            <a href="https://vk.com/club78335588"><div class="vk"></div></a>
+            <a href="https://twitter.com/HorsInvest"><div class="tw"></div></a>
+            <a href="https://www.facebook.com/"><div class="fb"></div></a>
+            <a href="https://plus.google.com/"><div class="go"></div></a>
+        </div>
         <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
-    </div>
-    <div class="social bottom-social hidden visible-xs">
-        <a href="https://vk.com/club78335588"><div class="vk"></div></a>
-        <a href="https://twitter.com/HorsInvest"><div class="tw"></div></a>
-        <a href="https://www.facebook.com/"><div class="fb"></div></a>
-        <a href="https://plus.google.com/"><div class="go"></div></a>
     </div>
 </footer>
 

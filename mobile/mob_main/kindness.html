@@ -7,7 +7,6 @@
 
     <link href="../../main/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../main/css/mystyles.css" rel="stylesheet">
-    <link href="../../dashboard/css/styles.css" rel="stylesheet">
     <link href="../css/mob_styles.css" rel="stylesheet">
     <link href="../../main/fonts/glyphicons-halflings-regular.ttf">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
@@ -17,82 +16,45 @@
     <script src="../../main/js/myscript.js"></script>
     <script src="../../dashboard/js/script.js"></script>
     <script src="../js/mob_script.js"></script>
-    <title>О компании</title>
+    <title>Добрые дела</title>
 </head>
 <body class="container-fluid">
 <header class="row info-block">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
         <!-- Navbar start -->
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
-                <div class="navbar-header hidden visible-xs">
+                <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#bs-collapse" aria-expanded="false">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="main.html"><img src="images/логотип белый.png" width="120px"></a>
+                    <a class="navbar-brand" href="main.html"><img src="../../main/images/логотип белый.png" width="90px"></a>
+                    <span class="navbar-text number"><span class="small">8 (800)</span> <b>234 81 88</b></span>
                 </div>
 
                 <!-- Collect the nav links -->
                 <div class="collapse navbar-collapse" id="bs-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a class="nav-logo hidden-xs" href="main.html"><img src="images/логотип белый.png" width="120px"></a></li>
-                        <li class="hidden visible-xs"><a data-toggle="modal" data-target="#myModal1">Заключить договор</a></li>
                         <li><a href="targets.html">Целевые программы</a></li>
-                        <li class="hidden visible-xs"><a href="news.html">Новости</a></li>
-                        <li class="hidden visible-xs"><a href="faq.html">Вопросы и ответы</a></li>
-                        <li class="hidden visible-xs"><a href="kindness.html">Добрые дела</a></li>
+                        <li><a data-toggle="modal" data-target="#myModal1">Заключить договор</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="faq.html">Вопросы и ответы</a></li>
+                        <li><a href="kindness.html">Добрые дела</a></li>
                         <li><a href="about.html">О нас</a></li>
-                        <li class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></li>
-                        <li class="hidden-xs"><a href="main.html#kr-address" title="Контакты">
-                            <img src="images/карта_иконка.png" height="20px" class="map-icon"></a>
-                        </li>
-                        <li class="dropdown hidden-xs">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                               aria-expanded="false" title="Язык">RU <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">EN</a></li>
-                            </ul>
-                        </li>
-                        <li class="hidden-xs"><a class="modal-button" data-toggle="modal" data-target="#myModal3" title="Личный кабинет" >
-                            <img src="images/ключ.png" height="25px"></a>
-                        </li>
-
-                        <li class="hidden visible-xs"><a>Личный кабинет</a></li>
-                        <li class="hidden visible-xs"><a href="main.html#kr-address">Контакты</a></li>
+                        <li><a data-toggle="modal" data-target="#myModal3">Личный кабинет</a></li>
+                        <li><a href="main.html#kr-address">Контакты</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
         <!-- Navbar end -->
-    </div>
-
-    <!-- Nav links start-->
-    <div class="nav-links hidden-xs">
-        <ul class="nav">
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="faq.html">Вопросы и ответы</a></li>
-            <li><a href="kindness.html">Добрые дела</a></li>
-        </ul>
-    </div>
-    <!-- Nav links end -->
-
-    <div class="social text-right hidden-xs">
-        <p>Мы в социальных сетях:</p>
-        <a href="https://vk.com/club78335588"><div class="vk"></div></a>
-        <a href="https://twitter.com/HorsInvest"><div class="tw"></div></a>
-        <a href="https://www.facebook.com/"><div class="fb"></div></a>
-        <a href="https://plus.google.com/"><div class="go"></div></a>
-    </div>
-
-    <div class="arrow-down hidden-xs"></div>
 
     <div id="myCarousel" class="carousel">
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="images/good_deeds.jpg" width="100%">
+                <img src="../../main/images/good_deeds_mob.jpg" width="100%">
                 <div class="carousel-caption">
                     <p>Мы совершаем</p>
                     <h1 class="text-uppercase">Добрые<br> дела</h1>
@@ -102,13 +64,14 @@
         </div>
     </div>
 </header>
+
 <main>
     <div class="row">
-        <section class="col-lg-8 col-lg-offset-2 col-md-12">
-            <div class="media article">
-                <div class="media-left">
+        <section class="col-xs-12">
+            <div class="article">
+                <div class="col-xs-12 text-center">
                     <!-- Только квадратные картинки!!!! -->
-                    <img class="img-circle article-img" src="images/children.jpg">
+                    <img class="img-circle article-img" src="../../main/images/children.jpg">
                 </div>
                 <div class="media-body article-text">
                     <div class="media-heading">
@@ -132,14 +95,14 @@
                     </a>
                     <div class="collapse" id="collapsePhoto">
                         <div class="row">
-                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                <img src="images/k1.jpg" class="img-responsive img-thumbnail">
+                            <div class="col-xs-12">
+                                <img src="../../main/images/k1.jpg" class="img-responsive img-thumbnail">
                             </div>
-                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                <img src="images/k3.jpg" class="img-responsive img-thumbnail">
+                            <div class="col-xs-12">
+                                <img src="../../main/images/k3.jpg" class="img-responsive img-thumbnail">
                             </div>
-                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                <img src="images/k2.jpg" class="img-responsive img-thumbnail">
+                            <div class="col-xs-12">
+                                <img src="../../main/images/k2.jpg" class="img-responsive img-thumbnail">
                             </div>
                         </div>
                     </div>
@@ -150,35 +113,25 @@
 
     <div class="row lgray thank">
         <h3 class=" text-center">Благодарственные письма</h3>
-        <section class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1 letters">
-            <img src="images/благодарственное1ё.png" height="250px" width="auto">
-            <img src="images/благодарственное2.png" height="250px" width="auto" class="hidden-xs">
+        <section class="col-xs-12">
+            <img src="../../main/images/благодарственное1ё.png" height="250px" width="auto">
+            <img src="../../main/images/благодарственное2.png" height="250px" width="auto">
         </section>
     </div>
 </main>
+
 <footer class="row">
-    <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1">
-        <ul class="site-map text-nowrap">
-            <li><a href="targets.html">Целевые программы</a></li>
-            <li><a href="about.html">О нас</a></li>
-            <li><a href="main.html#kr-address">Контакты</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="faq.html">Вопросы и ответы</a></li>
-            <li class="small-number hidden-xs">
-                <span class="small">8 (800)</span> <b>234 81 88</b>
-            </li>
-            <li class="hidden-xs"><a href="main.html"><img src="images/логотип%20белый.png" width="100px"></a></li>
-        </ul>
+    <div class="text-center col-xs-12">
+        <div class="social">
+            <p>Мы в социальных сетях:</p>
+            <a href="https://vk.com/club78335588"><div class="vk"></div></a>
+            <a href="https://twitter.com/HorsInvest"><div class="tw"></div></a>
+            <a href="https://www.facebook.com/"><div class="fb"></div></a>
+            <a href="https://plus.google.com/"><div class="go"></div></a>
+        </div>
         <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
     </div>
-    <div class="social bottom-social hidden visible-xs">
-        <a href="https://vk.com/club78335588"><div class="vk"></div></a>
-        <a href="https://twitter.com/HorsInvest"><div class="tw"></div></a>
-        <a href="https://www.facebook.com/"><div class="fb"></div></a>
-        <a href="https://plus.google.com/"><div class="go"></div></a>
-    </div>
 </footer>
-
 
 <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
     <div class="modal-dialog" role="document">
