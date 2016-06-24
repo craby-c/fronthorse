@@ -86,6 +86,7 @@ $(document).ready(function(){
         }
     );
 
+    //промотка хедера
     var d = $("#details");
     if (d.length != 0){
         $('html,body').stop().animate({ scrollTop: d.offset().top }, 1500);

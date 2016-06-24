@@ -5,59 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/mystyles.css" rel="stylesheet">
-    <link href="fonts/glyphicons-halflings-regular.ttf">
+    <link href="../../main/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../main/css/mystyles.css" rel="stylesheet">
+    <link href="../css/mob_styles.css" rel="stylesheet">
+    <link href="../../main/fonts/glyphicons-halflings-regular.ttf">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/myscript.js"></script>
+    <script src="../../main/js/bootstrap.min.js"></script>
+    <script src="../../main/js/myscript.js"></script>
+    <script src="../../dashboard/js/script.js"></script>
+    <script src="../js/mob_script.js"></script>
     <title>О компании</title>
 </head>
 <body class="container-fluid">
 <header class="row info-block">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+    <div class="col-xs-12">
         <!-- Navbar start -->
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
-                <div class="navbar-header hidden visible-xs">
+                <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#bs-collapse" aria-expanded="false">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="main.html"><img src="images/логотип белый.png" width="120px"></a>
+                    <a class="navbar-brand" href="main.html"><img src="../../main/images/логотип белый.png" width="90px"></a>
+                    <span class="navbar-text number"><span class="small">8 (800)</span> <b>234 81 88</b></span>
                 </div>
 
                 <!-- Collect the nav links -->
                 <div class="collapse navbar-collapse" id="bs-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a class="nav-logo hidden-xs" href="main.html"><img src="images/логотип белый.png" width="120px"></a></li>
-                        <li class="hidden visible-xs"><a data-toggle="modal" data-target="#myModal1">Заключить договор</a></li>
                         <li><a href="targets.html">Целевые программы</a></li>
-                        <li class="hidden visible-xs"><a href="news.html">Новости</a></li>
-                        <li class="hidden visible-xs"><a href="faq.html">Вопросы и ответы</a></li>
-                        <li class="hidden visible-xs"><a href="kindness.html">Добрые дела</a></li>
+                        <li><a data-toggle="modal" data-target="#myModal1">Заключить договор</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="faq.html">Вопросы и ответы</a></li>
+                        <li><a href="kindness.html">Добрые дела</a></li>
                         <li><a href="about.html">О нас</a></li>
-                        <li class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></li>
-                        <li class="hidden-xs"><a href="main.html#kr-address" title="Контакты">
-                            <img src="images/карта_иконка.png" height="20px" class="map-icon"></a>
-                        </li>
-                        <li class="dropdown hidden-xs">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                               aria-expanded="false" title="Язык">RU <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">EN</a></li>
-                            </ul>
-                        </li>
-                        <li class="hidden-xs"><a class="modal-button" data-toggle="modal" data-target="#myModal3" title="Личный кабинет" >
-                            <img src="images/ключ.png" height="25px"></a>
-                        </li>
-
-                        <li class="hidden visible-xs"><a>Личный кабинет</a></li>
-                        <li class="hidden visible-xs"><a href="main.html#kr-address">Контакты</a></li>
+                        <li><a data-toggle="modal" data-target="#myModal3">Личный кабинет</a></li>
+                        <li><a href="main.html#kr-address">Контакты</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -65,102 +53,25 @@
         <!-- Navbar end -->
     </div>
 
-
-    <a class="btn red-btn btn-deal btn-lg hidden-xs" data-toggle="modal" data-target="#myModal1">Заключить договор</a>
-
-    <!-- Nav links start-->
-    <div class="nav-links hidden-xs">
-        <ul class="nav">
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="faq.html">Вопросы и ответы</a></li>
-            <li><a href="kindness.html">Добрые дела</a></li>
-        </ul>
-    </div>
-    <!-- Nav links end -->
-
-    <div class="social text-right hidden-xs">
-        <p>Мы в социальных сетях:</p>
-        <a href="https://vk.com/club78335588"><div class="vk"></div></a>
-        <a href="https://twitter.com/HorsInvest"><div class="tw"></div></a>
-        <a href="https://www.facebook.com/"><div class="fb"></div></a>
-        <a href="https://plus.google.com/"><div class="go"></div></a>
-    </div>
-
-    <div class="arrow-down hidden-xs"></div>
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-        <!-- Wrapper for slides -->
+    <div id="myCarousel" class="carousel">
         <div class="carousel-inner" role="listbox">
-            <div class="item">
-                <img src="images/trip.jpg" width="100%">
-                <div class="carousel-caption">
-                    <p>Позвольте себе</p>
-                    <h1 class="text-uppercase">Путешествие <br> в любую <br> страну мира</h1>
-                    <span>Выгодные предложения по вкладам для Вас. <br> Специальные целевые программы.</span>
-                </div>
-            </div>
-
             <div class="item active">
-                <img src="images/company.jpg" width="100%">
+                <img src="../../main/images/company_mob.jpg" width="100%">
                 <div class="carousel-caption">
                     <p>Позвольте себе</p>
                     <h1 class="text-uppercase">Больше<br> спокойствия</h1>
                     <span>Целевые программы для безопасности вклада <br>и минимизация рисков.</span>
                 </div>
             </div>
-
-            <div class="item">
-                <img src="images/health.jpg" width="100%">
-                <div class="carousel-caption">
-                    <p>Позвольте себе</p>
-                    <h1 class="text-uppercase">Больше заботы <br>о здоровье</h1>
-                    <span>Страхование здоровья для Вас и Вашей семьи.</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="images/retire.jpg" width="100%">
-                <div class="carousel-caption">
-                    <p>Позвольте себе</p>
-                    <h1 class="text-uppercase">Не думать <br> о пенсии</h1>
-                    <span>Продуманная пенсионная программа <br> для беззаботной старости.</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="images/target-program.jpg" width="100%">
-                <div class="carousel-caption">
-                    <p>Позвольте себе</p>
-                    <h1 class="text-uppercase">Новое<br> качество<br> жизни</h1>
-                    <span>Выгодные целевые программы.</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="images/property.jpg" width="100%">
-                <div class="carousel-caption">
-                    <p>Позвольте себе</p>
-                    <h1 class="text-uppercase">Роскошный<br> дом</h1>
-                    <span>Выгодные предложения <br>по инвестициям в недвижимость.</span>
-                </div>
-            </div>
         </div>
-
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control hidden-xs" href="#myCarousel" role="button" data-slide="prev">
-        <span aria-hidden="true"><img src="images/arrow-lw.png"></span>
-    </a>
-    <a class="right carousel-control hidden-xs" href="#myCarousel" role="button" data-slide="next">
-        <span aria-hidden="true"><img src="images/arrow-rw.png"></span>
-    </a>
-
+    <a class="btn red-btn btn-deal btn-lg" data-toggle="modal" data-target="#myModal1">Заключить договор</a>
 </header>
+
 <main>
-    <div class="row" id="details">
-        <section class="col-lg-8 col-lg-offset-2 col-md-12">
+    <div class="row">
+        <section class="col-xs-12">
             <h3 class="text-center">О нас...</h3>
             <p class="text-justify">
                 Наша компания имеет достаточно ресурсов, опыта и знаний, чтобы предлагать Вам
@@ -178,74 +89,44 @@
                 Будем рады сотрудничеству.
             </p>
         </section>
-        <div class="col-lg-8 col-lg-offset-2 col-md-12">
-            <div class="circles">
-                <div class="little-one"></div>
-                <div class="big-one"></div>
-                <div class="little-one"></div>
-            </div>
-        </div>
-        <section class="col-lg-8 col-lg-offset-2 col-md-12">
-            <div class="media b-box">
-                <div class="media-left media-middle">
-                    <img class="media-object" src="images/подарок.png" alt="Страхование" height="100px" width="auto">
+        <section class="col-xs-12 text-center">
+                <div class="col-xs-12">
+                    <img class="gift" src="../../main/images/подарок.png" alt="Страхование" height="100px" width="auto">
                 </div>
-                <div class="media-body">
-                    <h3 class="media-heading">Страхование жизни</h3>
-                    <i>Мы обеспечиваем страхование жизни наших клиентов на сумму до 250000 в ПОДАРОК</i>
+                <div class="gift-text">
+                    <h3>Страхование жизни</h3>
+                    <span>Мы обеспечиваем страхование жизни наших клиентов на сумму<br> до 250000 рублей в ПОДАРОК</span>
                 </div>
-            </div>
         </section>
     </div>
     <section class="row lgray">
         <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12">
             <h3 class="text-center">Наши преимущества:</h3>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center plus">
-                <img src="images/камень.png" height="150px" width="auto">
+            <div class="col-xs-12 text-center plus">
+                <img src="../../main/images/камень.png" height="150px" width="auto">
                 <p>Минимизация <br> рисков</p>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center plus">
-                <img src="images/сейф.png" height="150px" width="auto">
+            <div class="col-xs-12 text-center plus">
+                <img src="../../main/images/сейф.png" height="150px" width="auto">
                 <p class="text-center">Страхование <br> вкладов</p>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center plus">
-                <img src="images/график.png" height="150px" width="auto">
+            <div class="col-xs-12 text-center plus">
+                <img src="../../main/images/график.png" height="150px" width="auto">
                 <p class="text-center">Статистика роста <br> компании</p>
             </div>
         </div>
-        <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 plus-descr text-justify">
-            <p>
-                Застраховать свой вклад имеет право каждый пайщик, сделав свой взнос в Ф.Ф.О. на целевую программу,
-                получить займ до 50% от суммы целевого взноса.
-                Страхование взноса в нашей компании в первую очередь  - это диверсификация Ваших средств.
-                На сегодняшний день мы считаем, что это самое выгодное предложение на рынке финансовых услуг,
-                так как Вы получаете «живые» деньги на руки...
-            </p>
-            <a href="targets.html">Подробнее...</a>
-        </div>
-        <div class="angle"></div>
     </section>
 </main>
 <footer class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <ul class="site-map text-nowrap">
-            <li><a href="targets.html">Целевые программы</a></li>
-            <li><a href="about.html">О нас</a></li>
-            <li><a href="main.html#kr-address">Контакты</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="faq.html">Вопросы и ответы</a></li>
-            <li class="small-number hidden-xs">
-                <span class="small">8 (800)</span> <b>234 81 88</b>
-            </li>
-            <li class="hidden-xs"><a href="main.html"><img src="images/логотип%20белый.png" width="100px"></a></li>
-        </ul>
+    <div class="text-center col-xs-12">
+        <div class="social">
+            <p>Мы в социальных сетях:</p>
+            <a href="https://vk.com/club78335588"><div class="vk"></div></a>
+            <a href="https://twitter.com/HorsInvest"><div class="tw"></div></a>
+            <a href="https://www.facebook.com/"><div class="fb"></div></a>
+            <a href="https://plus.google.com/"><div class="go"></div></a>
+        </div>
         <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
-    </div>
-    <div class="social bottom-social hidden visible-xs">
-        <a href="https://vk.com/club78335588"><div class="vk"></div></a>
-        <a href="https://twitter.com/HorsInvest"><div class="tw"></div></a>
-        <a href="https://www.facebook.com/"><div class="fb"></div></a>
-        <a href="https://plus.google.com/"><div class="go"></div></a>
     </div>
 </footer>
 
