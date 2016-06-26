@@ -21,82 +21,58 @@
 </head>
 <body class="container-fluid">
 <header class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-        <!-- Navbar start -->
-        <nav class="navbar">
-            <div class="container-fluid">
-                <div class="navbar-header hidden visible-xs">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-collapse" aria-expanded="false">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand left" href="../main/main.html"><img src="../main/images/логотип белый.png" width="120px"></a>
-                </div>
+    <!-- Navbar start -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header text-nowrap">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand left" href="../../main/main.html"><img src="../../main/images/логотип белый.png" width="90px"></a>
+                <span class="navbar-text number"><span class="small">8 (800)</span> <b>234 81 88</b></span>
+            </div>
 
-                <!-- Collect the nav links -->
-                <div class="collapse navbar-collapse" id="bs-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a class="nav-logo hidden-xs" href="../main/main.html"><img src="../main/images/logobook_hors.png" width="150px"></a></li>
-                        <li class="hidden-xs"><a href="../main/targets.html">Целевые программы</a></li>
-                        <li class="hidden-xs"><a href="../main/about.html">О нас</a></li>
-                        <li class="visible-xs"><a href="../main/main.html">На главную страницу</a></li>
-                        <li class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></li>
-                        <li class="hidden-xs"><a href="../main/main.html#kr-address" title="Контакты">
-                            <img src="../main/images/карта_иконка.png" height="20px" class="map-icon"></a>
-                        </li>
-                        <li class="dropdown hidden-xs">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                               aria-expanded="false" title="Язык">RU <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">EN</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="../main/main.html">Выход</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-        <!-- Navbar end -->
+            <!-- Collect the nav links -->
+            <div class="collapse navbar-collapse" id="bs-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="myaccount.html">Мои счета</a></li>
+                    <li><a href="operations.html">Операции</a></li>
+                    <li><a href="mydata.html">Мои данные</a></li>
+                    <li><a href="myclients.html">Мои клиенты</a></li>
+                    <li><a href="reports.html">Отчеты</a></li>
+                    <li><a href="docs.html">Документы</a></li>
+                    <li><a href="achivements.html">Достижения</a></li>
+                    <li><a href="rescind.html">Расторгнуть договор</a></li>
+                    <li><a href="answers.html">Частые вопросы</a></li>
+                    <li><a href="../../main/main.html">На главную страницу</a></li>
+                    <li><a href="#">Выход</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- Navbar end -->
+
+    <div class="col-xs-12 hello-row">
+        <aside class="text-center">Здравствуйте, <span>{{ username }}</span>!
+            <a data-toggle="modal" data-target="#noteModal">
+            <span class="message text-nowrap">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                <sup>1</sup>
+            </span>
+            </a>
+        <span class="nomessage hidden">
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+        </span>
+        </aside>
     </div>
 </header>
 
-
-<div class="col-lg-12 hello-row">
-    <div class="col-lg-6">
-        <a href="answers.html"><i>У Вас возникли вопросы?</i></a>
-    </div>
-    <div class="col-lg-6">
-        <aside class="username"><i>Здравствуйте, <span>{{ username }}</span>! </i>
-            <a data-toggle="modal" data-target="#noteModal">
-                <span class="message text-nowrap">
-                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                    <sup>1</sup>
-                </span>
-            </a>
-            <span class="nomessage hidden">
-                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-            </span>
-        </aside>
-    </div>
-</div>
-<nav class="navbar col-lg-12">
-    <ul class="nav navbar-nav lk-nav">
-        <li><a href="myaccount.html">Мои счета</a></li>
-        <li><a href="operatons.html">Операции</a></li>
-        <li><a href="mydata.html">Мои данные</a></li>
-        <li><a href="myclients.html">Мои клиенты</a></li>
-        <li><a href="reports.html">Отчеты</a></li>
-        <li><a href="docs.html">Документы</a></li>
-        <li><a href="achivements.html">Достижения</a></li>
-        <li><a href="rescind.html">Расторгнуть договор</a></li>
-    </ul>
-</nav>
-
-<main class="container-fluid">
+<main>
     <div class="row">
-        <div class="col-lg-12 text-justify">
+        <div class="col-xs-12 text-justify">
             <ul class="nav nav-tabs gray-title nav-justified">
                 <li role="presentation" class="active"><a href="#reward" data-toggle="tab">Партнерские вознаграждения</a></li>
                 <li role="presentation"><a href="#main" data-toggle="tab">Баланс основного счёта</a></li>
@@ -106,28 +82,30 @@
 
                 <!--Вкладка "Партнерские вознаграждения"-->
                 <div id="reward" class="tab-pane fade in active">
-                    <table class="table table-responsive">
-                        <tbody>
-                        <tr>
-                            <th>Дата</th>
-                            <th>Описание</th>
-                            <th>Приход</th>
-                            <th>Расход</th>
-                            <th>Баланс</th>
-                        </tr>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <th>Дата</th>
+                                <th>Описание</th>
+                                <th>Приход</th>
+                                <th>Расход</th>
+                                <th>Баланс</th>
+                            </tr>
 
-                        <!--Добавлять строки по мере необходимости при помощи циклов-->
-                        <tr>
-                            <td class="date"></td>
-                            <td class="transaction"></td>
-                            <td class="in"></td>
-                            <td class="out"></td>
-                            <td class="balance"></td>
-                        </tr>
-                        <!--конец шаблона-->
+                            <!--Добавлять строки по мере необходимости при помощи циклов-->
+                            <tr>
+                                <td class="date"></td>
+                                <td class="transaction"></td>
+                                <td class="in"></td>
+                                <td class="out"></td>
+                                <td class="balance"></td>
+                            </tr>
+                            <!--конец шаблона-->
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                     <p class="disclaimer">
                         На данный момент информация отсутствует
                     </p>
@@ -137,28 +115,30 @@
 
                 <!--Вкладка "Баланс основного счёта"-->
                 <div id="main" class="tab-pane fade">
-                    <table class="table table-responsive">
-                        <tbody>
-                        <tr>
-                            <th>Дата</th>
-                            <th>Описание</th>
-                            <th>Приход</th>
-                            <th>Расход</th>
-                            <th>Баланс</th>
-                        </tr>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <th>Дата</th>
+                                <th>Описание</th>
+                                <th>Приход</th>
+                                <th>Расход</th>
+                                <th>Баланс</th>
+                            </tr>
 
-                        <!--Добавлять строки по мере необходимости при помощи циклов-->
-                        <tr>
-                            <td class="date"></td>
-                            <td class="transaction"></td>
-                            <td class="in"></td>
-                            <td class="out"></td>
-                            <td class="balance"></td>
-                        </tr>
-                        <!--конец шаблона-->
+                            <!--Добавлять строки по мере необходимости при помощи циклов-->
+                            <tr>
+                                <td class="date"></td>
+                                <td class="transaction"></td>
+                                <td class="in"></td>
+                                <td class="out"></td>
+                                <td class="balance"></td>
+                            </tr>
+                            <!--конец шаблона-->
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                     <p class="disclaimer">
                         На данный момент информация отсутствует
                     </p>
@@ -168,28 +148,30 @@
 
                 <!--Вкладка "Баланс счёта займа"-->
                 <div id="loan" class="tab-pane fade">
-                    <table class="table table-responsive">
-                        <tbody>
-                        <tr>
-                            <th>Дата</th>
-                            <th>Описание</th>
-                            <th>Приход</th>
-                            <th>Расход</th>
-                            <th>Баланс</th>
-                        </tr>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <th>Дата</th>
+                                <th>Описание</th>
+                                <th>Приход</th>
+                                <th>Расход</th>
+                                <th>Баланс</th>
+                            </tr>
 
-                        <!--Добавлять строки по мере необходимости при помощи циклов-->
-                        <tr>
-                            <td class="date"></td>
-                            <td class="transaction"></td>
-                            <td class="in"></td>
-                            <td class="out"></td>
-                            <td class="balance"></td>
-                        </tr>
-                        <!--конец шаблона-->
+                            <!--Добавлять строки по мере необходимости при помощи циклов-->
+                            <tr>
+                                <td class="date"></td>
+                                <td class="transaction"></td>
+                                <td class="in"></td>
+                                <td class="out"></td>
+                                <td class="balance"></td>
+                            </tr>
+                            <!--конец шаблона-->
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                     <p class="disclaimer">
                         На данный момент информация отсутствует
                     </p>
@@ -201,20 +183,15 @@
     </div>
 </main>
 
-
 <footer class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <ul class="site-map">
-            <li><a href="../main/targets.html">Целевые программы</a></li>
-            <li><a href="../main/about.html">О нас</a></li>
-            <li><a href="../main/main.html#kr-address">Контакты</a></li>
-            <li><a href="../main/news.html">Новости</a></li>
-            <li><a href="../main/faq.html">Вопросы и ответы</a></li>
-            <li class="small-number hidden-xs">
-                <span class="small">8 (800)</span> <b>234 81 88</b>
-            </li>
-            <li class="hidden-xs"><a href="../main/main.html"><img src="../main/images/логотип%20белый.png" width="100px"></a></li>
-        </ul>
+    <div class="text-center col-xs-12">
+        <div class="social">
+            <p>Мы в социальных сетях:</p>
+            <a href="https://vk.com/club78335588"><div class="vk"></div></a>
+            <a href="https://twitter.com/HorsInvest"><div class="tw"></div></a>
+            <a href="https://www.facebook.com/"><div class="fb"></div></a>
+            <a href="https://plus.google.com/"><div class="go"></div></a>
+        </div>
         <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
     </div>
 </footer>

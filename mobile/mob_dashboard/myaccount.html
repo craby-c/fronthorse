@@ -21,223 +21,192 @@
 </head>
 <body class="container-fluid">
 <header class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-        <!-- Navbar start -->
-        <nav class="navbar">
-            <div class="container-fluid">
-                <div class="navbar-header hidden visible-xs">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-collapse" aria-expanded="false">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand left" href="../main/main.html"><img src="../main/images/логотип белый.png" width="120px"></a>
-                </div>
+    <!-- Navbar start -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header text-nowrap">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand left" href="../../main/main.html"><img src="../../main/images/логотип белый.png" width="90px"></a>
+                <span class="navbar-text number"><span class="small">8 (800)</span> <b>234 81 88</b></span>
+            </div>
 
-                <!-- Collect the nav links -->
-                <div class="collapse navbar-collapse" id="bs-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a class="nav-logo hidden-xs" href="../main/main.html"><img src="../main/images/logobook_hors.png" width="150px"></a></li>
-                        <li class="hidden-xs"><a href="../main/targets.html">Целевые программы</a></li>
-                        <li class="hidden-xs"><a href="../main/about.html">О нас</a></li>
-                        <li class="visible-xs"><a href="../main/main.html">На главную страницу</a></li>
-                        <li class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></li>
-                        <li class="hidden-xs"><a href="../main/main.html#kr-address" title="Контакты">
-                            <img src="../main/images/карта_иконка.png" height="20px" class="map-icon"></a>
-                        </li>
-                        <li class="dropdown hidden-xs">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                               aria-expanded="false" title="Язык">RU <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">EN</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="../main/main.html">Выход</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-        <!-- Navbar end -->
+            <!-- Collect the nav links -->
+            <div class="collapse navbar-collapse" id="bs-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="myaccount.html">Мои счета</a></li>
+                    <li><a href="operations.html">Операции</a></li>
+                    <li><a href="mydata.html">Мои данные</a></li>
+                    <li><a href="myclients.html">Мои клиенты</a></li>
+                    <li><a href="reports.html">Отчеты</a></li>
+                    <li><a href="docs.html">Документы</a></li>
+                    <li><a href="achivements.html">Достижения</a></li>
+                    <li><a href="rescind.html">Расторгнуть договор</a></li>
+                    <li><a href="answers.html">Частые вопросы</a></li>
+                    <li><a href="../../main/main.html">На главную страницу</a></li>
+                    <li><a href="#">Выход</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- Navbar end -->
+
+    <div class="col-xs-12 hello-row">
+        <aside class="text-center">Здравствуйте, <span>{{ username }}</span>!
+            <a data-toggle="modal" data-target="#noteModal">
+            <span class="message text-nowrap">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                <sup>1</sup>
+            </span>
+            </a>
+        <span class="nomessage hidden">
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+        </span>
+        </aside>
     </div>
 </header>
 
-<div class="col-lg-12 hello-row">
-    <div class="col-lg-6">
-        <a href="answers.html"><i>У Вас возникли вопросы?</i></a>
-    </div>
-    <div class="col-lg-6">
-        <aside class="username"><i>Здравствуйте, <span>{{ username }}</span>! </i>
-            <a data-toggle="modal" data-target="#noteModal">
-                <span class="message text-nowrap">
-                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                    <sup>1</sup>
-                </span>
-            </a>
-            <span class="nomessage hidden">
-                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-            </span>
-        </aside>
-    </div>
-</div>
-
-<nav class="navbar col-lg-12">
-    <ul class="nav navbar-nav lk-nav">
-        <li><a href="myaccount.html">Мои счета</a></li>
-        <li><a href="operatons.html">Операции</a></li>
-        <li><a href="mydata.html">Мои данные</a></li>
-        <li><a href="myclients.html">Мои клиенты</a></li>
-        <li><a href="reports.html">Отчеты</a></li>
-        <li><a href="docs.html">Документы</a></li>
-        <li><a href="achivements.html">Достижения</a></li>
-        <li><a href="rescind.html">Расторгнуть договор</a></li>
-    </ul>
-</nav>
-
-<main class="container-fluid">
+<main>
     <div class="row">
-        <div class="mytab col-lg-12 text-justify">
+        <div class="mytab col-xs-12 text-justify">
             <ul class="nav nav-tabs gray-title nav-justified">
                 <li role="presentation" class="active"><a href="#account" data-toggle="tab">Основная информация по счёту</a></li>
                 <li role="presentation"><a href="#addacc" data-toggle="tab">Добавить новый счёт</a></li>
-                <li></li>
             </ul>
             <div class="tab-content">
 
                 <!--Вкладка "Основная информация по счёту"-->
                 <div id="account" class="tab-pane fade in active">
-                    <table class="table table-responsive">
-                        <tbody>
-                        <tr>
-                            <td>Владелец счёта</td>
-                            <td>{{username}}</td>
-                        </tr>
-                        <tr>
-                            <td>Дата открытия</td>
-                            <td>{{date}}</td>
-                        </tr>
-                        <tr>
-                            <td>Дата окончания</td>
-                            <td>{{date}}</td>
-                        </tr>
-                        <tr>
-                            <td>Продукт</td>
-                            <td>{{product}}</td>
-                        </tr>
-                        <tr>
-                            <td>Валюта</td>
-                            <td>{{currency}}</td>
-                        </tr>
-                        <tr>
-                            <td>Сумма договора</td>
-                            <td>{{value}}</td>
-                        </tr>
-                        <tr>
-                            <td>Баланс основного счёта</td>
-                            <td>{{value}}</td>
-                        </tr>
-                        <tr>
-                            <td>Баланс займа</td>
-                            <td>{{value}}</td>
-                        </tr>
-                        <tr>
-                            <td>Доступный баланс для совершения операций</td>
-                            <td>{{value}}</td>
-                        </tr>
-                        <tr>
-                            <td>Доступный баланс при закрытии счёта</td>
-                            <td>{{value}}</td>
-                        </tr>
-                        <tr>
-                            <td>Поощрения</td>
-                            <td>{{value}}</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>Владелец счёта</td>
+                                <td>{{username}}</td>
+                            </tr>
+                            <tr>
+                                <td>Дата открытия</td>
+                                <td>{{date}}</td>
+                            </tr>
+                            <tr>
+                                <td>Дата окончания</td>
+                                <td>{{date}}</td>
+                            </tr>
+                            <tr>
+                                <td>Продукт</td>
+                                <td>{{product}}</td>
+                            </tr>
+                            <tr>
+                                <td>Валюта</td>
+                                <td>{{currency}}</td>
+                            </tr>
+                            <tr>
+                                <td>Сумма договора</td>
+                                <td>{{value}}</td>
+                            </tr>
+                            <tr>
+                                <td>Баланс основного счёта</td>
+                                <td>{{value}}</td>
+                            </tr>
+                            <tr>
+                                <td>Баланс займа</td>
+                                <td>{{value}}</td>
+                            </tr>
+                            <tr>
+                                <td>Доступный баланс <br>для совершения операций</td>
+                                <td>{{value}}</td>
+                            </tr>
+                            <tr>
+                                <td>Доступный баланс <br>при закрытии счёта</td>
+                                <td>{{value}}</td>
+                            </tr>
+                            <tr>
+                                <td>Поощрения</td>
+                                <td>{{value}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <!--конец вкладки "Основная информация по счёту"-->
 
                 <!--Вкладка "Добавить счёт"-->
                 <div id="addacc" class="tab-pane fade row">
-                    <form class="form-horizontal col-lg-10 col-lg-offset-1">
+                    <form class="col-xs-12">
                         <div class="form-group row">
-                            <label for="inn" class="col-lg-4 control-label">ИНН</label>
-                            <div class="col-lg-4">
+                            <label for="inn" class="col-xs-12 control-label">ИНН</label>
+                            <div class="col-xs-12">
                                 <input type="text" class="form-control" id="inn">
                             </div>
-                            <div class="col-lg-4 validation"></div>
+                            <div class="col-xs-12 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="kpp" class="col-lg-4 control-label">КПП</label>
-                            <div class="col-lg-4">
+                            <label for="kpp" class="col-xs-12 control-label">КПП</label>
+                            <div class="col-xs-12">
                                 <input type="text" class="form-control" id="kpp">
                             </div>
-                            <div class="col-lg-4 validation"></div>
+                            <div class="col-xs-12 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="ogrn" class="col-lg-4 control-label">ОГРН</label>
-                            <div class="col-lg-4">
+                            <label for="ogrn" class="col-xs-12 control-label">ОГРН</label>
+                            <div class="col-xs-12">
                                 <input type="text" class="form-control" id="ogrn">
                             </div>
-                            <div class="col-lg-4 validation"></div>
+                            <div class="col-xs-12 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="rs" class="col-lg-4 control-label">Расчетный счет</label>
-                            <div class="col-lg-4">
+                            <label for="rs" class="col-xs-12 control-label">Расчетный счет <span class="asterisk">*</span></label>
+                            <div class="col-xs-12">
                                 <input type="text" class="form-control" id="rs" required>
                             </div>
-                            <div class="col-lg-4 validation hidden-xs">
-                                <label class="glyphicon glyphicon-asterisk" aria-hidden="true"></label>
-                                <i class="small"><br>Обязательное поле для заполнения</i>
+                            <div class="col-xs-12 validation">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="bankname" class="col-lg-4 control-label">Наименование банка</label>
-                            <div class="col-lg-4">
+                            <label for="bankname" class="col-xs-12 control-label">Наименование банка <span class="asterisk">*</span></label>
+                            <div class="col-xs-12">
                                 <input type="text" class="form-control" id="bankname" required>
                             </div>
-                            <div class="col-lg-4 validation hidden-xs">
-                                <label class="glyphicon glyphicon-asterisk" aria-hidden="true"></label>
-                            </div>
+                            <div class="col-lg-12 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="korr" class="col-lg-4 control-label">Корреспондентский счет</label>
-                            <div class="col-lg-4">
+                            <label for="korr" class="col-xs-12 control-label">Корреспондентский счет <span class="asterisk">*</span></label>
+                            <div class="col-xs-12">
                                 <input type="text" class="form-control" id="korr" required>
                             </div>
-                            <div class="col-lg-4 validation hidden-xs">
-                                <label class="glyphicon glyphicon-asterisk" aria-hidden="true"></label>
-                            </div>
+                            <div class="col-xs-12 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="bik" class="col-lg-4 control-label">БИК</label>
-                            <div class="col-lg-4">
+                            <label for="bik" class="col-xs-12 control-label">БИК <span class="asterisk">*</span></label>
+                            <div class="col-xs-12">
                                 <input type="text" class="form-control" id="bik" required>
                             </div>
-                            <div class="col-lg-4 validation hidden-xs">
-                                <label class="glyphicon glyphicon-asterisk" aria-hidden="true"></label>
-                            </div>
+                            <div class="col-xs-12 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="swift" class="col-lg-4 control-label">СВИФТ</label>
-                            <div class="col-lg-4">
+                            <label for="swift" class="col-xs-12 control-label">СВИФТ</label>
+                            <div class="col-xs-12">
                                 <input type="text" class="form-control" id="swift">
                             </div>
-                            <div class="col-lg-4 validation"></div>
+                            <div class="col-xs-12 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="bankben" class="col-lg-4 control-label">Банк-бенефициар</label>
-                            <div class="col-lg-4">
+                            <label for="bankben" class="col-xs-12 control-label">Банк-бенефициар</label>
+                            <div class="col-xs-12">
                                 <input type="text" class="form-control" id="bankben">
                             </div>
-                            <div class="col-lg-4 validation"></div>
+                            <div class="col-xs-12 validation"></div>
                         </div>
                         <div class="form-group row">
-                            <label for="bene" class="col-lg-4 control-label">Бенефициар</label>
-                            <div class="col-lg-4">
+                            <label for="bene" class="col-xs-12 control-label">Бенефициар</label>
+                            <div class="col-xs-12">
                                 <input type="text" class="form-control" id="bene">
                             </div>
-                            <div class="col-lg-4 validation"></div>
+                            <div class="col-xs-12 validation"></div>
                         </div>
                         <div class="wrapper-center">
                             <input type="submit" class="btn red-btn" value="Добавить реквизиты" data-toggle="modal" data-target="#accModal">
@@ -287,18 +256,14 @@
 </main>
 
 <footer class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <ul class="site-map">
-            <li><a href="../main/targets.html">Целевые программы</a></li>
-            <li><a href="../main/about.html">О нас</a></li>
-            <li><a href="../main/main.html#kr-address">Контакты</a></li>
-            <li><a href="../main/news.html">Новости</a></li>
-            <li><a href="../main/faq.html">Вопросы и ответы</a></li>
-            <li class="small-number hidden-xs">
-                <span class="small">8 (800)</span> <b>234 81 88</b>
-            </li>
-            <li class="hidden-xs"><a href="../main/main.html"><img src="../main/images/логотип%20белый.png" width="100px"></a></li>
-        </ul>
+    <div class="text-center col-xs-12">
+        <div class="social">
+            <p>Мы в социальных сетях:</p>
+            <a href="https://vk.com/club78335588"><div class="vk"></div></a>
+            <a href="https://twitter.com/HorsInvest"><div class="tw"></div></a>
+            <a href="https://www.facebook.com/"><div class="fb"></div></a>
+            <a href="https://plus.google.com/"><div class="go"></div></a>
+        </div>
         <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
     </div>
 </footer>
@@ -344,7 +309,7 @@
             </div>
             <div class="modal-body wrapper-center">
                 <button class="red-btn btn">Скачать документы</button>
-                <button class="gray-btn btn">Вернуться на сайт</button>
+                <button class="gray-btn btn" data-dismiss="modal">Вернуться на сайт</button>
             </div>
         </div>
     </div>

@@ -21,462 +21,436 @@
 </head>
 <body class="container-fluid">
 <header class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-        <!-- Navbar start -->
-        <nav class="navbar">
-            <div class="container-fluid">
-                <div class="navbar-header hidden visible-xs">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-collapse" aria-expanded="false">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand left" href="../main/main.html"><img src="../main/images/логотип белый.png" width="120px"></a>
-                </div>
+    <!-- Navbar start -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header text-nowrap">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand left" href="../../main/main.html"><img src="../../main/images/логотип белый.png" width="90px"></a>
+                <span class="navbar-text number"><span class="small">8 (800)</span> <b>234 81 88</b></span>
+            </div>
 
-                <!-- Collect the nav links -->
-                <div class="collapse navbar-collapse" id="bs-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a class="nav-logo hidden-xs" href="../main/main.html"><img src="../main/images/logobook_hors.png" width="150px"></a></li>
-                        <li class="hidden-xs"><a href="../main/targets.html">Целевые программы</a></li>
-                        <li class="hidden-xs"><a href="../main/about.html">О нас</a></li>
-                        <li class="visible-xs"><a href="../main/main.html">На главную страницу</a></li>
-                        <li class="navbar-text number hidden-xs"><span class="small">8 (800)</span> <b>234 81 88</b></li>
-                        <li class="hidden-xs"><a href="../main/main.html#kr-address" title="Контакты">
-                            <img src="../main/images/карта_иконка.png" height="20px" class="map-icon"></a>
-                        </li>
-                        <li class="dropdown hidden-xs">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                               aria-expanded="false" title="Язык">RU <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">EN</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="../main/main.html">Выход</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-        <!-- Navbar end -->
+            <!-- Collect the nav links -->
+            <div class="collapse navbar-collapse" id="bs-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="myaccount.html">Мои счета</a></li>
+                    <li><a href="operations.html">Операции</a></li>
+                    <li><a href="mydata.html">Мои данные</a></li>
+                    <li><a href="myclients.html">Мои клиенты</a></li>
+                    <li><a href="reports.html">Отчеты</a></li>
+                    <li><a href="docs.html">Документы</a></li>
+                    <li><a href="achivements.html">Достижения</a></li>
+                    <li><a href="rescind.html">Расторгнуть договор</a></li>
+                    <li><a href="answers.html">Частые вопросы</a></li>
+                    <li><a href="../../main/main.html">На главную страницу</a></li>
+                    <li><a href="#">Выход</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- Navbar end -->
+
+    <div class="col-xs-12 hello-row">
+        <aside class="text-center">Здравствуйте, <span>{{ username }}</span>!
+            <a data-toggle="modal" data-target="#noteModal">
+            <span class="message text-nowrap">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                <sup>1</sup>
+            </span>
+            </a>
+        <span class="nomessage hidden">
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+        </span>
+        </aside>
     </div>
 </header>
 
-<div class="col-lg-12 hello-row">
-    <div class="col-lg-6">
-        <a href="answers.html"><i>У Вас возникли вопросы?</i></a>
-    </div>
-    <div class="col-lg-6">
-        <aside class="username"><i>Здравствуйте, <span>{{ username }}</span>! </i>
-            <a data-toggle="modal" data-target="#noteModal">
-                <span class="message text-nowrap">
-                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                    <sup>1</sup>
-                </span>
-            </a>
-            <span class="nomessage hidden">
-                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-            </span>
-        </aside>
-    </div>
-</div>
-
-<nav class="navbar col-lg-12">
-    <ul class="nav navbar-nav lk-nav">
-        <li><a href="myaccount.html">Мои счета</a></li>
-        <li><a href="operatons.html">Операции</a></li>
-        <li><a href="mydata.html">Мои данные</a></li>
-        <li><a href="myclients.html">Мои клиенты</a></li>
-        <li><a href="reports.html">Отчеты</a></li>
-        <li><a href="docs.html">Документы</a></li>
-        <li><a href="achivements.html">Достижения</a></li>
-        <li><a href="rescind.html">Расторгнуть договор</a></li>
-    </ul>
-</nav>
-
-<main class="container-fluid">
+<main>
     <div class="row">
-        <div class="col-lg-12 text-right">
+        <div class="col-xs-12 text-right">
             <div class="gray-title title-row">
-                <i>Часто задаваемые вопросы</i>
+                Часто задаваемые вопросы
             </div>
         </div>
 
-        <div class="col-lg-12">
-            <div class="panel faq-panel main-panel">
-                <div class="panel-body">
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel faq-panel main-panel">
+            <div class="panel-body">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingOne">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                       aria-expanded="true" aria-controls="collapseOne">Где располагается компания "Хорс-Инвест"?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    Находимся мы территориально по адресу Краснодарский Край, город Краснодар,
-                                    ул. Монтажников д. 1/4, офис 1103
-                                </div>
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                   aria-expanded="true" aria-controls="collapseOne">Где располагается компания "Хорс-Инвест"?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                Находимся мы территориально по адресу Краснодарский Край, город Краснодар,
+                                ул. Монтажников д. 1/4, офис 1103
                             </div>
                         </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingTwo">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Как связаться с нами?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                    По телефону горячей линии 8-800-234-8188 или отправить заявку с сайта (hors-Invest.ru),
-                                    заполнив все необходимые формы.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingThree">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Как открыть счет в "Хорс-Инвест"?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    Необходимо связаться с финансовым консультантом "Хорс-Инвест" и получить полную информацию;
-                                    <br>
-                                    Пройти регистрацию на сайте(hors-Invest.ru);
-                                    <br>
-                                    Отправить заявку на электронную почту "Хорс-Инвест" (offisehors@gmail.com)в свободной
-                                    форме, в заявке необходимо указать ФИО, адрес, электронную почту и номер телефона.
-                                    <br>
-                                    Или отправить заявку с сайта (hors-Invest.ru) заполнив все необходимые формы.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingFour">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Как внести деньги на счет?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                <div class="panel-body">
-                                    После регистрации клиент получает реквизиты компании, на которые можно перевести деньги.
-                                    Или внести деньги наличными через кассу "Хорс-Инвест". (внесение наличных возможно только
-                                    в центральном офисе "Хорс-Инвест" в гор. Краснодаре)
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingFive">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        Какой процент за пользование займом?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                <div class="panel-body">
-                                    11,5%
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingSix">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        Какой минимальный размер вклада?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                                <div class="panel-body">
-                                    Минимальный размер вклада в нашей компании составляет 6000 рублей.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingSeven">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                        Какой минимальный процент доходности дает ваша компания?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                                <div class="panel-body">
-                                    Минимальный процент доходности равен 3% в месяц при размере вклада от 6000 до 120000 рублей.
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingEight">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                        Могу ли я перейти на другой тариф?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-                                <div class="panel-body">
-                                    Да, Вы можете перейти на другой тариф в любой момент,заполнив заявку на переход с тарифа,
-                                    но только тогда, когда сумма на Вашем счете превышает верхний порог тарифа минимум на 10 рублей.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingNine">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                        Как можно получить займ?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-                                <div class="panel-body">
-                                    Займ можно получить при условии, что все документы по всем Вашим основным счетам приняты
-                                    компанией. В этом случае Вам нужно заполнить договор Займа, а также заполнить одну из
-                                    двух заявок в зависимости от того что Вы хотите сделать с займом. Если забрать, то
-                                    необходимо заполнить заявку Возврат Целевого Взноса, если первести на счёт, то заполнить
-                                    заявку на Внутренний Перевод и отправить эти документы на offisehors@gmail.com.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingTen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                        Процент за использование займа - это фиксированная или плавающая величина?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
-                                <div class="panel-body">
-                                    На данный момент фиксированная. Если какие-то изменения будут происходить,
-                                    то компания уведомит об этом клиента за 30 дней.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingEleven">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                                        Возможно ли дополнительно получить займ при условии наличия у клиента уже
-                                        взятого займа?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
-                                <div class="panel-body">
-                                    Нет, займ по учетному счету клиент может получить только после погашения всех
-                                    выданных ранее займов.
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingTvelve">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseTvelve" aria-expanded="false" aria-controls="collapseTvelve">
-                                        На какой срок предоставляется займ?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTvelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTvelve">
-                                <div class="panel-body">
-                                    Займ является бессрочным.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingThirteen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                                        Происходит ли зачисление выданных в займ средств автоматически на основной счёт?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
-                                <div class="panel-body">
-                                    Нет. Зачисление заемных средств осуществляется на специальный счет займа до получения
-                                    от клиента соответствующего распоряжения о переводе данной суммы. Перевод заемных
-                                    средств может быть осуществлен как на основной счет, так и на другие счета
-                                    (через «Заявление на внутренний перевод»), или в другой банк
-                                    (через «Заявление на возврат части целевого взноса»).
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingFourteen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-                                        Каким образом происходит начисление процентов за пользование займом?
-                                        Как и в какие сроки осуществляется погашение процентов по займу?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
-                                <div class="panel-body">
-                                    Начисление процентов за пользование заемными средствами по счету займа происходит
-                                    ежедневно и пропорционально периоду, в течение которого использовались заемные средства
-                                    (точные цифры Вы можете увидеть в личном кабинете в разделе "Контрактная информация").
-                                    Погашение процентов происходит либо при закрытии счёта, либо при закрытии займа.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingFifteen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-                                        Каким образом происходит начисление процентов за пользование займом?
-                                        Как и в какие сроки осуществляется погашение процентов по займу?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
-                                <div class="panel-body">
-                                    Ответ: Рассмотрим на примере: Вы открыли счёт на сумму 100 000 рублей и заполнили
-                                    Договор Займа. Затем автоматически со счёта будет высчитаны первоначальные взносы:
-                                    Членский взнос - 6% от суммы взноса(данная комиссия будет взыматься при каждом
-                                    пополнении счёта), Вступительный взнос - 150 рублей (единоразовый-фиксированный),
-                                    Паевой взнос - 150 рублей (единоразовый-фиксированный).
-                                    <br><br>
-                                    Таким образом:
-                                    <br><br>
-                                    100000р – 6000р – 150р - 150р = 93700р на счету.
-                                    <br><br>
-                                    50% от этой суммы и есть сумма, которую можно взять в заим.
-                                    <br><br>
-                                    То есть 93700р / 2 = 46850р,  данная сумма является суммой займа.
-                                    <br><br>
-                                    Если счёт уже открыт, то займ выдается без вычетов от суммы, которая на счету на момент
-                                    подписания Договора займа.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingSixteen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
-                                        Могу ли я с помощью заемных средств активировать новые счета?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
-                                <div class="panel-body">
-                                    Да, это возможно.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingSeventeen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
-                                        Как я могу получить социальную защиту?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventeen">
-                                <div class="panel-body">
-                                    Вы получаете ее в подарок при активации основного счета от 120 001 рублей.
-                                    Клиент получает Страховой сертификат в течение 1-2 недель с момента активации своего счета.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingEighteen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
-                                        Должен ли я за нее что-то платить?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseEighteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEighteen">
-                                <div class="panel-body">
-                                    В первый год работы с клиентом эта защита предоставляется в подарок, в последующие –
-                                    в случае продления клиентом договора на год и более. Если договор продлён не будет,
-                                    то Вы можете написать запрос на offisehors@gmail.com, и компания Вам ответит,
-                                    сколько будет стоить эта социальная защита.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingNineteen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
-                                        Нужно ли мне заполнять какие-либо документы для получения полиса?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseNineteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNineteen">
-                                <div class="panel-body">
-                                    Да. Необходимо поставить подпись при получении полиса, материалы для которого будут
-                                    составлены для Вас нашими консультантами.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <div class="panel-heading" role="tab" id="headingTwenty">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
-                                        Какая компания дает мне защиту?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwenty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwenty">
-                                <div class="panel-body">
-                                    Компания PPF - одна из лучших страховых компаний в Европе.
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Как связаться с нами?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                По телефону горячей линии 8-800-234-8188 или отправить заявку с сайта (hors-Invest.ru),
+                                заполнив все необходимые формы.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Как открыть счет в "Хорс-Инвест"?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                Необходимо связаться с финансовым консультантом "Хорс-Инвест" и получить полную информацию;
+                                <br>
+                                Пройти регистрацию на сайте(hors-Invest.ru);
+                                <br>
+                                Отправить заявку на электронную почту "Хорс-Инвест" (offisehors@gmail.com)в свободной
+                                форме, в заявке необходимо указать ФИО, адрес, электронную почту и номер телефона.
+                                <br>
+                                Или отправить заявку с сайта (hors-Invest.ru) заполнив все необходимые формы.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Как внести деньги на счет?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                После регистрации клиент получает реквизиты компании, на которые можно перевести деньги.
+                                Или внести деньги наличными через кассу "Хорс-Инвест". (внесение наличных возможно только
+                                в центральном офисе "Хорс-Инвест" в гор. Краснодаре)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Какой процент за пользование займом?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                11,5%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Какой минимальный размер вклада?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="panel-body">
+                                Минимальный размер вклада в нашей компании составляет 6000 рублей.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingSeven">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Какой минимальный процент доходности дает ваша компания?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                            <div class="panel-body">
+                                Минимальный процент доходности равен 3% в месяц при размере вклада от 6000 до 120000 рублей.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingEight">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Могу ли я перейти на другой тариф?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                            <div class="panel-body">
+                                Да, Вы можете перейти на другой тариф в любой момент,заполнив заявку на переход с тарифа,
+                                но только тогда, когда сумма на Вашем счете превышает верхний порог тарифа минимум на 10 рублей.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingNine">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    Как можно получить займ?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                            <div class="panel-body">
+                                Займ можно получить при условии, что все документы по всем Вашим основным счетам приняты
+                                компанией. В этом случае Вам нужно заполнить договор Займа, а также заполнить одну из
+                                двух заявок в зависимости от того что Вы хотите сделать с займом. Если забрать, то
+                                необходимо заполнить заявку Возврат Целевого Взноса, если первести на счёт, то заполнить
+                                заявку на Внутренний Перевод и отправить эти документы на offisehors@gmail.com.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingTen">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    Процент за использование займа - это фиксированная или плавающая величина?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                            <div class="panel-body">
+                                На данный момент фиксированная. Если какие-то изменения будут происходить,
+                                то компания уведомит об этом клиента за 30 дней.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingEleven">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                    Возможно ли дополнительно получить займ при условии наличия у клиента уже
+                                    взятого займа?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                            <div class="panel-body">
+                                Нет, займ по учетному счету клиент может получить только после погашения всех
+                                выданных ранее займов.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingTvelve">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseTvelve" aria-expanded="false" aria-controls="collapseTvelve">
+                                    На какой срок предоставляется займ?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTvelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTvelve">
+                            <div class="panel-body">
+                                Займ является бессрочным.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingThirteen">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                    Происходит ли зачисление выданных в займ средств автоматически на основной счёт?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+                            <div class="panel-body">
+                                Нет. Зачисление заемных средств осуществляется на специальный счет займа до получения
+                                от клиента соответствующего распоряжения о переводе данной суммы. Перевод заемных
+                                средств может быть осуществлен как на основной счет, так и на другие счета
+                                (через «Заявление на внутренний перевод»), или в другой банк
+                                (через «Заявление на возврат части целевого взноса»).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingFourteen">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                    Каким образом происходит начисление процентов за пользование займом?
+                                    Как и в какие сроки осуществляется погашение процентов по займу?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
+                            <div class="panel-body">
+                                Начисление процентов за пользование заемными средствами по счету займа происходит
+                                ежедневно и пропорционально периоду, в течение которого использовались заемные средства
+                                (точные цифры Вы можете увидеть в личном кабинете в разделе "Контрактная информация").
+                                Погашение процентов происходит либо при закрытии счёта, либо при закрытии займа.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingFifteen">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                                    Каким образом происходит начисление процентов за пользование займом?
+                                    Как и в какие сроки осуществляется погашение процентов по займу?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
+                            <div class="panel-body">
+                                Ответ: Рассмотрим на примере: Вы открыли счёт на сумму 100 000 рублей и заполнили
+                                Договор Займа. Затем автоматически со счёта будет высчитаны первоначальные взносы:
+                                Членский взнос - 6% от суммы взноса(данная комиссия будет взыматься при каждом
+                                пополнении счёта), Вступительный взнос - 150 рублей (единоразовый-фиксированный),
+                                Паевой взнос - 150 рублей (единоразовый-фиксированный).
+                                <br><br>
+                                Таким образом:
+                                <br><br>
+                                100000р – 6000р – 150р - 150р = 93700р на счету.
+                                <br><br>
+                                50% от этой суммы и есть сумма, которую можно взять в заим.
+                                <br><br>
+                                То есть 93700р / 2 = 46850р,  данная сумма является суммой займа.
+                                <br><br>
+                                Если счёт уже открыт, то займ выдается без вычетов от суммы, которая на счету на момент
+                                подписания Договора займа.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingSixteen">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                                    Могу ли я с помощью заемных средств активировать новые счета?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
+                            <div class="panel-body">
+                                Да, это возможно.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingSeventeen">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                                    Как я могу получить социальную защиту?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventeen">
+                            <div class="panel-body">
+                                Вы получаете ее в подарок при активации основного счета от 120 001 рублей.
+                                Клиент получает Страховой сертификат в течение 1-2 недель с момента активации своего счета.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingEighteen">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                                    Должен ли я за нее что-то платить?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEighteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEighteen">
+                            <div class="panel-body">
+                                В первый год работы с клиентом эта защита предоставляется в подарок, в последующие –
+                                в случае продления клиентом договора на год и более. Если договор продлён не будет,
+                                то Вы можете написать запрос на offisehors@gmail.com, и компания Вам ответит,
+                                сколько будет стоить эта социальная защита.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingNineteen">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                                    Нужно ли мне заполнять какие-либо документы для получения полиса?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseNineteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNineteen">
+                            <div class="panel-body">
+                                Да. Необходимо поставить подпись при получении полиса, материалы для которого будут
+                                составлены для Вас нашими консультантами.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingTwenty">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                                    Какая компания дает мне защиту?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwenty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwenty">
+                            <div class="panel-body">
+                                Компания PPF - одна из лучших страховых компаний в Европе.
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -484,28 +458,17 @@
 </main>
 
 <footer class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <ul class="site-map">
-            <li><a href="../main/targets.html">Целевые программы</a></li>
-            <li><a href="../main/about.html">О нас</a></li>
-            <li><a href="../main/main.html#kr-address">Контакты</a></li>
-            <li><a href="../main/news.html">Новости</a></li>
-            <li><a href="../main/faq.html">Вопросы и ответы</a></li>
-            <li class="small-number hidden-xs">
-                <span class="small">8 (800)</span> <b>234 81 88</b>
-            </li>
-            <li class="hidden-xs"><a href="../main/main.html"><img src="../main/images/логотип%20белый.png" width="100px"></a></li>
-        </ul>
+    <div class="text-center col-xs-12">
+        <div class="social">
+            <p>Мы в социальных сетях:</p>
+            <a href="https://vk.com/club78335588"><div class="vk"></div></a>
+            <a href="https://twitter.com/HorsInvest"><div class="tw"></div></a>
+            <a href="https://www.facebook.com/"><div class="fb"></div></a>
+            <a href="https://plus.google.com/"><div class="go"></div></a>
+        </div>
         <p class="autors">Copyright © 2016 Разработка студии Hight Ground</p>
     </div>
-    <div class="social bottom-social hidden visible-xs">
-        <a href="https://vk.com/club78335588"><div class="vk"></div></a>
-        <a href="https://twitter.com/HorsInvest"><div class="tw"></div></a>
-        <a href="https://www.facebook.com/"><div class="fb"></div></a>
-        <a href="https://plus.google.com/"><div class="go"></div></a>
-    </div>
 </footer>
-
 
 <div class="modal fade" id="noteModal" tabindex="-1" role="dialog" aria-labelledby="noteModalLabel">
     <div class="modal-dialog" role="document">
