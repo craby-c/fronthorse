@@ -41,8 +41,8 @@
 }
 .btn-lg.btn-deal{
     font-size: 1.1em;
-    bottom: 15%;
-    left: 22%;
+    bottom: 8%;
+    left: 20%;
 }
 .gift-text{
     padding: 0 20px 0 20px;
@@ -232,4 +232,10 @@ h4{
 }
 .main-panel>.panel-body {
     padding-top: 0;
+}
+#main-faq.main-panel>.panel-body{
+    padding-top: 20px;
+}
+.partners>.row>a>div>img{
+    margin-left: -15px;
 }
